@@ -1,0 +1,69 @@
+region,name,start,end,level,add,colour,Quelle,notes,placement
+Böhmen,SBK früh,-4950,-4850/-4700,2,TRUE,SBK,Trampota/Kvetina 2020,1sigma,-4900
+Böhmen,SBK spät,-4850/-4700,-4600/-4600,2,TRUE,SBK,Trampota/Kvetina 2020,1sigma,-4650
+Böhmen,Lengyel II,-4770/-4600,-4350_-4300,2,FALSE,Lengyel,Trampota/Kvetina 2020,1sigma,-4500
+Böhmen,Jordansmühl,-4250,-3950,2,FALSE,Jordansmühl,Trampota/Kvetina 2020,1sigma,-4100
+Mähren/Niederösterreich,LBK ,-5400,-4900/-4900,2,TRUE,LBK,Trampota/Kvetina 2020,1sigma,-5050
+Mähren/Niederösterreich,SBK früh,-4900/-4900,-4850/-4750,2,TRUE,SBK,Trampota/Kvetina 2020,1sigma,-4870
+Mähren/Niederösterreich,SBK spät,-4850/-4750,-4600/-4500,2,TRUE,SBK,Trampota/Kvetina 2020,1sigma,-4700
+Mähren/Niederösterreich,Lengyel I,-4770_-4750,-4550_-4420,2,FALSE,Lengyel,Trampota/Kvetina 2020,1sigma,-4600
+Mähren/Niederösterreich,Lengyel II,-4550_-4420,-4350_-4300,2,FALSE,Lengyel,Trampota/Kvetina 2020,1sigma,-4400
+Mähren/Niederösterreich,Epi-Lengyel,-4230,-4080,2,FALSE,Epi-Rössen/-Lengyel,Trampota/Kvetina 2020,1sigma,-4100
+Böhmen,Michelsberg,-4270/-4220,-3930/-3830,2,TRUE,Michelsberg,Trampota/Kvetina 2020,1sigma,-4000
+Böhmen,Schussenried,-4320/-4220,-3930/-3850,2,TRUE,Schussenried,Trampota/Kvetina 2020,1sigma,-4300
+Brandenburg (o. HVL),LBK ,-5300,-4800,2,TRUE,LBK,Schmidt 2026,2sigma,-4900
+Brandenburg (o. HVL),SBK spät,-4800,-4700/-4700,2,TRUE,SBK,Schmidt 2026,2sigma,-4750
+Brandenburg (o. HVL),Rössen,-4700/-4700,-4500_-4344,2,TRUE,Rössen,Schmidt 2026,2sigma,-4600
+Brandenburg (o. HVL),SRK,-4800,-4340,2,FALSE,SBK,Schmidt 2026,2sigma,-4750
+Brandenburg (o. HVL),TBK,-4100,-3600_-3500,2,TRUE,TBK,Schmidt 2026,2sigma,-4000
+Großpolen/Kujawien,LBPC IIA (SBK),-4800_-4700,-4335_-4310,2,TRUE,SBK,Czerniak et al. 2016,1sigma,-4500
+Großpolen/Kujawien,LBPC IIB (BKK),-4335_-4310,-4210_-4185,2,TRUE,Lengyel,Czerniak et al. 2016,1sigma,-4250
+Großpolen/Kujawien,LBPC IIIA (BKK),-4210_-4185,-4085_-4000,2,TRUE,Lengyel,Czerniak et al. 2016,1sigma,-4150
+Großpolen/Kujawien,LBPC IIIB (BKK),-4085_-4000,-3900/-3900,2,TRUE,Lengyel,Czerniak et al. 2016,1sigma,-4000
+disk. Fundstellen,Seelow 20,-4546,-4340,1,TRUE,SBK,Schmidt 2026,2sigma,-4400
+disk. Fundstellen,Bochow 2,-4681,-4446,1,TRUE,Guhrau,Schmidt 2026,2sigma,-4500
+disk. Fundstellen,Dyrotz,-4464,-4344,1,FALSE,Rössen,Wetzel 2021,,-4300
+disk. Fundstellen,Uhyst Guhrau?,-4685,-4505,1,TRUE,Guhrau,Wetzel 2021,2sigma,-4550
+disk. Fundstellen,Uhyst SRK,-4660,-4460,1,FALSE,SBK,Wetzel 2021,,-4550
+disk. Fundstellen,Flemsdorf,-4700,-4450,1,FALSE,Rössen,Wetzel 2021,,-4650
+disk. Fundstellen,Diepensee,-4460,-4260,1,FALSE,TBK,Wetzel 2021,,-4200
+disk. Fundstellen,Criewen 4,-4700,-4500,1,FALSE,Mesolithikum,Wetzel 2021,,-4600
+Europa,LBK ,-5398,-4788,2,TRUE,LBK,Manning et al. 2014,mean and sd based,-4900
+Europa,Rössen,-4776,-4464,2,TRUE,Rössen,Manning et al. 2014,mean and sd based,-4600
+Europa,Lengyel,-4861,-4137,2,FALSE,Lengyel,Manning et al. 2014,mean and sd based,-4500
+Mesolithikum Norddeutschland,Ertebölle,-5207,-3959,2,FALSE,Mesolithikum,"Manning 2014, Wetzel 2021",mean and sd based,-4600
+Europa,Michelsberg,-4239,-3583,2,TRUE,Michelsberg,Manning et al. 2014,mean and sd based,-4100
+Europa,TBK,-3913,-3031,2,FALSE,TBK,Manning et al. 2014,mean and sd based,-3900
+Mitteldeutschland,Rössen,-4800,-4400_-4300,2,TRUE,Rössen,"Kaufmann 2007, 2009",1sigma,-4700
+Mitteldeutschland,Gatersleben,-4600,-4300,2,FALSE,Gatersleben,"Kaufmann 2007, 2009",1sigma,-4500
+Mitteldeutschland,Epi-Rös/-Lengyel,-4400_-4300,-3900/-3800,2,TRUE,Epi-Rössen/-Lengyel,"Kaufmann 2007, 2009",1sigma,-4150
+Mitteldeutschland,Kmehlen,-4400_-4300,-4200/-4200,3,TRUE,Epi-Rössen/-Lengyel,"Kaufmann 2007, 2009",1sigma,-4250
+Mitteldeutschland,Gröna,-4200/-4200,-4000/-4000,3,TRUE,Epi-Rössen/-Lengyel,"Kaufmann 2007, 2009",1sigma,-4100
+Mitteldeutschland,Schiepzig,-4000/-4000,-3900/-3900,3,TRUE,Epi-Rössen/-Lengyel,"Kaufmann 2007, 2009",1sigma,-3950
+Mitteldeutschland,Jordansmühl,-4000/-3900,-3800,2,FALSE,Jordansmühl,"Kaufmann 2007, 2009",1sigma,-3950
+Mitteldeutschland,SBK ,-4900,-4700_-4600,2,TRUE,SBK,"Kaufmann 2007, 2009",,-4800
+Kujawien,SBK spät,-4800_-4700,-4600,2,TRUE,SBK,Grygiel 2008,big sd in 14C,-4650
+Kujawien,BKK früh,-4600,-4500,2,TRUE,Lengyel,Grygiel 2008,big sd in 14C,-4550
+Kujawien,BKK „klassisch“,-4500,-4300,2,TRUE,Lengyel,Grygiel 2008,big sd in 14C,-4450
+Kujawien,BKK spät,-4300,-4100,2,TRUE,Lengyel,Grygiel 2008,big sd in 14C,-4200
+Kujawien,Epi-Rös/-Lengyel,-4100,-4000,2,TRUE,Epi-Rössen/-Lengyel,Grygiel 2008,big sd in 14C,-4050
+Kujawien,LBK ,-5300,-4900,2,TRUE,LBK,Grygiel 2008,big sd in 14C,-5000
+Großpolen,LBK ,-5300,-4900,1,TRUE,LBK,Grygiel 2008,big sd in 14C,-5000
+Großpolen,Lengyel,-4800,-4100,1,TRUE,Lengyel,Grygiel 2008,big sd in 14C,-4450
+Großpolen,Samborzec-Opatów,-4800,-4600/-4600,2,TRUE,Lengyel,Grygiel 2008,big sd in 14C,-4700
+Großpolen,Pleszów-Mlodnica,-4600/-4600,-4300/-4300,2,TRUE,Lengyel,Grygiel 2008,big sd in 14C,-4500
+Großpolen,Wyciąże – Złotniki,-4300/-4300,-4100/-4100,2,TRUE,Lengyel,Grygiel 2008,big sd in 14C,-4200
+Großpolen,Malice,-4700,-4100,1,FALSE,Lengyel,Grygiel 2008,big sd in 14C,-4500
+Großpolen,Epi-Rös/-Lengyel,-4100,-4000,1,TRUE,Epi-Rössen/-Lengyel,Grygiel 2008,big sd in 14C,-4050
+Mesolithikum Norddeutschland,FBG,-4600_-4600,-4000_-3800,2,TRUE,Mesolithikum,"Manning 2014, Wetzel 2021",Speisekrusten,-4300
+Brandenburg,LBK ,-5200,-5000/-4900,2,TRUE,LBK,Wetzel 2021,,-5050
+Brandenburg,SBK ,-4850_-4850,-4500,2,TRUE,SBK,Wetzel 2021,,-4800
+Brandenburg,Rössen,-4700,-4350,2,TRUE,Rössen,Wetzel 2021,,-4600
+Brandenburg,BKK ,-4650,-4300,2,FALSE,Lengyel,Wetzel 2021,,-4400
+Brandenburg,Michelsberg,-4235,-4045,2,TRUE,Michelsberg,Wetzel 2021,,-4100
+Brandenburg,frühe TBK,-4100,-3600,2,FALSE,TBK,Wetzel 2021,,-3900
+Mähren/Niederösterreich,LBK ,-5400,-4900/-4900,2,FALSE,LBK,Trampota/Kvetina 2020,1sigma,-5050
+Brandenburg (o. HVL),LBK ,-5300,-4800,2,FALSE,LBK,Schmidt 2026,2sigma,-4900
+Europa,LBK ,-5398,-4788,2,FALSE,LBK,Manning et al. 2014,mean and sd based,-4900
+Großpolen,LBK ,-5300,-4900,1,FALSE,LBK,Grygiel 2008,big sd in 14C,-5000
+Brandenburg,LBK ,-5200,-5000/-4900,2,FALSE,LBK,Wetzel 2021,,-5050
