@@ -7,12 +7,6 @@ date-format: iso
 
 ---
 # Daten 
-```{r}
-library(dplyr)
-library(stringr)
-library(ggplot2)
-```
-
 
 ## Daten einladen und mit FO etc-Infos verknüpfen
 
@@ -94,8 +88,9 @@ gef$h_oberteil <- as.numeric(gef$h_oberteil)
 
 ```
 
-## vertikale umbruchstärke zu gefäß hinzufügen
+## vertikale Umbruchstärke zu Gefäß hinzufügen
 
+vertikale Umbruchsstärke wurde in der Tabelle "scherben" aufgenommen
 ```{r}
 
 
@@ -161,6 +156,7 @@ gef_umbruch$kreislabel <- factor(gef_umbruch$kreislabel, ordered = TRUE,
 
 
 ## Verhältnismaße nach Czerniak berechnen
+nach Czerniak 1980, der das sehr erfolgreich für Gefäßformklassifikationen benutzt hat
 
 ```{r}
 
@@ -229,6 +225,8 @@ gef_umbruch2 <- gef_umbruch |> filter(kreislabel != "NA") |> filter(!is.na(kreis
 save(gef_umbruch2, file = "../data/derived_data/gef_umbruch.RData")
 
 ```
+
+--> diese Maße wurden getestet für unterschiedliche Gruppierungen, blieben aber etwas unbefriedigend, da an zu vielen Stellen genaue Maße fehlen
 
 # Analyse
 
@@ -322,7 +320,7 @@ gef_umbruch |>
   count(gefäßnummer, kreislabel, kultur_gr, randabschluss_f, fundort) |>
   group_by(gefäßnummer, kreislabel, kultur_gr, randabschluss_f, fundort) |>
   mutate(prop = prop.table(n)) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
   geom_bar(aes(y = prop,
                x = fundort,
                fill = randabschluss_f),
@@ -378,7 +376,7 @@ gef_per_k2 <- gef_umbruch |>    filter(!is.na(randneigung)) |>
 
 gef_umbruch |>
   filter(!is.na(randneigung)) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
     geom_jitter(aes(x = kultur2,
                   y = randneigung,
                   col = kultur2),
@@ -400,9 +398,6 @@ gef_umbruch |>
        x = "",
        y = "Randneigung (Grad)",
        caption = paste0( "erhaltene Ränder, n = ", nrow(unique(gef_umbruch |>  filter(!is.na(randneigung),  randneigung != "") |> select(gefäßnummer))), ", \n Zittern der Punkte um 0.3, um Überlappung zu reduzieren") )  +
-#  scale_fill_manual(name = "",
-#                      breaks = c("SBK", "SRK","Rös", "Guhrau", "BKK", "FBG"),
-#                      values = palette("R4")   )+ 
   scale_colour_manual(name = "",
                       breaks = c("SBK", "SRK","Rös", "Guhrau", "BKK", "FBG"),
                       values = col )+
@@ -480,7 +475,7 @@ ggsave("../figures/Gef_Form/2025-09-25_Richtungswechsel_Hals.png", dpi = 300, wi
 #| label: randform_nonek chi
 #| eval: false
 library(stringr)
-
+library(rcompanion)
 g_u <- gef_umbruch |>
   filter(!str_detect(randform_nonek, "xo") )|>
   filter(!str_detect(randform_nonek, "\\?") )|>
@@ -618,7 +613,7 @@ gef_umbruch |>
   count(gefäßnummer, kreislabel, kultur_gr, bauchform_nonek, fundort) |>
   group_by(gefäßnummer, kreislabel, kultur_gr, bauchform_nonek, fundort) |>
   mutate(prop = prop.table(n)) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
   geom_bar(aes(y = prop,
                x = fundort,
                fill = bauchform_nonek),
@@ -717,7 +712,7 @@ gef_umbruch |>
   count(gefäßnummer, kreislabel, kultur_gr, Hals.schulter.umbruch, fundort) |>
   group_by(gefäßnummer, kreislabel, kultur_gr, Hals.schulter.umbruch, fundort) |>
   mutate(prop = prop.table(n)) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
   geom_bar(aes(y = prop,
                x = fundort,
                fill = Hals.schulter.umbruch),
@@ -777,7 +772,7 @@ gef_umbruch |>
   count(gefäßnummer, kreislabel, kultur_gr, Schulter.bauch.umbruch, fundort) |>
   group_by(gefäßnummer, kreislabel, kultur_gr, Schulter.bauch.umbruch, fundort) |>
   mutate(prop = prop.table(n)) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
   geom_bar(aes(y = prop,
                x = fundort,
                fill = Schulter.bauch.umbruch),
@@ -848,7 +843,7 @@ gef_off |>
   count(gefäßnummer, kreislabel, kultur_gr, off, fundort) |>
   group_by(gefäßnummer, kreislabel, kultur_gr, off, fundort) |>
   mutate(prop = prop.table(n)) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
   geom_bar(aes(y = prop,
                x = fundort,
                fill = off),
@@ -976,7 +971,7 @@ gef_umbruch |>
   filter(erh_bod != 0) |>
   # filter(kultur2 != "FBG") |>
   #      kultur2 != "Guhrau") |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
   geom_boxplot(aes(x = kultur2,
                    y = bodenwinkel),
                col = "grey80")+
@@ -1285,16 +1280,17 @@ gef_hh$ausr.zu.rand <- as.numeric(gef_hh$ausr.zu.rand)
 
 
 gef_hh |>
-  filter(!is.na(ausr.zu.rand)) |>
-  ggplot(na.rm = TRUE)+
+  # filter(!is.na(ausr.zu.rand)) |>
+  filter(kultur2 != "FBG") |>
+  ggplot()+
   geom_boxplot(aes(y = ausr.zu.rand,
                    x = kultur2,
                    fill = kultur2))+
   geom_jitter(aes(y = ausr.zu.rand,
                   x = kultur2), 
               colour = "grey")  +
-  scale_fill_manual(breaks = c("SBK", "SRK","Rös", "Guhrau", "BKK", "FBG"),
-                    values = palette("R4") )+
+  scale_fill_manual(breaks = c("SBK", "SRK","Rös", "Guhrau", "BKK"),
+                    values = col[names(col) != "FBG"] )+
   labs(title = "Ausrichtung der Handhaben zum Rand",
        caption = paste0("n = ", sum(gef_per_ra$count) ),
        x = "Kulturgruppe",
@@ -1330,7 +1326,7 @@ handhaben |>
   count(gefäßnummer, kreislabel, kultur_gr, fundort.y, ort_k, Handhabentyp) |>
   group_by(gefäßnummer, kreislabel, kultur_gr, fundort.y, ort_k, Handhabentyp) |>
   mutate(prop = prop.table(n)) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
   geom_bar(aes(y = prop,
                x = fundort.y,
                fill = ort_k,
@@ -1348,9 +1344,9 @@ handhaben |>
   labs(title = "Ort der Handhaben am Gefäßkörper",
        caption = paste0("n = ", sum(gef_per_ra$count) ),
        x = "",
-       y = "Anteil",
+       y = "Prozent",
        fill = "")+
-  scale_fill_manual(values = c(rev(viridis(10)), "grey"),
+  scale_fill_manual(values = c(rev(viridis(11)), "grey"),
                     breaks = c("oben auf dem rand", 
                                "randständig",
                                "unter dem rand, hals",
@@ -1372,7 +1368,7 @@ handhaben |>
                                "Schulter oder Bauch",
                                "Schulter-Bauch-Umbr."))+
   scale_y_continuous(breaks = c(0, 0.5, 1),
-                     labels = c(0, 0.5, 1))+
+                     labels = c(0, 50, 100))+
   coord_flip()+
   facet_grid(kreislabel ~ kultur_gr, scales = "free", drop = TRUE) +
   force_panelsizes(rows = fo_per_kr$count)+
@@ -1411,7 +1407,7 @@ handhaben |>
                  shape = Handhabentyp),
              size = 2)+
   scale_color_manual(breaks = c("SBK", "SRK","Rös", "Guhrau", "BKK", "FBG"),
-                     values = palette("R4") )+
+                    values = col[names(col) != "FBG"]  )+
   labs(title = "Größe der Handhaben",
        caption = paste0("n = ", sum(gef_per_ra$count) ),
        x = "Tiefe der Handhaben (mm)",
@@ -1435,7 +1431,7 @@ ggsave("../figures/Gef_Form/Größe_Handhaben.png", dpi = 300, width = 10, heigh
 
 gef_hh |>
   filter(!is.na(länge_zu_tiefe)) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
   geom_boxplot(aes(y = log(länge_zu_tiefe),
                    x = kultur2,
                    fill = kultur2))+
@@ -1443,7 +1439,7 @@ gef_hh |>
                   x = kultur2), 
               colour = "grey")  +
   scale_fill_manual(breaks = c("SBK", "SRK","Rös", "Guhrau", "BKK", "FBG"),
-                    values = palette("R4") )+
+                   values = col[names(col) != "FBG"] )+
   labs(title = "Länge zu Tiefe der Handhaben",
        caption = paste0("n = ", sum(gef_per_ra$count) ),
        x = "Kulturgruppe",
@@ -1558,6 +1554,7 @@ handhaben |>
             angle = 0, 
             colour = "white",
             position = position_fill(vjust = .9)  )  +
+  scale_fill_manual(values = col)+
   ylim(0,8)+
   labs(title = "Handhabentypen (gruppierte Feintypologie)",
        caption = paste0("n = ", sum(gef_per_ra$count), ", gefiltert auf Typ mehr als 1x vorhanden" ),
@@ -1567,36 +1564,13 @@ handhaben |>
   coord_flip()+
   facet_grid(Handhabentyp ~ kultur2, scales = "free_y", drop = TRUE) +
   force_panelsizes(rows = fo_per_kr$count)+
-  theme_bw()+
-  theme(text = element_text(size = 15),
-        legend.position = "bottom"         ) 
+  theme_bw(base_size = 18)+
+  theme(legend.position = "bottom" ,
+        legend.key.size = unit(0.5, "cm")) 
 
 
-ggsave("../figures/Gef_Form/Knubbentypen2.png", dpi = 300, width = 16, height = 25)
+ggsave("../figures/Gef_Form/Knubbentypen2.png", dpi = 300, width = 24, height = 42, units = "cm")
 
-```
-## "profil_seitlich_abschluss" -> rauslassen
-
-```{r}
-load( "../data/derived_data/handhaben.RData")
-gef_hh |>
-  filter(!is.na(profil_seitlich_abschluss)) |>
-  count(gefäßnummer, kreislabel, kultur2, seitlich_richtung, profil_seitlich_abschluss) |>
-  group_by(gefäßnummer, kreislabel, kultur2, seitlich_richtung, profil_seitlich_abschluss) |>
-  #  mutate(prop = prop.table(n)) |>
-  ggplot(na.rm = TRUE)+
-  geom_bar(aes(x = kultur2,
-               fill = seitlich_richtung  )
-  ) +
-   labs(title = "profil_seitlich_abschluss",
-       x = "",
-       y = "Anteil",
-       fill = "")+
-  coord_flip()+
-  facet_grid(. ~ profil_seitlich_abschluss, scales = "free", drop = TRUE) +
-  theme_bw()+
-  theme(text = element_text(size = 15),
-        legend.position = "bottom"         ) 
 ```
 
 
@@ -1680,7 +1654,7 @@ p_values |>
   ggplot(aes(x = variable,
              y = k) ) +
   geom_tile(aes(fill = round(p.adj, 2 )),
-            color = "black" )+
+            color = "white", linewidth = 1 )+
   geom_text(aes(label = format(round(p.adj, 2), nsmall = 2) ),
             col = "white",
             hjust = 2) +
@@ -1717,6 +1691,7 @@ ggsave("../figures/Gef_Form/Vgl_p_Handhaben2.png", dpi = 300, width = 30, height
 
 
 ```
+
 # dbRDA
 
 ```{r}
@@ -1818,7 +1793,7 @@ ggplot(RDA_all$sites, aes(dbRDA1, dbRDA2)) +
              size = 2) +
  scale_color_manual("", 
                     breaks = c("SBK", "SRK","Rös", "Guhrau", "BKK", "FBG"),
-                    values = palette("R4") ) +
+                    values = col)  +
   scale_linetype_discrete(guide="none") +
   theme_minimal()
 
@@ -1852,16 +1827,28 @@ load("../data/derived_data/handhaben.RData")
 
 hh_2 <- handhaben |>
   select(gefäßnummer, technikform, 
-         #ausfuehrung, größe, 
-         ausr.zu.rand, Handhabentyp, Form_grundflaeche, profil_tiefe, profil_seitlich_abschluss, seitlich_richtung, geteilt, gelocht, `in Muster einbezogen`, ort_k, länge_mm, tiefe_mm, kultur2, kreislabel) |>
+     #   ausfuehrung, größe, # sonst Dopplung mit länge in mm 
+         ausr.zu.rand, Handhabentyp, 
+     Form_grundflaeche, 
+     profil_tiefe,
+     profil_seitlich_abschluss, 
+  seitlich_richtung, 
+  geteilt, 
+  gelocht, 
+  `in.Muster.einbezogen`,
+  ort_k, länge_mm, tiefe_mm, kultur2, kreislabel) |>
   unique()
 
+hh_2$tiefe_mm <- as.numeric(hh_2$tiefe_mm)
+hh_2$ausr.zu.rand <- as.numeric(hh_2$ausr.zu.rand)
+hh_2$profil_tiefe <- factor(hh_2$profil_tiefe,  ordered = T, levels = c("flach", "mittel", "groß", "sehr groß", "nach oben negativ") )
+
 hh_2 <- hh_2 |>
-      mutate(across(technikform:ort_k, as_factor))
+      mutate(across(technikform:ort_k, as_factor))|>
+  group_by(gefäßnummer) |> slice_head() |> ungroup() # aus irgendeinem grund ein Gef mit zwei gleichen Knubben doppelt
 
 #hh_2$ausfuehrung <- factor(hh_2$ausfuehrung, ordered = T, levels = c("flach", "klein", "mittel", "groß", "sehr groß") )
 #hh_2$größe <- factor(hh_2$größe,  ordered = T, levels = c("klein", "mittel", "groß", "sehr groß") )
-hh_2$profil_tiefe <- factor(hh_2$profil_tiefe,  ordered = T, levels = c("flach", "mittel", "groß", "sehr groß", "nach oben negativ") )
 
 
 
@@ -1870,7 +1857,7 @@ hh_3 <- hh_2 |>
 
 data_gower <- gowdis(hh_3, ord = "podani") #
 
-RDA_all <- dbrda(data_gower ~ kultur2, data = hh_2) 
+RDA_all <- dbrda(data_gower ~ kultur2 + kreislabel, data = hh_2) 
 
 
 summary_rda <- summary(RDA_all) #
@@ -1886,7 +1873,7 @@ ggplot(RDA_all$sites, aes(dbRDA1, dbRDA2)) +
   geom_hline(yintercept = 0, color = "gray") +
   geom_vline(xintercept = 0, color = "gray") +
   labs(title = "distanzbasierte Redundanzanalyse über Handhaben-Parameter",
-       caption = paste("mit der Gower-Distanz über Handhaben mit \nKulturgruppe als erklärenden Faktor\n Gefäße n = ", length(unique(hh_2$gefäßnummer)) ),
+       caption = paste("mit der Gower-Distanz über Handhaben mit \nKulturgruppe und Kreis als erklärende Faktoren\n Gefäße n = ", length(unique(hh_2$gefäßnummer)) ),
        x = paste("dbRDA1", round(summary_rda$cont$importance[2, "dbRDA1"] *100, 1), "%" ),
        y =  paste("dbRDA2",  round(summary_rda$cont$importance[2, "dbRDA2"]*100,1 ), "%" ),
        colour = "",
@@ -1899,7 +1886,7 @@ ggplot(RDA_all$sites, aes(dbRDA1, dbRDA2)) +
              size = 2) +
  scale_color_manual("", 
                     breaks = c("SBK", "SRK","Rös", "Guhrau", "BKK", "FBG"),
-                    values = palette("R4") ) +
+                    values = col ) +
   scale_linetype_discrete(guide="none") +
   theme_minimal()
 
@@ -1909,1209 +1896,6 @@ ggsave("../figures/Gef_Form/dbRDA_Handhaben-kultur2.png", dpi = 300, width = 21,
 ```
 
 
-### Bäuche RDA
 
-```{r}
-bauch <- gef_umbruch |>
-  filter(erh_b > 0)
-
-bauch2 <- bauch |>
-  mutate(across(c(`Hals-Schulter-Umbruch`:`Schulter-Bauch-Boden`, randabschluss_gr, randabschluss_f), as_factor)) |>
-    mutate(across(randform_nonek:bauchform_nonek, as_factor)) |> 
-  select(-c(erh_r, erh_s, erh_b, erh_bod, sicherheit_orient, rand_halsband, x_scherben, n_anspassungen, gef_typ, gef_typ_gr, gef_untertyp, bem, vgl, durchm_b:durchm_bod) )
-
-bauch3 <- bauch2 |>
-   select(c(gefäßnummer, kultur2, kreis, h_unterteil, h_oberteil, bauchform_nonek, `Schulter-Bauch-Umbruch`, `Bauch-Boden`:Fuß, 
-            #`Schulter-Bauch-Boden`, 
-            verh_durchm_r_h_insg, verh_durchm_r_b, verh_durchm_s_b, verh_durchm_r_bod, verh_durchm_b_h_insg, verh_o_u) ) # Gegenstück zu den Infos bei den Randstücken, positiv-Auswahl
-
-
-bauch3 <- bauch3[,colSums(is.na(bauch3)) < nrow(bauch3)] # find column that is empty ->  2 vars raus
-
-# zeilen rausschmeißen. doe zu wenig besetzt sind?
-
-bauch3 <- bauch3[rowSums(is.na(bauch3)) < (ncol(bauch3) * 1/2),] # find rows that is 50 % empty -> nur noch 47 ... damit lässt sich schwer was anfangen
-
-bauch4 <- bauch3 |> select(-c("gefäßnummer", "kultur2", "kreis") )
-
-data_gower <- gowdis(bauch4, ord = "podani") ## jetz keine NAs mehr
-
-RDA_all <- dbrda(data_gower ~ kultur2, data = bauch3) 
-
-
-summary_rda <- summary(RDA_all) #
-
-summary_rda$cont$importance[2, "dbRDA1"]
-summary_rda$cont$importance[2, "dbRDA2"]
-
-
-RDA_all <- RDA_all  %>% scores(tidy = TRUE) %>% 
-         split(.[["score"]])
-
-ggplot(RDA_all$sites, aes(dbRDA1, dbRDA2)) +
-  geom_hline(yintercept = 0, color = "gray") +
-  geom_vline(xintercept = 0, color = "gray") +
-  labs(title = "distanzbasierte Redundanzanalyse über Gefäßform-Parameter",
-       subtitle = "Bauchscherben",
-       caption = paste("mit der Gower-Distanz über Gefäßmittelteilform (Schulter - Bauch - Boden) mit \nKulturgruppe als erklärenden Faktor\n Gefäße mit > 0 % erhaltenem Bauch und über 50% belegten Informationen, n = ", length(unique(gower_df_infos$gefäßnummer)) ),
-       x = paste("dbRDA1", round(summary_rda$cont$importance[2, "dbRDA1"] *100, 1), "%" ),
-       y =  paste("dbRDA2",  round(summary_rda$cont$importance[2, "dbRDA2"]*100,1 ), "%" ),
-       colour = "",
-       shape = "")+
-    stat_ellipse(data = within(RDA_all$sites, kultur2 <- bauch3$kultur2),
-                    aes(label = kultur2, group = kultur2, colour = kultur2), 
-               geom = "textpath", hjust = "ymin", vjust = 1.2) +
-  geom_point(aes(colour = bauch3$kultur2,
-                 shape = bauch3$kultur2), 
-             size = 2) +
- scale_color_manual("", 
-                    breaks = c("SBK", "SRK","Rös", "Guhrau", "BKK", "FBG"),
-                    values = palette("R4") ) +
-  scale_linetype_discrete(guide="none") +
-  theme_minimal()
-
-```
-
-
-# Gefäßformtypologie multivariat
-
-### Maße Czerniak 1980 einladen
-
-```{r}
-czerniak_formen <- read.csv2("../data/tabellen/2024-07-25_Gefaessformsystematik_Czerniak.csv", sep = ",", dec = ",", 
-                             na.strings = c("nicht relevant", "?", "nicht berechenbar", "runder Boden") )
-
-library(dplyr)
-
-czerniak_form_2 <- czerniak_formen |>
-  filter(!is.na(verh_durchm_r_h_hals) | !is.na(verh_durchm_r_b) )
-
-```
-
-#### Czerniak's Maße clustern (hierarchisch mit Ward)
-
-```{r}
-
-library(FD)
-
-vars <- colnames(czerniak_form_2)[c(7:13, 20:27)]
-
-data_gower <- gowdis(czerniak_form_2[,c(7:13, 20:27)], ord = "podani") ## Binary variables should be of class 'numeric'
-
-
-data_hclust_w <- hclust(data_gower, method = "ward.D2") #hierarchical clustering with Gower Distance Ward linking
-# da sind NAs im Datensatz??
-
-#data2 <- left_join(data, gef_dat, by = "gefäßnummer") 
-
-data_hclust_w$labels <- paste0(czerniak_form_2$basistyp, "_",czerniak_form_2$detailtyp) # dem cluster als labels hinzufügen
-
-library(ggdendro)
-
-# Build dendrogram object from hclust results
-dend <- as.dendrogram(data_hclust_w)
-# Extract the data (for rectangular lines)
-# Type can be "rectangle" or "triangle"
-dend_data <- dendro_data(dend, type = "rectangle")
-
-d_data <- merge(dend_data$labels, czerniak_form_2)
-
-
-ggplot(dend_data$segments) + 
-  geom_segment(aes(x = x, y = y, xend = xend, yend = yend))+
-  geom_text(data = d_data, aes(x, y, label = label, col = label),
-            hjust = 1, angle = 90, size = 3)+
-  ylim(-0.1, 1)+
-  theme_bw()
-
-#ggsave("../figures/Gef_Form/Klassifikation_Czerniak_hierarch_mit_Formbeschreibung.jpg", dpi = 300, height = 10, width = 10)  
-```
-
-```{r}
-
-library(cluster)
-
-maxk <- 40
-
-# vector for storing results in
-totsilvec <- rep(0, (maxk - 1))
-
-
-for (i in 2:maxk) {
-  groupvec <- cutree(data_hclust_w, i)  # cut the tree into i groups
-  sils <- silhouette(groupvec, data_gower)[, 3]  # calculate the silhouttes
-  totsilvec[i - 1] <- mean(sils)  # average the silhouettes
-}
-
-totsilvec_df <- data.frame(c(2:maxk), totsilvec)
-
-ggplot()+
-  geom_col(data = totsilvec_df[c(1:40),],
-           aes(x = c.2.maxk.,
-               y = totsilvec))+
-  labs(y= "durchscnittlicher Silhouette-Wert",
-       x = "Anzahl der Cluster")+
-  scale_y_continuous(breaks = seq(0,40, 2),
-                     labels = seq(0,40, 2))+
-  theme_bw()
-
-
-groupvec <- cutree(data_hclust_w, 15)
-# calculate silhouette
-sil <- silhouette(groupvec, data_gower)
-
-
-```
-
-
-### eigene Daten hinzufügen
-
-```{r}
-library(stringr)
-
-gef_vgl <- gef_umbruch # nicht genuztzte Variablen später rausschmeißen
-
-gef_vgl$label <- gef_vgl$gefäßnummer
-
-czerniak_form_2$rn <- rownames(czerniak_form_2)
-
-czerniak_form_2$label <- paste0(czerniak_form_2$basistyp, "_",czerniak_form_2$detailtyp, "_", czerniak_form_2$rn)
-
-czerniak_form_2 <- czerniak_form_2 |>
-  mutate(kultur_gr = case_when(
-    stufe == "I" ~ "SBK",
-    stufe == "Ia" ~ "SBK",
-    stufe == "Ib" ~ "SBK",
-    stufe == "IIa" ~ "SBK",
-    stufe == "IIa (?)" ~ "SBK",
-    stufe == "Ib (?)" ~ "SBK",
-    stufe == "NA" ~ NA,
-    stufe == "IIb" ~ "BKK",
-    stufe == "IIIb" ~ "BKK",
-    stufe == "IIIb-c" ~ "BKK",
-    stufe == "IIIa" ~ "BKK",
-    stufe == "IIIa (?)" ~ "BKK",
-    stufe == "IIIb (?)" ~ "BKK",
-    stufe == "IIIb-c (?)" ~"BKK",
-    stufe == "III" ~"BKK",
-    stufe == "IIIa-b" ~"BKK",
-    stufe == "IIIc" ~ "BKK"
-  )) |>
-  mutate(kultur2 = case_when(
-    kultur_gr == "SBK" ~ "SRK",
-    TRUE ~ kultur_gr
-  ))
-
-czerniak_form_2 <- czerniak_form_2 |>
-  mutate(gef_typ = case_when(
-    basistyp == "BI" ~ "Schale",
-    basistyp == "CI" ~ "Schale",
-    basistyp == "DI" ~ "Schale",
-    basistyp == "EI" ~ "Schale",
-    str_detect(basistyp, "IV") ~ "Becher",
-    str_detect(basistyp, "III") ~ "Topf",
-    str_detect(basistyp, "II") ~ "Vase" )) |>
-  mutate(gef_sys_cz = case_when(
-    basistyp == "BI" ~ "Schale",
-    basistyp == "CI" ~ "Schale",
-    basistyp == "DI" ~ "Schale",
-    basistyp == "EI" ~ "Schale",    str_detect(basistyp, "IV") ~ "Becher",
-    str_detect(basistyp, "III") ~ "Topf",    
-    str_detect(basistyp, "II") ~ "Vase"))|>
-  mutate(gef_typ_gr = gef_typ)
-
-czerniak_form_2$land <- "Polen"
-czerniak_form_2$kreis <- "Kujawsko-Pomorskie"
-
-gef_vgl$kreis <- as.character(gef_vgl$kreis)
-gef_vgl$randneigung <- as.numeric(gef_vgl$randneigung)
-
-
-form_vgl <- dplyr::bind_rows(czerniak_form_2, gef_vgl)
-
-
-form_vgl$Hals.schulter.umbruch <- factor(form_vgl$Hals.schulter.umbruch, ordered = T,
-                                         levels = c("keine Wölbung",  "schwache Wölbung"  ,  "mittlere Wölbung", "starke Wölbung" , "scharfer Umbruch") )
-
-form_vgl$Schulter.bauch.umbruch <- factor(form_vgl$Schulter.bauch.umbruch , ordered = T,
-                                          levels = c("keine Wölbung",  "schwache Wölbung"  ,  "mittlere Wölbung", "starke Wölbung" , "scharfer Umbruch") )
-```
-
-### Daten nach Voillständigkeit filtern
-```{r}
-# form-Infos filtern auf die, wo mehr als nur ein Rand erhalten ist
-
-## https://stackoverflow.com/questions/31848156/delete-columns-rows-with-more-than-x-missing 
-
-
-## Remove rows with more than 75% NA -> keep those with those above 25% -> gezählt werden die "vollen" Zeilen
-
-vars_label <- c(vars, "label")
-
-form_vgl2 <- form_vgl[,c(vars_label)]
-
-form_vgl2[form_vgl2 == ""] <- NA
-
-form_vgl2 <- form_vgl2 |> # alle Angaben mit Fragezeichen durch NA ersetzen
-  mutate(across(where(is.character), 
-                ~ replace(., str_detect(., "\\?"), NA) ) )
-
-form_vgl2 <- form_vgl2[which(rowMeans(!is.na(form_vgl2)) > 0.5), ] # 70 Prozent-Schwelle! -> Mittelwert etwa 75%
-
-form_vgl2 <- form_vgl2 |> 
-  mutate(boden = case_when(
-    str_detect(boden, "Standf") ~ "Standfuß",
-    TRUE ~ boden
-  ))
-
-
-form_vgl3 <- form_vgl2 |> select(-label)
-
-```
-
-Daten so filtern, dass nur die übrigbleiben, die mehr als 50% vollständigkeit haben -> um eine Chance auf form zu haben
-
-```{r}
-library(FD)
-
-data_gower <- gowdis(form_vgl3, ord = "podani") ## Verhätlnismaße, Winkel, NoNeK Rand-, Schulter-, Bauch -Formen, Boden und Umbruchstärke Hals-Schulter, Schulter-Bauch (vars oben definiert)
-
-## remove pure NAs from distance matrix
-
-##x = as.matrix(data_gower)
-##x = x[rowSums(is.na(x)) == 0, colSums(is.na(x)) == 0, drop = FALSE]
-##data_gower <- as.dist(x)
-
-
-#data_gower[is.na(data_gower)] <- 0
-
-data_hclust_w <- hclust(data_gower, method = "ward.D2") #hierarchical clustering with Gower Distance Ward linking
-
-
-#data2 <- left_join(data, gef_dat, by = "gefäßnummer") 
-
-data_hclust_w$labels <-form_vgl2$label # dem cluster als labels hinzufügen
-
-library(ggdendro)
-
-# Build dendrogram object from hclust results
-dend <- as.dendrogram(data_hclust_w)
-# Extract the data (for rectangular lines)
-# Type can be "rectangle" or "triangle"
-dend_data <- dendro_data(dend, type = "rectangle")
-
-
-df_list <- list(dend_data$labels, form_vgl)
-df <- Reduce(function(x, y) merge(x, y, all=TRUE), df_list)
-
-d_data <- df
-
-library(ggplot2)
-ggplot(dend_data$segments) + 
-  geom_segment(aes(x = x, y = y, xend = xend, yend = yend))+
-  geom_text(data = d_data, aes(x, y, label = label, col = gef_typ_gr),
-            hjust = 1, angle = 90, size = 2)+
-  ylim(-0.1, 1)+
-  theme_bw()+
-  scale_color_discrete(name = "Gefäßtyp nach Czerniaks Systematik")+
-  theme(legend.position = "bottom")
-
-## nicht mehr so schlimm unübersichtlich mit noch 110 Gef
-ggsave("../figures/Gef_Form/Klassifikation_Czerniak_SCS_hierarch_50proz_gef_typ_gr.jpg", dpi = 300, height = 8, width = 15)  
-
-#ggsave("../figures/Gef_Form/Klassifikation_Czerniak_SCS_hierarch_50proz_sys_cz.jpg", dpi = 300, height = 8, width = 20)  
-
-
-
-library(ggplot2)
-ggplot(dend_data$segments) + 
-  geom_segment(aes(x = x, y = y, xend = xend, yend = yend))+
-  geom_text(data = d_data, aes(x, y, label = label, col = kultur2),
-            hjust = 1, angle = 90, size = 2)+
-  ylim(-0.1, 1)+
-  theme_bw()+
-  scale_color_discrete(name = "Gefäßtyp nach Czerniaks Systematik")+
-  theme(legend.position = "bottom")
-
-## nicht mehr so schlimm unübersichtlich mit noch 110 Gef
-
-#ggsave("../figures/Gef_Form/Klassifikation_Czerniak_SCS_hierarch_50proz_kultur2.jpg", dpi = 300, height = 8, width = 20)  
-```
-
-TODO: cut tree nach silhouette method
-#### silhouette
-
-```{r}
-library(cluster)
-
-maxk <- 50
-
-# vector for storing results in
-totsilvec <- rep(0, (maxk - 1))
-
-
-for (i in 2:maxk) {
-  groupvec <- cutree(data_hclust_w, i)  # cut the tree into i groups
-  sils <- silhouette(groupvec, data_gower)[, 3]  # calculate the silhouttes
-  totsilvec[i - 1] <- mean(sils)  # average the silhouettes
-}
-
-totsilvec_df <- data.frame(c(2:maxk), totsilvec)
-
-ggplot()+
-  geom_col(data = totsilvec_df[c(1:maxk),],
-           aes(x = c.2.maxk.,
-               y = totsilvec))+
-  labs(y= "durchscnittlicher Silhouette-Wert",
-       x = "Anzahl der Cluster")+
-  theme_bw()
-
-## ...
-
-```
-##### cut tree
-```{r}
-library(factoextra)
-
-# create vector holding cluster assignment for each data point
-groupvec <- cutree(data_hclust_w, 14)
-# calculate silhouette
-sil <- silhouette(groupvec, data_gower)
-# visualize silhouette
-
-
-fviz_silhouette(sil, label = T)
-```
-
-
-```{r}
-vgl_clust <- data.frame(data_hclust_w$labels, data_hclust_w$order, sil)
-
-vgl_clust_data <- left_join(vgl_clust, form_vgl, join_by("data_hclust_w.labels" == "label") )
-
-#vgl_clust$hclust_k6<- cutree(data_hclust_w, k = 6)
-vgl_clust_data |>
-  filter(sil_width > 0) |>
-  ggplot()+
-  geom_bar( aes(x = cluster,
-                fill = gef_typ_gr) )+
-  theme_bw()
-
-#ggsave
-
-```
-```{r}
-#vgl_clust$hclust_k6<- cutree(data_hclust_w, k = 6)
-vgl_clust_data |>
-  filter(sil_width > 0) |>
-  ggplot()+
-  geom_bar( aes(x = cluster,
-                fill = kultur2) )+
-  theme_bw()
-
-
-
-```
-
-
-# nur SBK-mult-variate Formanalyse
-```{r}
-
-vars_label <- c(vars, "label")
-
-form_vgl_SBK <- form_vgl |> filter(kultur_gr == "SBK")
-
-
-form_vgl2 <- form_vgl_SBK[,c(vars_label)]
-
-form_vgl2[form_vgl2 == ""] <- NA
-
-form_vgl2 <- form_vgl2 |> # alle Angaben mit Fragezeichen durch NA ersetzen
-  mutate(across(where(is.character), 
-                ~ replace(., str_detect(., "\\?"), NA) ) )
-
-form_vgl2 <- form_vgl2[which(rowMeans(!is.na(form_vgl2)) > 0.5), ] # 70 Prozent-Schwelle! -> Mittelwert etwa 75%
-
-form_vgl2 <- form_vgl2 |> 
-  mutate(boden = case_when(
-    str_detect(boden, "Standf") ~ "Standfuß",
-    TRUE ~ boden
-  ))
-
-
-form_vgl3 <- form_vgl2 |> select(-label)
-
-```
-
-Daten so filtern, dass nur die übrigbleiben, die mehr als 50% vollständigkeit haben -> um eine Chance auf form zu haben
-
-```{r}
-library(FD)
-
-data_gower <- gowdis(form_vgl3, ord = "podani") ## Verhätlnismaße, Winkel, NoNeK Rand-, Schulter-, Bauch -Formen, Boden und Umbruchstärke Hals-Schulter, Schulter-Bauch (vars oben definiert)
-
-## remove pure NAs from distance matrix
-
-##x = as.matrix(data_gower)
-##x = x[rowSums(is.na(x)) == 0, colSums(is.na(x)) == 0, drop = FALSE]
-##data_gower <- as.dist(x)
-
-
-#data_gower[is.na(data_gower)] <- 0
-
-data_hclust_w <- hclust(data_gower, method = "ward.D2") #hierarchical clustering with Gower Distance Ward linking
-
-
-#data2 <- left_join(data, gef_dat, by = "gefäßnummer") 
-
-data_hclust_w$labels <-form_vgl2$label # dem cluster als labels hinzufügen
-
-library(ggdendro)
-
-# Build dendrogram object from hclust results
-dend <- as.dendrogram(data_hclust_w)
-# Extract the data (for rectangular lines)
-# Type can be "rectangle" or "triangle"
-dend_data <- dendro_data(dend, type = "rectangle")
-
-k <- 13
-MidPoint <- (data_hclust_w$height[63-k] + data_hclust_w$height[63-k+1]) / 2 # 63= n Gefäße, k ist so viele Klassen will ich ahben
-
-
-df_list <- list(dend_data$labels, form_vgl)
-df <- Reduce(function(x, y) merge(x, y, all=TRUE), df_list)
-
-d_data <- df
-
-library(ggplot2)
-ggplot(dend_data$segments) + 
-  geom_segment(aes(x = x, y = y, xend = xend, yend = yend))+
-  geom_text(data = d_data, aes(x, y, label = label, col = gef_typ_gr),
-            hjust = 1, angle = 90, size = 6)+
-  geom_hline(aes(yintercept = MidPoint),
-             linetype = "dashed",
-             col = "grey")+
-  ylim(-0.1, 1)+
-  theme_bw()+
-  scale_color_discrete(name = "Gefäßtyp nach eigener Systematik")+
-  theme(legend.position = "bottom")
-
-ggsave("../figures/Gef_Form/SBK_Klassifikation_SCS_hierarch_50proz_sys_gef_gr.jpg", dpi = 300, height = 15, width = 20)  
-
-
-
-
-library(ggplot2)
-ggplot(dend_data$segments) + 
-  geom_segment(aes(x = x, y = y, xend = xend, yend = yend))+
-  geom_text(data = d_data, aes(x, y, label = label, col = kultur2),
-            hjust = 1, angle = 90, size = 5)+
-  ylim(-0.1, 1)+
-  geom_hline(aes(yintercept = MidPoint),
-             linetype = "dashed",
-             col = "grey")+
-  theme_bw()+
-  scale_color_discrete(name = "")+
-  theme(legend.position = "bottom")
-
-## nicht mehr so schlimm unübersichtlich mit noch 110 Gef
-
-ggsave("../figures/Gef_Form/SBK_Klassifikation_SCS_hierarch_50proz_kultur.jpg", dpi = 300, height = 10, width = 15)  
-```
-
-TODO: cut tree nach silhouette method
-#### silhouette
-
-```{r}
-library(cluster)
-
-maxk <- 50
-
-# vector for storing results in
-totsilvec <- rep(0, (maxk - 1))
-
-
-for (i in 2:maxk) {
-  groupvec <- cutree(data_hclust_w, i)  # cut the tree into i groups
-  sils <- silhouette(groupvec, data_gower)[, 3]  # calculate the silhouttes
-  totsilvec[i - 1] <- mean(sils)  # average the silhouettes
-}
-
-totsilvec_df <- data.frame(c(2:maxk), totsilvec)
-
-ggplot()+
-  geom_col(data = totsilvec_df[c(1:maxk),],
-           aes(x = c.2.maxk.,
-               y = totsilvec))+
-  labs(y= "durchscnittlicher Silhouette-Wert",
-       x = "Anzahl der Cluster")+
-  theme_bw()
-
-## ...
-
-```
-##### cut tree
-```{r}
-library(factoextra)
-
-# create vector holding cluster assignment for each data point
-groupvec <- cutree(data_hclust_w, 13)
-# calculate silhouette
-sil <- silhouette(groupvec, data_gower)
-# visualize silhouette
-
-
-fviz_silhouette(sil, label = T)
-```
-
-
-```{r}
-vgl_clust <- data.frame(data_hclust_w$labels, data_hclust_w$order, sil)
-
-vgl_clust_data <- left_join(vgl_clust, form_vgl, join_by("data_hclust_w.labels" == "label") )
-
-#vgl_clust$hclust_k6<- cutree(data_hclust_w, k = 6)
-vgl_clust_data |>
-  filter(sil_width > 0) |> # nur die mitnehmen, die gut in die Gruppe passen
-  ggplot()+
-  geom_bar( aes(x = cluster,
-                fill = gef_typ_gr) )+
-  theme_bw()
-
-#ggsave
-
-```
-
-```{r}
-#vgl_clust$hclust_k6<- cutree(data_hclust_w, k = 6)
-vgl_clust_data |>
-  filter(sil_width > 0) |>
-  ggplot()+
-  geom_bar( aes(x = cluster,
-                fill = kultur2) )+
-  theme_bw()
-
-# 8 /13 Clustern kulturspezifisch
-
-```
-
-
-### check die Gefäße, die hier zugewiesen werden können
-```{r}
-vgl_clust_data |> filter(cluster == 1)
-## nur Czerniaks DIII 1a und 1b
-```
-
-
-```{r}
-vgl_clust_data |> filter(cluster == 2)
-
-# Niederguhren gehört zu EIII 1a, 2a, 2b, 2c, 2d
-```
-
-```{r}
-vgl_clust_data |> filter(cluster == 3)
-# form_vgl_SBK 741, krusz IV und V, Eythra 1142 und 1143
-# mit EIII 1b
-
-```
-
-
-```{r}
-vgl_clust_data |> filter(cluster == 4)
-# Karsko und 932
-# EIII 1c und 1d
-
-```
-
-```{r}
-vgl_clust_data |> filter(cluster == 5)
-
-# seelow 068, 137, 326, 137.327, QLB 918, 944, 945, 968, Eythra 1139, 1140
-# Schalen und Fußschale 
-# + Flasche?? -> passt laut sil_width am schlechtesten rein
-
-# Rand- und Bauchform xi, Randneigung 60-70
-```
-
-```{r}
-vgl_clust_data |> filter(cluster == 6)
-
-```
-
-
-
-```{r}
-vgl_clust_data |> filter(cluster == 7)
-# nur seelow: Wanne / ovale Schale
-```
-
-```{r}
-vgl_clust_data |> filter(cluster == 8)
-# seelow
-# Iwno, Niederjesar, Klein-Ritz, Pyritz Weinberg, Uhyst 20 -> typische Becher
-
-# gerade Hals (80-90), Randform du, Schulterform xo, Bauchform xi, stark bis scharfe Bauch- und Schulterumbrüche
-```
-
-
-```{r}
-vgl_clust_data |> filter(cluster == 9)
-# zöllmersdorf 742, karsko 2, eytrha 1073-74
-
-# Schalen, mit Standfuß, Rand bis Bauch di, Becher E051 passt mit sil am schlechtesten, aber eigl immernoch gut
-```
-
-
-```{r}
-vgl_clust_data |> filter(cluster == 10)
-# Bochow 15 835-36: passt schlecht, sil minuswerte, allgemein schelchte werte, Q027 auch minus.... 
-## QLB 939, 960, 995, Eythra 1069
-
-# verh_durchm_r_h_insg 2.2-3.6, verh_dzrchm_r_b 1.2 - 1.7, Bauchform xi, Randneigung 50-70
-# alles Schalen
-```
-
-```{r}
-vgl_clust_data |> filter(cluster == 11)
-# QLB, Wirchenblatt und Prettin
-
-# alle Rand vo, schulter xo, bauch xi, schwache bis mittlere Wölbungen in den Unmbrüchen und Becher.
-```
-
-
-```{r}
-vgl_clust_data |> filter(cluster == 12)
-
-# das mal v a SBK in QLB und Eythra
-## Randformen größtenteils vi (1x du), Schulterformen do, Bauchformen xi, Randneigung 80-90 , WÖlbungen unterschiedlich stark
-## Eytrhaer Funde passen am wenigsten rein
-## alles Becher
-```
-
-
-```{r}
-vgl_clust_data |> filter(cluster == 13)
-
-# Nowe Obj, QLB, Eythra
-## Nowe Obj passt noch gut, aber am wenigsten gut
-# Randform vi, Schulterform vo, Bauchform xi
-## Becher bis Flasche
-```
-
-
-
-
-# SRK, Guhrau, BKK und Rössen
-
-```{r}
-form_vgl_RGB <- form_vgl |> 
-  filter(kultur2 != "SBK") |>
-  filter(kultur_gr != "FBG")
-```
--> lohnt nicht, nur 1-2 Guhrau und 1-2 Rössen dabei.
-BKK und SRK gibt Ähnlichkeiten und Unterschiede... aber nicht die Fragestellung hier.
-
-
-# versuch PCAmixed data
-
-PCAmixdata kann mit numerischen und kategorischen Daten umgehen -- aber nicht extra mit ordinalen
-
-bei kategorischen daten -> jeder missing value 0, bei numerishcen daten -> mean
-
-#### nur Czerniaks Gruppen
-
-```{r}
-library(PCAmixdata)
-library(FactoMineR)
-library(ade4)
-
-czerniak_form_pca <- czerniak_form_2 |> select("verh_durchm_r_h_insg":"verh_o_u", "randform_nonek":"Schulter.bauch.umbruch", "randneigung", "bodenwinkel")
-
-split <- splitmix(czerniak_form_pca)
-
-X1 <- split$X.quanti
-X2 <- split$X.quali
-res.pcamix <- PCAmix(X.quanti = X1, X.quali = X2, rename.level = TRUE, graph = FALSE)
-
-res.pcamix$eig
-
-```
-
-```{r}
-plot(res.pcamix, choice = "levels", main = "(b) Levels")
-
-```
-
-```{r}
-plot(res.pcamix,choice = "cor", main = "(c) Numerical variables")
-```
-
-```{r}
-plot(res.pcamix, choice = "sqload", coloring.var = T, leg = TRUE, posleg = "topright", main = "(d) All variables")
-```
-
-
-
-```{r}
-plot(res.pcamix, choice = "ind", coloring.ind = X2$Schulter.bauch.umbruch, label = TRUE,
-     posleg = "bottomright", main = "(a) Observations")
-```
-
-#### alle Daten
-
-```{r}
-### Unsicherheiten und Fehler raus
-
-#form_vgl3[form_vgl3 == "Inf"] <- NA # aus irgendwelchen mir nicht bekannten Gründen wird bei Gef 532 ein Inf im Verh_r_bod berechnet... ??
-
-
-### im ersten Durchlauf sind K21 aufgefallen (vollständige ovale Wanne aus Kruszynek) und Q065, Flasche ? aus Quedlinburg
-
-
-form_vgl3 <- form_vgl2 |>
-  filter(label != "Q056") |>
-  filter(label != "K21") 
-
-form_vgl_pca <- form_vgl3
-select(-label)
-
-form_vgl_pca[form_vgl_pca == ""] <- NA
-
-
-library(tidyr)
-
-form_vgl_pca <- form_vgl_pca |> # alle Angaben mit Fragezeichen durch NA ersetzen
-  mutate(across(where(is.character), 
-                ~ replace(., str_detect(., "\\?"), NA) ) )
-
-```
-
-
-```{r}
-library(PCAmixdata)
-library(FactoMineR)
-library(ade4)
-
-
-
-split <- splitmix(form_vgl_pca)
-
-X1 <- split$X.quanti
-X2 <- split$X.quali
-
-res.pcamix <- PCAmix(X.quanti = X1, X.quali = X2, rename.level = TRUE, graph = FALSE)
-
-head(res.pcamix$eig)
-
-pca_xy <- as.data.frame(res.pcamix$ind$coord)
-
-pca_data <- data.frame(pca_xy, form_vgl3)
-
-pca_data <- left_join(pca_data, form_vgl, by = "label" )
-
-```
-
-
-```{r}
-pca_data |>
-  ggplot()+
-  #  geom_point(aes(x = dim.1, 
-  #                 y = dim.2,
-  #                 col = kultur2)) +
-  geom_text(aes(x = dim.1, 
-                y = dim.2,
-                label = label,
-                col = kultur2))+
-  theme_bw()+
-  labs(x = paste("Dim 1:", round(res.pcamix$eig[1,2], 2), " %"),
-       y = paste("Dim 2:", round(res.pcamix$eig[2,2], 2), " %") )
-
-
-
-
-```
-
-
-
-```{r}
-plot(res.pcamix, choice = "levels", xlim = c(-1.5,2.5), main = "(b) Levels")
-```
-```{r}
-plot(res.pcamix,choice = "cor", main = "(c) Numerical variables")
-```
-```{r}
-plot(res.pcamix, choice = "sqload", coloring.var = T, leg = TRUE, posleg = "topright", main = "(d) All variables")
-```
-
-
-
-```{r}
-plot(res.pcamix, choice = "ind", coloring.ind = form_vgl_pca$Schulter.bauch.umbruch, label = TRUE,
-     posleg = "bottomright", main = "(a) Observations")
-```
-
-
-
-#### missMDA - Methoden ausprobieren
--- nicht sehr erfolgreich
-```{r}
-
-library(missMDA)
-
-form_vgl_pca_na <- imputeFAMD(form_vgl_pca, 
-                              ncp = 1, 
-                              method = "Regularized",
-                              seed = 42,
-                              maxiter = 1000) # Problem: macht aus allen kategorialen Variablen NA
-
-#FAMD (FactoMineR)
-famd <- FAMD(form_vgl_pca, 
-             graph = FALSE, ncp = 2)
-
-# dudi.mix (ade4)
-dudimix <- dudi.mix(form_vgl_pca,
-                    scannf = FALSE, nf = 2)
-```
-
-
-```{r}
-
-split <- splitmix(form_vgl_pca_na$completeObs)
-
-X1 <- split$X.quanti
-X2 <- split$X.quali
-res.pcamix <- PCAmix(X.quanti = X1, X.quali = X2, rename.level = TRUE, graph = FALSE)
-
-res.pcamix$eig
-```
-
-```{r}
-plot(res.pcamix, choice = "ind", coloring.ind = form_vgl$label, label = TRUE,
-     posleg = "bottomright", main = "(a) Observations")
-```
-```{r}
-plot(res.pcamix, choice = "levels", xlim = c(-1.5,2.5), main = "(b) Levels")
-```
-```{r}
-plot(res.pcamix,choice = "cor", main = "(c) Numerical variables")
-```
-
-### Formanalyse nach region 
-
-```{r}
-
-form_vgl_SBK <- form_vgl2 |>
-  filter(kultur_gr == "SBK")
-
-
-data_gower <- gowdis(form_vgl_SBK[,c(7:14, 20:22)], ord = "podani") ## Binary variables should be of class 'numeric' ## ohne mikromorph
-
-## remove pure NAs from distance matrix
-
-##x = as.matrix(data_gower)
-##x = x[rowSums(is.na(x)) == 0, colSums(is.na(x)) == 0, drop = FALSE]
-##data_gower <- as.dist(x)
-
-
-data_gower[is.na(data_gower)] <- 0
-
-data_hclust_w <- hclust(data_gower, method = "ward.D2") #hierarchical clustering with Gower Distance Ward linking
-
-
-#data2 <- left_join(data, gef_dat, by = "gefäßnummer") 
-
-data_hclust_w$labels <-form_vgl2$label # dem cluster als labels hinzufügen
-
-library(ggdendro)
-
-# Build dendrogram object from hclust results
-dend <- as.dendrogram(data_hclust_w)
-# Extract the data (for rectangular lines)
-# Type can be "rectangle" or "triangle"
-dend_data <- dendro_data(dend, type = "rectangle")
-
-d_data <- merge(dend_data$labels, form_vgl2)
-
-
-ggplot(dend_data$segments) + 
-  geom_segment(aes(x = x, y = y, xend = xend, yend = yend))+
-  geom_text(data = d_data, aes(x, y, label = label, col = kreis),
-            hjust = 1, angle = 90, size = 3)+
-  ylim(-0.1, 1)+
-  theme_bw()+
-  theme(legend.position = "bottom")
-
-## immernoch zu unübersichtlich
-```
-
-
-
-
-### Randdurchmesser zu Gesamthöhe und Randdurchmesser zu Bauchdurchmesser
-
-Lt Czerniak 1980, S. 50-51:
-- wenn R1:H1 < 2 + R1 > R3 ->  dann Pokal  
-- wenn 1,1 < R1:H1 < 2 + R1 </ =  R3 -> dann Vase  
-- wenn R1:H1 < 1,1  + R1 </= R3  -> Topf  
-
-```{r}
-gef |>
-  #  filter(kultur_gr == "SBK") |>
-  count(gefäßnummer, kreis, fundort, kultur_gr,verh_durchm_r_b, verh_durchm_r_h_insg) |>  # group by gefäßnummer 
-  group_by(gefäßnummer, fundort, kultur_gr, kreis,verh_durchm_r_b, verh_durchm_r_h_insg) |>      
-  ggplot(aes(x = verh_durchm_r_b,
-             y = verh_durchm_r_h_insg))+
-  geom_point(aes(colour = kreis,
-                 shape = kultur_gr) )+
-  scale_y_continuous(name = "Verhältnis Randdurchmesser zu Gesamthöhe",
-                     limits = c(0,4))+
-  scale_x_continuous(name = "Verhältnis Randdurchmesser zu Bauchdurchmesser")+
-  geom_vline(xintercept = 1, linetype="dotted", 
-             color = "grey", size=1)+
-  geom_hline(yintercept = 1.1, linetype="dotted", 
-             color = "grey", size=1)+
-  geom_hline(yintercept = 2, linetype="dotted", 
-             color = "grey", size=1)+
-  annotate("text",
-           x = 0.75, y = 0,
-           label = "Topf")+
-  annotate("text",
-           x = 2, y = 2.5,
-           label = "Schüsseln")+
-  annotate("text",
-           x = 0.5, y = 1.7,
-           label = "Vase")+
-  annotate("text",
-           x = 2, y = 1.1,
-           label = "Becher")+
-  theme_bw()
-
-ggsave("../figures/Gef_Form/Grobklassifikation_Czerniak.jpg", dpi = 300, height = 10, width = 10)  
-
-```
-
-## Formvergleich
-
-```{r}
-form_vgl |>
-  #  filter(kultur_gr == "SBK") |>
-  count(kreis, fundort, kultur_gr,verh_durchm_r_b, verh_durchm_r_h_insg, label) |>  # group by gefäßnummer 
-  group_by(fundort, kultur_gr, kreis,verh_durchm_r_b, verh_durchm_r_h_insg, label) |>      
-  ggplot(aes(x = verh_durchm_r_b,
-             y = verh_durchm_r_h_insg))+
-  geom_point(aes(colour = kreis,
-                 shape = kultur_gr)) +
-  geom_text(hjust=0, vjust=0,
-            aes(label = label,
-                colour = kreis),
-            size = 2)+
-  scale_y_continuous(name = "Verhältnis Randdurchmesser zu Gesamthöhe",
-                     limits = c(0,4))+
-  scale_x_continuous(name = "Verhältnis Randdurchmesser zu Bauchdurchmesser")+
-  geom_vline(xintercept = 1, linetype="dotted", 
-             color = "grey", size=1)+
-  geom_hline(yintercept = 1.1, linetype="dotted", 
-             color = "grey", size=1)+
-  geom_hline(yintercept = 2, linetype="dotted", 
-             color = "grey", size=1)+
-  annotate("text",
-           x = 0.75, y = 0,
-           label = "Topf")+
-  annotate("text",
-           x = 2, y = 2.5,
-           label = "Schüsseln")+
-  annotate("text",
-           x = 0.5, y = 1.7,
-           label = "Vase")+
-  annotate("text",
-           x = 2, y = 1.1,
-           label = "Becher")+
-  theme_bw()
-
-
-ggsave("../figures/Gef_Form/Grobklassifikation_Czerniak_mit_allen_Gefäßen.jpg", dpi = 300, height = 10, width = 10)  
-
-```
-
-
-
-
-
-## beschreibende Statistik: Halslänge mit Boxplots
-
-```{r}
-
-library(ggplot2)
-
-gef |>
-  #filter(kultur_gr == "SBK") |>
-  filter(erh_s > 0) |> # erhalt schulter über 0 -> der Schulteransatt ist zu erkennen
-  filter(!str_detect(gef_typ, "chale")) |> # alle Schalen raus
-  count(gefäßnummer, kreis, fundort, kultur_gr, h_hals) |>  # group by gefäßnummer 
-  group_by(gefäßnummer, fundort, kultur_gr, kreis, h_hals) |>          # now required with changes to dplyr::count()
-  # mutate(prop = prop.table(n)) |>
-  ggplot()+
-  geom_boxplot(aes(y = h_hals,
-                   x = fundort,
-                   fill  = kultur_gr),
-               na.rm = T)+
-  geom_jitter(aes(y = h_hals,
-                  x = fundort), alpha = 0.5)+
-  coord_flip()+
-  scale_fill_manual(name = "Kultur",
-                    values = c("beige", "grey", "aquamarine4", "darkblue", "black"))+ 
-  facet_grid(kreis ~ ., scales = "free_y", drop = TRUE) +
-  theme(text = element_text(size = 20))+
-  theme(strip.text.y = element_text(size = 10))+ # Labels des facet groids
-  ggtitle("Länge Hals")
-```
-
-
-## Zusammenhang Halslänge und Halsband oder randband?
-
-```{r}
-# Verzierung mit Gefäß verschneiden
-
-verz <- read.csv2("../data/tabellen/2024-05-04_verzierungen_data.csv", sep = ",")
-
-# geom_boxplot: x = Art des Bandes, y = Länge des Halses
-
-library(dplyr)
-
-verz_mn_gr <- verz |>
-  filter(!is.na(Muster_neu_gr))
-
-gef_mn_gr <- left_join(gef, verz_mn_gr)
-
-
-gef_mn_gr$kreis <- factor(gef_mn_gr$kreis, levels = c("Landkreis Harz", "Leipzig-Land", "Landkreis Wittenberg", "Teltow-Fläming" ,"Elbe-Elster", "Havelland",  "Dahme-Spreewald", "Spree-Neiße", "Oder-Spree"  , "Märkisch-Oderland", "Uckermark",  "Zachodniopomorskie","Dolnośląskie", "Lebus", "Wielkopolskie", "Kujawsko-Pomorskie", "Landkreis Hoyerswerda", "Landkreis Görlitz" ))
-
-```
-
-```{r}
-library(stringr)
-library(ggplot2)
-gef_mn_gr |>
-  filter(kultur_gr == "SBK") |>
-  filter(erh_s > 0) |> # erhalt schulter über 0 -> der Schulteransatt ist zu erkennen
-  filter(str_detect(Muster_neu_gr, "Hals|Rand") )|>
-  #  filter(!str_detect(gef_typ, "chale")) |> # alle Schalen raus
-  count(gefäßnummer, kreis, fundort, kultur_gr, h_hals, Muster_neu_gr) |>  # group by gefäßnummer 
-  group_by(gefäßnummer, fundort, kultur_gr, kreis, h_hals, Muster_neu_gr) |>          # now required with changes to dplyr::count()
-  # mutate(prop = prop.table(n)) |>
-  ggplot()+
-  geom_boxplot(aes(y = h_hals,
-                   x = Muster_neu_gr))+
-  geom_jitter(aes(y = h_hals,
-                  x = Muster_neu_gr,
-                  col = kreis), alpha = 0.5)+
-  coord_flip()+
-  #scale_fill_manual(values = c("beige", "aquamarine4", "darkblue"))+ 
-  #  facet_grid(kreis ~ kultur_gr, scales = "free_y", drop = TRUE) +
-  theme(text = element_text(size = 20),
-        legend.position = "bottom")+
-  ggtitle("Länge Hals")
-
-ggsave("../figures/Gef_Form/Halsverz-Länge_SBK.jpg", dpi = 300, height = 20, width = 20)  
-
-```
-
-## Verhältnis Oberteil zu Unterteil
-
-
-
-```{r}
-gef |>
-  count(gefäßnummer, kreis, fundort, kultur_gr, verh_o_u, gef_typ) |>  # group by gefäßnummer 
-  group_by(gefäßnummer, fundort, kultur_gr, kreis,verh_o_u, gef_typ) |>          # now required with changes to dplyr::count()
-  # mutate(prop = prop.table(n)) |>
-  ggplot()+
-  geom_boxplot(aes(y = verh_o_u,
-                   x = kultur_gr,
-                   fill = kultur_gr))+
-  geom_jitter(aes(y = verh_o_u,
-                  x = kultur_gr))+
-  #     col = gef_typ), alpha = 0.5)+
-  scale_y_continuous(name = "Länge Oberteil / Länge Unterteil")+
-  scale_x_discrete(name = "Kultur")+
-  coord_flip()+
-  scale_fill_manual(name = "Kultur", 
-                    values = c("beige", "aquamarine4", "darkblue"))+ 
-  facet_grid(kreis ~ ., scales = "free_y", drop = TRUE) +
-  theme_bw()+
-  theme(text = element_text(size = 20),
-        legend.position = "bottom",
-        legend.title = element_text("Kultur"))+
-  theme(strip.text.y = element_text(size = 10))+ # Labels des facet groids
-  ggtitle("Verhältnis Oberteil zu Unterteil")
-
-
-ggsave("../figures/Gef_Form/Verh_Oberteil-Unterteil_FBG-SBK-BKK-Rös--Kreis.jpg", dpi = 300, height = 20, width = 20)  
-```
-
-## Randdurchmesser
-```{r}
-gef |>
-  filter(erh_r > 4) |>
-  count(gefäßnummer, kreis, fundort, kultur_gr, durchm_r, gef_typ) |>  # group by gefäßnummer 
-  group_by(gefäßnummer, fundort, kultur_gr, kreis, durchm_r, gef_typ) |>          # now required with changes to dplyr::count()
-  # mutate(prop = prop.table(n)) |>
-  ggplot()+
-  geom_boxplot(aes(y = durchm_r,
-                   x = kultur_gr,
-                   fill = kultur_gr))+
-  geom_jitter(aes(y = durchm_r,
-                  x = kultur_gr))+
-  #     col = gef_typ), alpha = 0.5)+
-  scale_y_continuous(name = "Randdurchmesser")+
-  scale_x_discrete(name = "Kultur")+
-  coord_flip()+
-  scale_fill_manual(name = "Kultur", 
-                    values = c("beige", "grey", "aquamarine4", "darkblue"))+ 
-  facet_grid(kreis ~ ., scales = "free_y", drop = TRUE) +
-  theme_bw()+
-  theme(text = element_text(size = 20),
-        legend.position = "bottom",
-        legend.title = element_text("Kultur"))+
-  theme(strip.text.y = element_text(size = 10))+ # Labels des facet groids
-  ggtitle("Randdurchmesser")
-
-```
-
-
-## Randdurchmesser und Halslänge
-
-```{r}
-
-gef$randneigung <- as.numeric(gef$randneigung)
-
-gef |>
-  filter(erh_r > 4) |>
-  filter(erh_s > 0) |>
-  count(gefäßnummer, kreis, fundort, kultur_gr, durchm_r, h_hals, gef_typ, randneigung) |>  # group by gefäßnummer 
-  group_by(gefäßnummer, fundort, kultur_gr, kreis, durchm_r, h_hals, gef_typ, randneigung) |>          # now required with changes to dplyr::count()
-  ggplot()+
-  geom_jitter(aes(x = randneigung,
-                  y = h_hals,
-                  # shape = kultur_gr,
-                  colour = durchm_r))+
-  theme_bw()
-
-
-gef |>
-  filter(erh_r > 4) |>
-  filter(erh_s > 0) |>
-  count(gefäßnummer, kreis, fundort, kultur_gr, durchm_r, h_hals, gef_typ, randneigung) |>  # group by gefäßnummer 
-  group_by(gefäßnummer, fundort, kultur_gr, kreis, durchm_r, h_hals, gef_typ, randneigung) |>          # now required with changes to dplyr::count()
-  ggplot()+
-  geom_boxplot(aes(x = as.factor(randneigung),
-                   y = h_hals))+
-  geom_jitter(aes(x = as.factor(randneigung),
-                  y = h_hals,
-                  col = durchm_r) )+
-  theme_bw()
-
-```
 
 
