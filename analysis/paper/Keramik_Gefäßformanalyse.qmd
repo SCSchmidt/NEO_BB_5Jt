@@ -1134,16 +1134,24 @@ ggsave("../figures/Gef_Form//alle_p-Werte_Gefform_neu_v4.png", dpi = 300, width 
 # Handhaben
 
 ```{r}
+library(dplyr)
+library(ggplot2)
+library(viridis)
+library(ggh4x)
+
+
 hh <- read.csv2("../data/raw_data/handhaben.csv", sep = "|")
+gef_umbruch <- load("../data/derived_data/gef_umbruch.RData")
+
+gef_umbruch <- gef_umbruch2
+
 
 handhaben <- left_join(hh, gef_umbruch, by = "gefäßnummer")
 gef_hh <- right_join(hh, gef_umbruch, by = "gefäßnummer")
 ```
 
 ```{r}
-library(ggplot2)
-library(viridis)
-library(ggh4x)
+
 
 gef_per_ra <- gef_hh |>  
   group_by(kreislabel, kultur_gr, fundort.y) |>
@@ -1457,7 +1465,7 @@ ggsave("../figures/Gef_Form/Länge_Tiefe_Handhaben.png", dpi = 300, width = 17, 
 
 #### Knubbentypologie
 
-TODO überarbeiten / gute Bilder malen
+Abbildungen extern eingefügt
 ```{r}
 
 library(stringr)
@@ -1705,6 +1713,8 @@ library(ggforce)
 
 load("../data/derived_data/gef_umbruch.RData")
 
+gef_umbruch <- gef_umbruch2
+
 gef_umbruch$erh_s <- as.numeric(gef_umbruch$erh_s)
 gef_umbruch$erh_r <- as.numeric(gef_umbruch$erh_r)
 gef_umbruch$randneigung <- as.numeric(gef_umbruch$randneigung)
@@ -1775,10 +1785,12 @@ summary_rda$cont$importance[2, "dbRDA2"]
 RDA_all <- RDA_all  %>% scores(tidy = TRUE) %>% 
          split(.[["score"]])
 
+source("../../R_functions/farbzuweisungen.R")
+
 ggplot(RDA_all$sites, aes(dbRDA1, dbRDA2)) +
   geom_hline(yintercept = 0, color = "gray") +
   geom_vline(xintercept = 0, color = "gray") +
-  labs(title = "distanzbasierte Redundanzanalyse über Gefäßform-Parameter",
+  labs(title = "Distanzbasierte Redundanzanalyse über Merkmale der Gefäßform",
        subtitle = "Randscherben",
        caption = paste("mit der Gower-Distanz über Gefäßoberteilform (Hals - Schulter) mit \nKulturgruppe als erklärenden Faktor\n Gefäße mit > 4 % erhaltenem Rand, n = ", length(unique(gower_df_infos$gefäßnummer)) ),
        x = paste("dbRDA1", round(summary_rda$cont$importance[2, "dbRDA1"] *100, 1), "%" ),
@@ -1803,7 +1815,7 @@ ggsave("../figures/Gef_Form/dbRDA_Raender-kultur2.png", dpi = 300, width = 21, h
 ggplot(RDA_all$sites, aes(dbRDA1, dbRDA2)) +
   geom_hline(yintercept = 0, color = "gray") +
   geom_vline(xintercept = 0, color = "gray") +
-  labs(title = "distanzbasierte Redundanzanalyse über Gefäßform-Parameter",
+  labs(title = "Distanzbasierte Redundanzanalyse über Merkmale der Gefäßform",
        subtitle = "Randscherben",
        caption = paste("mit der Gower-Distanz überGefäßform mit \nKulturgruppe als erklärenden Faktor\n Gefäße mit > 4 % erhaltenem Rand, n = ", length(unique(gower_df_infos$gefäßnummer)) ),
        x = paste("dbRDA1", round(summary_rda$cont$importance[2, "dbRDA1"] *100, 1), "%" ),
@@ -1869,10 +1881,13 @@ summary_rda$cont$importance[2, "dbRDA2"]
 RDA_all <- RDA_all  %>% scores(tidy = TRUE) %>% 
          split(.[["score"]])
 
+source("../../R_functions/farbzuweisungen.R")
+
+
 ggplot(RDA_all$sites, aes(dbRDA1, dbRDA2)) +
   geom_hline(yintercept = 0, color = "gray") +
   geom_vline(xintercept = 0, color = "gray") +
-  labs(title = "distanzbasierte Redundanzanalyse über Handhaben-Parameter",
+  labs(title = "Distanzbasierte Redundanzanalyse über Merkmale der Handhaben",
        caption = paste("mit der Gower-Distanz über Handhaben mit \nKulturgruppe und Kreis als erklärende Faktoren\n Gefäße n = ", length(unique(hh_2$gefäßnummer)) ),
        x = paste("dbRDA1", round(summary_rda$cont$importance[2, "dbRDA1"] *100, 1), "%" ),
        y =  paste("dbRDA2",  round(summary_rda$cont$importance[2, "dbRDA2"]*100,1 ), "%" ),
