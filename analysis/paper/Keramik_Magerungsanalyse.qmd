@@ -527,6 +527,7 @@ gef_per_fo <- scherben |>
   filter(as.integer(bruchpotential) < 7) |>
    group_by(fundort, kultur_gr, kreislabel) |> summarize(count = n_distinct(gefäßnummer))
 
+library(ggh4x)
 
 scherben |>
     filter(as.integer(bruchpotential) < 7) |>
@@ -954,7 +955,7 @@ scherben_gef_magerung |>
   count(gefäßnummer, magerungsel_gr, fundort, kultur_gr, kreislabel) |>
   group_by(gefäßnummer, magerungsel_gr, fundort, kultur_gr, kreislabel) |>
   mutate(prop = prop.table(n)) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
    geom_bar(aes(x = fundort,
                 fill = magerungsel_gr,
                 y = prop),
@@ -1003,7 +1004,7 @@ scherben_gef_magerung |>
   filter(verz_n == "unverz") |>
   filter(magerungsel_gr != "NA") |>
   group_by(gefäßnummer, magerungsel_gr, fundort, kultur_gr) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
    geom_bar(aes(x = fundort,
                 fill = magerungsel_gr))+
   scale_fill_manual(name = "Magerungselemente",
@@ -1034,7 +1035,7 @@ scherben_gef_magerung |>
   filter(verz_n == "verz") |>
   filter(magerungsel_gr != "NA") |>
   group_by(gefäßnummer, magerungsel_gr, fundort, kultur_gr) |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
    geom_bar(aes(x = fundort,
                 fill = magerungsel_gr))+
   scale_fill_manual(name = "Magerungselemente",
@@ -1094,7 +1095,7 @@ save(magerung_gef, file = "../data/derived_data/magerung_gef.RData")
 #| eval: false
 scherben_gef_magerung |>
   filter(magerungsel_gr != "NA") |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
    geom_bar(aes(x = sys_czerniak,
                 fill = magerungsel_gr))+
   scale_fill_manual(name = "Magerungselemente",
@@ -1653,7 +1654,8 @@ mag_gr_unverz <- s_mag |>
 
 
 s_bruchfarbe <- scherben_bf |>
-  select(gefäßnummer, bruchfarbe_gr, kultur2)
+  select(gefäßnummer, bruchfarbe_gr, kultur2) |>
+  unique() # hatt ich das vergessen?
 
 
 magerungsel_gr <- scherben_gef_magerung |>
@@ -1674,15 +1676,15 @@ magerungsart <- s_mag_art |>
 
 
 
-chi_machart_ls <- list(ofl_unverz = s_ofl2_unverz, 
-                       ofl_verz = s_ofl2_verz, 
-                       sys_cz_gr = k_sys_cz, 
+chi_machart_ls <- list(sys_cz_gr = k_sys_cz, 
                        magerungsel_gr = magerungsel_gr,
                        bruchfarbe_gr = s_bruchfarbe,
                        magerungsart = magerungsart
                        )
 
-wilcox_machart_ls <- list(unv_magerungsmenge = mag_m_unverz, 
+wilcox_machart_ls <- list(ofl_unverz = s_ofl2_unverz, 
+                       ofl_verz = s_ofl2_verz, 
+                       unv_magerungsmenge = mag_m_unverz, 
                        verz_magerungsmenge = verz_magerungsmenge,  
                        unverz_mag_gr = mag_gr_unverz, 
                        verz_mag_gr = mag_gr_verz,
@@ -1703,9 +1705,7 @@ wilcox_machart_ls <- list(unv_magerungsmenge = mag_m_unverz,
   
   kulturen <- unique(s_bruchfarbe$kultur2)
   
-  vars <- c("ofl_unverz",
-            "ofl_verz", 
-            "sys_cz_gr",
+  vars <- c("sys_cz_gr",
             "magerungsel_gr",
              "bruchfarbe_gr",
              "magerungsart")
@@ -1831,7 +1831,9 @@ source("../../R_functions/get_p_wilcoxon.R")
   
   kulturen <- unique(s_bruchfarbe$kultur2)
   
-  vars <- c("unv_magerungsmenge",
+  vars <- c("ofl_unverz",
+            "ofl_verz",
+            "unv_magerungsmenge",
             "verz_magerungsmenge", 
             "unverz_mag_gr",
             "verz_mag_gr",
@@ -1914,8 +1916,8 @@ farben <- c("#FDE725FF", "#7AD151FF", "#22A884FF", "grey70","grey60","grey50")
 
 p_values$label <- factor(p_values$label,
                            ordered = TRUE,
-                       levels = c( "ofl_unverz\nChi-Quadrat, Permutationstest",
-                                   "ofl_verz\nChi-Quadrat, Permutationstest",
+                       levels = c( "ofl_unverz\npaarweiser Wilcoxon" ,
+                                   "ofl_verz\npaarweiser Wilcoxon" ,
                                    "unverz_mag_gr\npaarweiser Wilcoxon" ,
                                     "verz_mag_gr\npaarweiser Wilcoxon",
                                     "unv_magerungsmenge\npaarweiser Wilcoxon" ,
@@ -1941,12 +1943,15 @@ p_values <- p_values |>
     k == "Rössen - SBK" ~ "SBK - Rössen",
     TRUE ~ k))
 
-save(p_values, file = "../data/derived_data/alle_p_machart.RData")
+save(p_values, file = "../data/derived_data/alle_p_machart_2026-04-23.RData")
 ```
 
 
 ```{r}
 #| label: plot all p-values für Machart
+
+
+load(file = "../data/derived_data/alle_p_machart_2026-04-23.RData") 
 
 p_values |>
   filter(!(str_detect(label, "unv"))) |>
@@ -1963,7 +1968,7 @@ p_values |>
              hjust = 0.2,
              vjust = 0.5) +
   scale_x_discrete(labels =  c(#"Oberflächengestaltung \nunverzierte Gef. \nChi-Quadrat,\n Permutationstest",
-                                   "Oberflächengestaltung \nverz. Gef.\nChi-Quadrat,\n Permutationstest",
+                                   "Oberflächengestaltung \npaarweiser\n Wilcoxon",
                                   # "Magerungsgröße\n\ unverz. Gef.\npaarweiser\n Wilcoxon" ,
                                     "Magerungsgröße\n verz. Gef.\npaarweiser\n Wilcoxon",
                                    # "Magerungsmenge\n unverz. Gef.\npaarweiser\n Wilcoxon" ,
@@ -1990,7 +1995,7 @@ guides(fill = guide_legend(nrow = 1)  ) +
    theme(legend.position = "bottom",
          text = element_text(size = 14))
 
-ggsave("../figures/Magerung/2026-04-14_verzierte_p-machart_perm.png", dpi = 300, width = 40, height = 25, units = "cm")
+ggsave("../figures/Magerung/2026-04-23_verzierte_p-machart_perm.png", dpi = 300, width = 40, height = 25, units = "cm")
 ```
 
 
