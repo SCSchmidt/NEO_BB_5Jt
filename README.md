@@ -1,14 +1,31 @@
 # README
 
-Dieser Ordner enthält den Analysecode und die veröffentlichbaren Daten der Dissertation von Sophie C. Schmidt zum 5. Jt. v. Chr. im Bundesland Brandenburg
+Dieser Ordner enthält den Analysecode und die veröffentlichbaren Daten der Dissertation von Sophie C. Schmidt 
+"Zwischen West und Ost, Nord und Süd: Brandenburg im 5. Jahrtausend v. Chr. als Interaktionsraum für Gruppen unterschiedlicher Subsistenz"
 
 Hier wird in etwa der Struktur Ben Marwicks Paket {rrtools} (*reproducible research tools*) gefolgt: Auf der ersten Ebene befinden sich zwei Ordner, 
-*R_functions* und *analysis*. Unter *R_functions* befinden sich kleinere R-Scripte, die mehrmals im Verlauf der Analyse eingesetzt wurden. 
+*R_functions* und *analysis*. Unter *R_functions* befinden sich kleinere R-Scripte, die mehrmals im Verlauf der 
+Analyse eingesetzt wurden. 
+
+Der Ordner *py_code* enthält unter *QGIS* 
+  - den Abfragecode für die Umkreisanalysen / *site catchment*-Analyse in Python und 
+  - die notwendigen Shapefiles unter *geodata*, Herausgeber: Landesvermessung und Geobasisinformation Brandenburg (LGB)
+      - BB_BÜK300_Grundkarte, steht als *open data* zur Verfügung unter <https://geoportal.brandenburg.de/detailansichtdienst/render?url=https://geoportal.brandenburg.de/gs-json/xml?fileid=f916fd97-f1e4-4516-a95c-7e9af9f98521> 
+      - landwirtschaftliches_ertragspotential, steht als *open data* zur Verfügung unter <https://geoportal.brandenburg.de/detailansichtdienst/render?view=gdibb&url=https%3A%2F%2Fgeoportal.brandenburg.de%2Fgs-json%2Fxml%3Ffileid%3Dbfafc655-9fa0-4b42-9c9b-43d00342e7ca> 
+      - Mittelmßst_landwirtsch_Standortkart_MMK100, steht als *open data* zur Verfügung unter <https://geoportal.brandenburg.de/detailansichtdienst/render?url=https://geoportal.brandenburg.de/gs-json/xml?fileid=f916fd97-f1e4-4516-a95c-7e9af9f98521> 
+      - schwarzerden_bb_admin3 ist eine Verschneidung der Schwarzerdenkartierung des Landesamts für Umwelt Brandenburg (<https://geobroker.geobasis-bb.de/gbss.php?MODE=GetProductInformation&PRODUCTID=BB07A209-E253-413D-B285-7B14671585DF>) und der Karten von Natural Earth Data (<https://www.naturalearthdata.com/>)
+      - seen_bb_admin3 ist eine Verschneidung der KArtierung von Seeflächen des Landesamts für Umwelt Brandenburg (<https://geoportal.brandenburg.de/detailansichtdienst/render?view=gdibb&url=https://geoportal.brandenburg.de/gs-json/xml?fileid=D9C4E283-00C3-42A2-9F1F-15BFD6A40B55>)
+      - SGDB_PTR_arbeitsgebiet_epsg25833 ist eine in das EPSG 25833 transformierte und auf das Arbeitsgebiet zugeschnittene Karte der *Soil Georgraphic Database of Europe* der Euroäischen Kommission (<https://esdac.jrc.ec.europa.eu/content/european-soil-database-v20-vector-and-attribute-data> )
+
+
 Unter *analysis* liegen die Ordner *data*, *figures* und *paper*:
 
 - *data* beherbergt 
   - alle Datensätze zur Keramik als csv-Daten im Ordner *raw_data*
-  - die Geodaten im Ordner *geodata*: shape-files (TODO umformen!!) für die Lokalisierung von Fundstellen und Stichprobenpunkte für die Umweltanalyse, sowie die Ergebnisse der Abfrage von den Umkreisanalysen nach Radius getrennt
+  - die Geodaten im Ordner *geodata*: 
+      - csv-Tabellen mit X- und Y-Koordinaten im *EPSG 25833* für die Lokalisierung von Fundstellen 
+      - Stichprobenpunkte  mit X- und Y-Koordinaten im *EPSG 25833* für die Umweltanalyse, 
+      - sowie die Ergebnisse der Abfrage von den Umkreisanalysen / *site catchment* nach Radius getrennt (s. o.)
   - der Ordner *derived_data* beinhaltet Daten, die während der Analyse erstellt wurden und nicht jedesmal neu generiert werden sollten, wenn zu einem späteren Zeitpunkt weiter gearbeitet wurde
 
 - im Ordner *figures* liegen Abbildungen, die während der Analyse durch den Code entstanden. Sie sind unterteilt in die Ordner:
@@ -17,7 +34,12 @@ Unter *analysis* liegen die Ordner *data*, *figures* und *paper*:
   - *Muster*: Abbildungen zur Analyse der Verzierungen der Gefäße
   - *Standortanalyse*: Abbildungen zur Analyse der Standortmerkmale der Fundstellen
   
-- im Ordner *paper* befinden sich die Dateien für die Ausführung der Analyse. In der von Marwick vorgeschlagenen Struktur würde hier auch der Text des Artikels abgelegt werden. Dies wurde im Zuge der Abgabe der Dissertation nicht getan, um diese nicht vorzuveröffentlichen. 
+- im Ordner *paper* befinden sich die R-Skripte für die Ausführung der Analyse im Unterordner  *scripts*. 
 
-Das Paket enthält nur Analyse-Code und tabellarische Daten, keine Bilder, da diese a) z. T. an anderer Stelle veröffentlicht werden und b) nicht alle für eine Veröffentlichung im Internet lizenziert sind.
+In der von Marwick vorgeschlagenen Struktur würde im Ordner *paper* der Text des Artikels abgelegt werden. 
+Dies wurde im Zuge der Abgabe der Dissertation nicht getan, um diesen nicht vorzuveröffentlichen.
+
+Das Paket enthält nur Analyse-Code und tabellarische Daten, keine Bilder, da diese 
+- a) z. T. an anderer Stelle veröffentlicht werden und 
+- b) nicht alle für eine Veröffentlichung im Internet lizenziert sind.
 
