@@ -11,3 +11,4 @@
       - seen_bb_admin3 ist eine Verschneidung der Kartierung von Seeflächen des Landesamts für Umwelt Brandenburg (<https://geoportal.brandenburg.de/detailansichtdienst/render?view=gdibb&url=https://geoportal.brandenburg.de/gs-json/xml?fileid=D9C4E283-00C3-42A2-9F1F-15BFD6A40B55>)
       - SGDB_PTR_arbeitsgebiet_epsg25833 ist eine in das EPSG 25833 transformierte und auf das Arbeitsgebiet zugeschnittene Karte der *Soil Georgraphic Database of Europe* der Euroäischen Kommission (<https://esdac.jrc.ec.europa.eu/content/european-soil-database-v20-vector-and-attribute-data> )
 
+- Die Koordinaten der Fundstellen sind unter NEO_BB_5Jt/analysis/geodata abgelegt, allerdings auf nur zwei Nachkommastellen genau, weshalb es hier zu etwas anderen Abfragen kommen kann. Sie liegen dort nur als csv-Datei vor.
