@@ -18,12 +18,13 @@ Der Ordner *py_code* enthält unter *QGIS*
       - SGDB_PTR_arbeitsgebiet_epsg25833 ist eine in das EPSG 25833 transformierte und auf das Arbeitsgebiet zugeschnittene Karte der *Soil Georgraphic Database of Europe* der Euroäischen Kommission (<https://esdac.jrc.ec.europa.eu/content/european-soil-database-v20-vector-and-attribute-data> )
 
 
+
 Unter *analysis* liegen die Ordner *data*, *figures* und *paper*:
 
 - *data* beherbergt 
   - alle Datensätze zur Keramik als csv-Daten im Ordner *raw_data*
   - die Geodaten im Ordner *geodata*: 
-      - csv-Tabellen mit X- und Y-Koordinaten im *EPSG 25833* für die Lokalisierung von Fundstellen 
+      - csv-Tabellen mit X- und Y-Koordinaten im *EPSG 25833* für die Lokalisierung von Fundstellen. Die Fundpunktkoordinaten wurden auf zwei Nachkommastellen reduziert, wodurch leichte Abweichungen entstehen könnten, sollte die *site catchment* - Analyse nachvollzogen werden. 
       - Stichprobenpunkte  mit X- und Y-Koordinaten im *EPSG 25833* für die Umweltanalyse, 
       - sowie die Ergebnisse der Abfrage von den Umkreisanalysen / *site catchment* nach Radius getrennt (s. o.)
   - der Ordner *derived_data* beinhaltet Daten, die während der Analyse erstellt wurden und nicht jedesmal neu generiert werden sollten, wenn zu einem späteren Zeitpunkt weiter gearbeitet wurde
@@ -36,10 +37,18 @@ Unter *analysis* liegen die Ordner *data*, *figures* und *paper*:
   
 - im Ordner *paper* befinden sich die R-Skripte für die Ausführung der Analyse im Unterordner  *scripts*. 
 
+Die Skripte sind nach vier Analyseschritten benannt und durchnummeriert, 01 ist dabei stets die Datenaufbereitung:
+
+- keramik_machart: Skripte, die die Machart untersuchen
+- keramik_verz: Skripte, die die Verzierungsanalyse der Keramik beinhalten
+- keramik_gefform: Skripte, die die Gefäßform analysieren
+- standortanalyse: Analyse der Lageeigenschaften: 1-17 innerhalb Brandenburgs, 20-22 die übergreifende Analyse
+
 In der von Marwick vorgeschlagenen Struktur würde im Ordner *paper* der Text des Artikels abgelegt werden. 
 Dies wurde im Zuge der Abgabe der Dissertation nicht getan, um diesen nicht vorzuveröffentlichen.
 
 Das Paket enthält nur Analyse-Code und tabellarische Daten, keine Bilder, da diese 
 - a) z. T. an anderer Stelle veröffentlicht werden und 
 - b) nicht alle für eine Veröffentlichung im Internet lizenziert sind.
+
 
