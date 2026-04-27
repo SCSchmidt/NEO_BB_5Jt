@@ -29,7 +29,7 @@ Unter *analysis* liegen die Ordner *data*, *figures* und *paper*:
       - sowie die Ergebnisse der Abfrage von den Umkreisanalysen / *site catchment* nach Radius getrennt (s. o.)
   - der Ordner *derived_data* beinhaltet Daten, die während der Analyse erstellt wurden und nicht jedesmal neu generiert werden sollten, wenn zu einem späteren Zeitpunkt weiter gearbeitet wurde
 
-- im Ordner *figures* liegen Abbildungen, die während der Analyse durch den Code entstanden. Sie sind unterteilt in die Ordner:
+- im Ordner *figures* (derzeit leer) werden Abbildungen abgelegt, die während der Analyse durch den Code entstehen. Sie sind unterteilt in die Ordner:
   - *Gef-Form*: Abbildungen zur Analyse der Gefäßformen
   - *Magerung*: Abbildungen zur Analyse der Machart der Gefäße
   - *Muster*: Abbildungen zur Analyse der Verzierungen der Gefäße
@@ -43,6 +43,8 @@ Die Skripte sind nach vier Analyseschritten benannt und durchnummeriert, 01 ist 
 - keramik_verz: Skripte, die die Verzierungsanalyse der Keramik beinhalten
 - keramik_gefform: Skripte, die die Gefäßform analysieren
 - standortanalyse: Analyse der Lageeigenschaften: 1-17 innerhalb Brandenburgs, 20-22 die übergreifende Analyse
+
+- 14C-daten erstellt Abbildungen für die Datierungen
 
 In der von Marwick vorgeschlagenen Struktur würde im Ordner *paper* der Text des Artikels abgelegt werden. 
 Dies wurde im Zuge der Abgabe der Dissertation nicht getan, um diesen nicht vorzuveröffentlichen.
