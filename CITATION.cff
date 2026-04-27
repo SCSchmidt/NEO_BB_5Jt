@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Rcode und Daten für Zwischen West und Ost, Nord und Süd: Brandenburg im 5. Jahrtausend v. Chr. als Interaktionsraum für Gruppen unterschiedlicher Subsistenz
+message: Dies sind Ergebnisse einer bisher unverteidigten und unveröffentlichten Dissertation. Please proceed with caution.
+  If you use this software and data, please cite it using the
+  metadata from this file.
+type: software, data
+authors:
+  - given-names: Sophie C.
+    family-names: Schmidt
+    email: s.c.schmidt@fu-berlin.de
+    affiliation: Freie Universität Berlin
+    orcid: 'https://orcid.org/0000-0003-4696-2101'
+repository-code: 'https://github.com/SCSchmidt/NEO_BB_5Jt/'
+abstract: >-
+  Code for statistical analyses of pottery data in R and
+  site catchment analysis in Python for QGIS and data needed
+license: CC-BY-4.0
+version: '0.9'
+date-released: '2026-04-30'
