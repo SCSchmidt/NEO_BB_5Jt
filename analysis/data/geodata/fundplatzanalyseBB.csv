@@ -1,0 +1,515 @@
+FID;Kreis;Gemeinde;Fundstelle;Kultur;Entdeckung;Quelle;Fundstellenart;Materialaufnahme;wgsX;wgsY;Publikation
+32;Havelland;Stadt Rathenow;Steckelsdorf 12;FBG;Lesefunde;BLDAM 2021;unbek.;ja;12.30;52.59;Wetzel/Beran 2023
+33;Havelland;Friesack;Friesack 4;FBG;Ausgrabung;BLDAM 2021;Siedlung;ja;12.54;52.75;Wetzel/Beran 2023
+34;Havelland;Friesack;Friesack 4;Guhrau;Ausgrabung;BLDAM 2021;Siedlung;nein;12.54;52.75;Wetzel/Beran 2023
+36;Teltow-Fläming;Rohrbeck;Rohrbeck 14;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.03;51.97;Eberhardt 2007
+37;Teltow-Fläming;Jüterbog;Jüterbog 31;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.05;51.99;Eberhardt 2007
+38;Teltow-Fläming;Bochow;Bochow 2;Rös.;Ausgrabung;BLDAM 2021;unbek.;ja;13.07;51.96;Eberhardt 2007
+39;Teltow-Fläming;Bochow;Bochow 2;Guhrau;Lesefunde;BLDAM 2021;unbek.;ja;13.07;51.96;Wetzel 2013
+40;Teltow-Fläming;Bochow;Bochow 16;SBK;Ausgrabung;BLDAM 2021;Siedlung, Kreisgrabenanlage;ja;13.08;51.96;Meyer 2011
+41;Teltow-Fläming;Bochow;Bochow 6/7;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.09;51.96;Eberhardt 2007
+43;Teltow-Fläming;Bochow;Bochow 7;Rös.;Lesefunde;BLDAM 2021;unbek.;ja;13.08;51.96;Eberhardt 2007
+44;Teltow-Fläming;Bochow;Bochow 15;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.09;51.96;Eberhardt 2007
+45;Teltow-Fläming;Bochow;Bochow 6;Rös.;Lesefunde;BLDAM 2021;unbek.;ja;13.09;51.96;Eberhardt 2007
+46;Teltow-Fläming;Bochow;Bochow 6;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.09;51.96;Eberhardt 2007
+47;Teltow-Fläming;Schiaß;Schiaß 1;SBK;Ausgrabung;BLDAM 2021;unbek.;ja;13.14;52.26;
+48;Teltow-Fläming;Groß Kienitz;Groß Kienitz 7;Rös.;Ausgrabung;BLDAM 2021;Siedlung;ja;13.46;52.33;Schmiederer 1997
+49;Dahme-Spreewald;Selchow;Selchow 7;Rös.;Ausgrabung;BLDAM 2021;Siedlung;ja;13.47;52.35;Lehmphul 2015
+50;Dahme-Spreewald;Gallun;Gallun 4;Guhrau;Einzelfund;BLDAM 2021;unbek.;nein;13.56;52.25;
+53;Dahme-Spreewald;Zöllmersdorf;Zöllmersdorf;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.66;51.85;Wetzel/Beran 2023
+54;Dahme-Spreewald;Kaden;Kaden 4;SBK;Ausgrabung;BLDAM 2021;Grab?;ja;13.80;51.91;Marschallek 1944
+55;Dahme-Spreewald;Neuendorf am See;Neuendorf am See 6;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.88;52.10;Wetzel 2013
+56;Dahme-Spreewald;Neuendorf am See;Neuendorf am See 6;Guhrau;Lesefunde;BLDAM 2021;unbek.;ja;13.88;52.10;Wetzel 2013
+57;Dahme-Spreewald;Neuendorf am See;Neuendorf am See 13;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.88;52.10;Wetzel 2013
+58;Dahme-Spreewald;Hohenbrück;Hohenbrück 3;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.91;52.10;Wetzel 2013
+59;Dahme-Spreewald;Hohenbrück;Hohenbrück 3;Guhrau;Lesefunde;BLDAM 2021;unbek.;ja;13.91;52.10;Wetzel 2013
+60;Dahme-Spreewald;Steinkirchen;Lübben Steinkirchen 6;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.92;51.91;Wetzel 2013
+61;Dahme-Spreewald;Lübben;Lübben Steinkirchen 6;FBG;Lesefunde;BLDAM 2021;unbek.;ja;13.92;51.91;Wetzel 2013
+64;Uckermark;Meichow;Meichow 16;Rös.;Ausgrabung;BLDAM 2021;unbek.;nein;13.96;53.19;
+65;Uckermark;Meichow;Meichow 8;Rös.;Lesefunde;BLDAM 2021;unbek.;ja;13.97;53.18;Stark 2020
+66;Uckermark;Kerkow;Kerkow 1;Rös.;Lesefunde;BLDAM 2021, Museum Angermünde;unbek.;ja;13.97;53.05;Umbreit 1937
+67;Uckermark;Angermünde;Angermünde 41;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;14.01;53.00;
+68;Uckermark;Herzsprung;Herzsprung 7;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;14.01;53.00;
+69;Uckermark;Gramzow;Gramzow 23;SBK;Lesefunde;BLDAM 2021;unbek.;ja;14.02;53.22;
+70;Uckermark;Grünow bei Schönermark;Grünow bei Schönermark 17/18 (17);Rös.;Einzelfund;BLDAM 2021;unbek.;ja;14.08;53.12;
+72;Uckermark;Flemsdorf;Flemsdorf 6/1 (6);Rös.;Lesefunde;BLDAM 2021;unbek.;ja;14.17;53.03;
+73;Uckermark;Flemsdorf;Flemsdorf 6/1 (6);SBK;Notbergung;BLDAM 2021;unbek.;ja;14.17;53.03;Gramsch 1960
+74;Uckermark;Berkholz zu Berkholz-Meyenburg;Berkholz zu Berkholz-Meyenburg 5;Rös.;Lesefunde;BLDAM 2021;unbek.;ja;14.19;53.06;
+75;Uckermark;Berkholz zu Berkholz-Meyenburg;Berkholz zu Berkholz-Meyenburg 8;Rös.;Lesefunde;BLDAM 2021;unbek.;ja;14.19;53.06;
+76;Oder-Spree;Rietz-Neuendorf;Klein-Rietz;SBK;unbek.;BLDAM 2021;unbek.;aus Lit.;14.20;52.21;Umbreit 1937
+77;Oder-Spree;Sabrodt;Trebatsch/Sabrodt 1;FBG;Einzelfund;BLDAM 2021, Wetzel/Beran 2023;unbek.;ja;14.20;52.08;Wetzel/Beran 2023
+79;Märkisch-Oderland;Gusow-Platkow;Platkow 13;SBK;Lesefunde;BLDAM 2021;unbek.;ja;14.33;52.61;
+80;Märkisch-Oderland;Seelow;Seelow 20;SBK;Ausgrabung;BLDAM 2021;Siedlung;ja;14.38;52.55;Völker 2002
+81;Uckermark;Gartz;Gartz ?;SBK?;Lesefunde;Museum Angermünde;unbek.;ja;14.39;53.21;
+82;Spree-Neiße;Neuendorf;Neuendorf 23;SBK;Ausgrabung;BLDAM 2021;Grab?;ja;14.42;51.80;
+83;Märkisch-Oderland;Niederjesar;Niederjesar 3;SBK;Einzelfund;BLDAM 2021;Grab?;aus Lit.;14.45;52.44;
+84;Frankfurt (Oder);Booßen;Booßen 2;SBK;Oberflächenfunde bei Ausgrabung;BLDAM 2021;Siedlung;ja;14.49;52.38;
+86;Spree-Neiße;Grötsch;Grötsch 8;SBK;Ausgrabung Bersu;BLDAM 2021;Grab?;nein;14.52;51.80;Stapel 2000
+90;Spree-Neiße;Heinersbrück;Heinersbrück 42;SBK;Lesefunde;BLDAM 2021;unbek.;ja;14.54;51.81;
+91;Spree-Neiße;Heinersbrück;Heinersbrück 42;Guhrau;Lesefunde;BLDAM 2021;unbek.;ja;14.54;51.81;
+92;Spree-Neiße;Heinersbrück;Heinersbrück 31;SBK;Einzelfund;BLDAM 2021;unbek.;ja;14.54;51.81;
+230;Potsdam-Mittelmark;Groß Kreutz (Havel);Schmergow;SBK;NA;von Richthofen 1930, Karte 2;unbek.;nein;12.81;52.46;Umbreit 1937
+232;Frankfurt (Oder);Frankfurt (Oder);Frankfurt/Oder - Ebertus Str.;SBK;NA;Umbreit 1940, S. 175;unbek.;nein;14.54;52.34;Umbreit 1937
+233;Frankfurt (Oder);Frankfurt (Oder);Frankfurt/Oder unbek.;SBK;Ausgrabung;Berlekamp 1966, Liste 9;unbek.;nein;14.53;52.34;Umbreit 1937
+234;Frankfurt (Oder);Frankfurt (Oder);Frankfurt/Oder - Danziger Str.;SBK;NA;Umbreit 1937, S. 175;unbek.;nein;14.52;52.35;Umbreit 1937
+240;Havelland;Friesack;Friesack 4;Rös.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.54;52.75;Wetzel/Beran 2023
+241;Oder-Spree;Sabrodt;Trebatsch/Sabrodt 1;SBK?;Einzelfund;BLDAM 2021;unbek.;ja;14.20;52.08;Wetzel/Beran 2023
+245;Spree-Neiße;Drebkau;Drebkau 2;SBK;Einzelfund;BLDAM 2021;unbek.;ja;14.23;51.65;
+250;Ostprignitz-Ruppin;Altfriesack;Altfriesack 6;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;12.88;52.84;
+251;Märkisch-Oderland;Altranft;Altranft 6;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;14.09;52.77;
+252;Märkisch-Oderland;Bad Freienwalde;Bad Freienwalde 8;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;14.06;52.78;
+253;Oder-Spree;Beeskow;Beeskow 5;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;14.30;52.17;
+254;Uckermark;Blankenburg;Blankenburg 26;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;13.94;53.21;
+255;Potsdam;Bornim;Bornim 8;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;13.01;52.42;
+256;Uckermark;Brüssow;Brüssow 67;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;14.10;53.42;
+257;Havelland;Dyrotz;Dyrotz 37;Rös.;Ausgrabung;BLDAM 2021;Siedlung, Brunnen;nein;12.96;52.56;Wetzel/Babieel 2016
+258;Uckermark;Flemsdorf;Flemsdorf 10;Rös.;Sondage;BLDAM 2021;Siedlung;ja;14.16;53.03;
+259;Frankfurt (Oder);Frankfurt;Frankfurt 108;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;14.52;52.33;
+260;Havelland;Friesack;Friesack 4;Rös.;Ausgrabung, Schichtenbefunde;BLDAM 2021;Siedlung;nein;12.54;52.75;
+261;Brandenburg (Havel);Kirchmöser;Kirchmöser 34;Rös.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.43;52.38;
+262;Oder-Spree;Kossenblatt;Kossenblatt 3;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;14.09;52.13;
+263;Havelland;Nauen;Nauen 21;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;12.88;52.62;
+264;Uckermark;Niederlandin;Niederlandin 12/5 (13);Rös.;Lesefunde;BLDAM 2021;unbek.;nein;14.14;53.08;
+265;Potsdam;Potsdam;Potsdam 3/13 (3);Rös.;Ausgrabung, Schichtenbefunde;BLDAM 2021;Siedlung;nein;13.05;52.39;
+266;Potsdam;Potsdam;Potsdam 58;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;13.09;52.36;
+267;Uckermark;Prenzlau;Prenzlau 23;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;13.86;53.30;
+268;Havelland;Ribbeck;Ribbeck 4;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;12.75;52.63;
+269;Havelland;Ribbeck;Ribbeck 9/21 (9);Rös.;Lesefunde;BLDAM 2021;unbek.;nein;12.75;52.63;
+270;Potsdam-Mittelmark;Treuenbrietzen;Treuenbrietzen 39;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;12.88;52.10;
+271;Havelland;Wachow;Wachow 17/4 (17);Rös.;Lesefunde;BLDAM 2021;unbek.;nein;12.76;52.53;
+272;Havelland;Wachow;Wachow 5;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;12.76;52.53;
+273;Havelland;Wachow;Wachow 7;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;12.72;52.53;
+274;Dahme-Spreewald;Wernsdorf;Wernsdorf 6;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;13.69;52.37;
+275;Havelland;Wustermark;Wustermark 9;Rös.;Lesefunde;BLDAM 2021;Siedlung;nein;12.95;52.56;
+276;Havelland;Zeestow;Zeestow 14/8 (14);Rös.;Lesefunde;BLDAM 2021;unbek.;nein;12.96;52.57;
+277;Havelland;Zeestow;Zeestow 8;Rös.;Lesefunde;BLDAM 2021;unbek.;nein;12.96;52.58;
+278;Havelland;Zeestow;Zeestow 8;FBG;Lesefunde;BLDAM 2021;unbek.;nein;12.96;52.58;
+281;Havelland;Bredow;Bredow 2;SBK;Lesefunde;BLDAM 2021;unbek.;nein;12.91;52.60;
+282;Uckermark;Brüssow;Brüssow 21;SBK;Einzelfund;BLDAM 2021;unbek.;nein;14.15;53.40;
+283;Havelland;Döberitz bei Premnitz;Döberitz bei Premnitz 20;SBK;Lesefunde;BLDAM 2021;unbek.;nein;12.39;52.51;
+284;Havelland;Dyrotz;Dyrotz 43;SBK;Ausgrabung;BLDAM 2021;Siedlung;nein;12.97;52.55;
+285;Elbe-Elster;Elsterwerda;Elsterwerda 10;SBK;Einzelfund;BLDAM 2021;Siedlung;nein;13.56;51.44;
+286;Oberhavel;Flatow;Flatow 17;SBK;Ausgrabung;BLDAM 2021;unbek.;nein;12.91;52.74;
+287;Uckermark;Flemsdorf;Flemsdorf 6/1 (6);SBK;Lesefunde;BLDAM 2021;unbek.;ja;14.17;53.03;Gramsch 1960
+288;Havelland;Gohlitz;Gohlitz 5;SBK;Einzelfund;BLDAM 2021;Siedlung;nein;12.78;52.54;
+289;Potsdam;Grube;Grube 7;SBK;Lesefunde;BLDAM 2021;unbek.;nein;12.95;52.44;
+290;Barnim;Hohenfinow;Hohenfinow 10;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.93;52.83;
+291;Havelland;Hoppenrade;Hoppenrade 6;SBK;Lesefunde;BLDAM 2021;unbek.;nein;12.92;52.54;
+292;Teltow-Fläming;Jüterbog;Jüterbog 31;SBK;Lesefunde;BLDAM 2021;unbek.;ja;13.05;51.99;
+293;Havelland;Ketzin;Ketzin 14;SBK;Lesefunde;BLDAM 2021;unbek.;nein;12.86;52.46;
+294;Potsdam-Mittelmark;Mötzow;Mötzow 11;SBK;Ausgrabung;BLDAM 2021;unbek.;nein;12.59;52.45;
+295;Havelland;Nauen;Nauen 68;SBK;Lesefunde;BLDAM 2021;unbek.;nein;12.98;52.62;
+296;Brandenburg (Havel);Neuendorf;Neuendorf 14;SBK;Ausgrabung;BLDAM 2021;unbek.;nein;12.49;52.40;
+297;Havelland;Niebede;Niebede 4;SBK;Lesefunde;BLDAM 2021;unbek.;nein;12.79;52.54;
+298;Uckermark;Niederlandin;Niederlandin 8;SBK;Lesefunde;BLDAM 2021;unbek.;nein;14.15;53.06;
+299;Potsdam;Potsdam;Potsdam 3/15 (3);SBK;Lesefunde;BLDAM 2021;unbek.;nein;13.07;52.40;
+300;Potsdam;Potsdam;Potsdam 3/58 (16);SBK;Lesefunde;BLDAM 2021;unbek.;nein;13.07;52.40;
+301;Teltow-Fläming;Rohrbeck;Rohrbeck 14;SBK;Lesefunde;BLDAM 2021;unbek.;nein;13.03;51.97;
+302;Potsdam-Mittelmark;Satzkorn;Satzkorn 37;SBK;Ausgrabung;BLDAM 2021;Siedlung;nein;12.99;52.48;
+303;Uckermark;Schönfeld bei Prenzlau;Schönfeld bei Prenzlau 11;SBK;Lesefunde;BLDAM 2021;unbek.;nein;13.96;53.43;
+304;Havelland;Wustermark;Wustermark 44;SBK;Ausgrabung;BLDAM 2021;Siedlung;nein;12.96;52.56;
+305;Barnim;Eichhorst;Eichhorst - 8;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.65;52.91;
+306;Brandenburg (Havel);Brandenburg-Altstadt;Brandenburg-Altstadt - 7;Meso;Ausgrabung;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.57;52.43;
+307;Brandenburg (Havel);Brandenburg-Neustadt;Brandenburg-Neustadt - 87;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.54;52.40;
+308;Brandenburg (Havel);Brandenburg-Altstadt;Brandenburg-Altstadt - 41;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.56;52.42;
+309;Brandenburg (Havel);Brandenburg-Neustadt;Brandenburg-Neustadt - 56;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.56;52.41;
+310;Dahme-Spreewald;Gräbendorf;Gräbendorf - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.76;52.22;
+311;Dahme-Spreewald;Gräbendorf;Gräbendorf - 8;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.71;52.24;
+312;Dahme-Spreewald;Mittenwalde;Mittenwalde - 11;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.53;52.26;
+313;Dahme-Spreewald;Schulzendorf;Schulzendorf - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.59;52.37;
+314;Dahme-Spreewald;Zaue;Zaue - 6;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.19;52.04;
+315;Dahme-Spreewald;Zaue;Zaue - 13;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.19;52.05;
+316;Dahme-Spreewald;Reichwalde;Reichwalde - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.72;51.95;
+317;Dahme-Spreewald;Mittenwalde;Mittenwalde - 23;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.53;52.28;
+318;Dahme-Spreewald;Waltersdorf bei Kö.Wusterhausen;Waltersdorf bei Kö.Wusterhausen - 14;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.59;52.37;
+319;Dahme-Spreewald;Deutsch Wusterhausen;Deutsch Wusterhausen - 15;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.61;52.29;
+321;Dahme-Spreewald;Mittenwalde;Mittenwalde - 58;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.55;52.26;
+322;Dahme-Spreewald;Hohenbrück;Hohenbrück - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.89;52.09;
+323;Dahme-Spreewald;Krausnick;Krausnick - 5;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.85;52.03;
+324;Dahme-Spreewald;Groß Köris;Groß Köris - 15;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.63;52.17;
+325;Dahme-Spreewald;Töpchin;Töpchin - 14;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.58;52.16;
+326;Dahme-Spreewald;Teurow;Teurow - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.72;52.09;
+327;Elbe-Elster;Schmielsdorf;Schmielsdorf - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.22;51.83;
+328;Elbe-Elster;Elsterwerda;Elsterwerda - 28;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.54;51.47;
+329;Elbe-Elster;Buchhain;Buchhain - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.39;51.66;
+332;Havelland;Hertefeld;Hertefeld - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.87;52.65;
+333;Havelland;Vietznitz;Vietznitz - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.66;52.74;
+334;Havelland;Schönwalde;Schönwalde - 30;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.10;52.60;
+336;Havelland;Wagenitz;Wagenitz - 6;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.63;52.64;
+337;Havelland;Friedrichsbruch;Friedrichsbruch - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.39;52.80;
+338;Havelland;Rathenow;Rathenow - 20;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.34;52.60;
+339;Havelland;Rathenow-Neue Schleuse;Rathenow-Neue Schleuse - 9;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.31;52.61;
+340;Havelland;Strodehne;Strodehne - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.23;52.74;
+341;Havelland;Schönwalde;Schönwalde - 9;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.13;52.61;
+342;Havelland;Buckow;Buckow - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.27;52.59;
+343;Havelland;Wansdorf;Wansdorf - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.07;52.63;
+344;Havelland;Strodehne;Strodehne - 19;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.24;52.74;
+345;Havelland;Rübehorst;Rübehorst - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.33;52.80;
+346;Havelland;Vietznitz;Vietznitz - 11;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.63;52.74;
+347;Havelland;Wustermark;Wustermark - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.95;52.54;
+348;Havelland;Hoppenrade;Hoppenrade - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.94;52.52;
+349;Havelland;Rhinow;Rhinow - 32;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.36;52.77;
+350;Märkisch-Oderland;Münchehofe;Münchehofe - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.12;52.56;
+351;Märkisch-Oderland;Friedersdorf;Friedersdorf - 6;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.39;52.51;
+352;Oberhavel;Krewelin;Krewelin - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.41;52.95;
+353;Oberhavel;Badingen;Badingen - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.25;53.02;
+354;Oberhavel;Zehdenick;Zehdenick - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.32;52.95;
+355;Oberhavel;Sommerfeld;Sommerfeld - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.05;52.79;
+356;Oberhavel;Teschendorf;Teschendorf - 5;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.17;52.86;
+357;Oberhavel;Zehdenick;Zehdenick - 33;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.35;53.02;
+358;Oberhavel;Birkenwerder;Birkenwerder - 14;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.25;52.69;
+359;Oberhavel;Birkenwerder;Birkenwerder - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.27;52.69;
+360;Oberhavel;Burgwall;Burgwall - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.31;53.05;
+361;Oberhavel;Badingen;Badingen - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.25;53.01;
+362;Oberhavel;Germendorf;Germendorf - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.19;52.75;
+363;Oberhavel;Kappe;Kappe - 8;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.42;52.95;
+364;Oberhavel;Krewelin;Krewelin - 13;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.38;52.94;
+365;Oberhavel;Oranienburg;Oranienburg - 42;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.25;52.75;
+366;Oberspreewald-Lausitz;Leipe;Leipe - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.04;51.86;
+367;Oberspreewald-Lausitz;Lübbenau;Lübbenau - 5;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.97;51.87;
+368;Oder-Spree;Rieplos;Rieplos - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.90;52.30;
+369;Oder-Spree;Fürstenwalde;Fürstenwalde - 5;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.05;52.36;
+370;Oder-Spree;Fürstenwalde-Süd;Fürstenwalde-Süd - 5;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.08;52.33;
+371;Oder-Spree;Tempelberg;Tempelberg - 17;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.14;52.45;
+372;Oder-Spree;Schwerin;Schwerin - 11;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.86;52.19;
+373;Ostprignitz-Ruppin;Wusterhausen (Dosse);Wusterhausen (Dosse) - 12;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.48;52.92;
+374;Ostprignitz-Ruppin;Kötzlin;Kötzlin - 9;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.22;52.91;
+375;Ostprignitz-Ruppin;Dreetz;Dreetz - 14;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.43;52.78;
+376;Ostprignitz-Ruppin;Kyritz;Kyritz - 36;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.41;52.98;
+377;Ostprignitz-Ruppin;Lohm;Lohm - 12;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.31;52.87;
+378;Ostprignitz-Ruppin;Roddahn;Roddahn - 8;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.29;52.83;
+379;Ostprignitz-Ruppin;Wusterhausen (Dosse);Wusterhausen (Dosse) - 34;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.46;52.89;
+380;Ostprignitz-Ruppin;Wusterhausen (Dosse);Wusterhausen (Dosse) - 16;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.47;52.91;
+381;Ostprignitz-Ruppin;Alt Ruppin;Alt Ruppin - 10;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.82;53.02;
+382;Ostprignitz-Ruppin;Herzberg;Herzberg - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.96;52.92;
+383;Ostprignitz-Ruppin;Langen;Langen - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.80;52.83;
+384;Ostprignitz-Ruppin;Lüchfeld;Lüchfeld - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.68;52.87;
+385;Ostprignitz-Ruppin;Wildberg;Wildberg - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.63;52.87;
+386;Ostprignitz-Ruppin;Wildberg;Wildberg - 10;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.63;52.86;
+387;Ostprignitz-Ruppin;Zechliner Hütte;Zechliner Hütte - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.86;53.17;
+388;Ostprignitz-Ruppin;Altfriesack;Altfriesack - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.89;52.84;
+389;Ostprignitz-Ruppin;Wulkow bei Alt Ruppin;Wulkow bei Alt Ruppin - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.95;52.93;
+390;Ostprignitz-Ruppin;Alt Ruppin;Alt Ruppin - 23;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.93;52.98;
+391;Ostprignitz-Ruppin;Alt Ruppin;Alt Ruppin - 24;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.83;52.96;
+392;Ostprignitz-Ruppin;Alt Ruppin;Alt Ruppin - 25;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.81;53.02;
+393;Ostprignitz-Ruppin;Königshorst;Königshorst - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.73;52.72;
+394;Ostprignitz-Ruppin;Wusterhausen (Dosse);Wusterhausen (Dosse) - 17;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.48;52.91;
+395;Ostprignitz-Ruppin;Zechliner Hütte;Zechliner Hütte - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.85;53.17;
+396;Ostprignitz-Ruppin;Lohm;Lohm - 10;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.30;52.84;
+397;Ostprignitz-Ruppin;Königshorst;Königshorst - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.74;52.72;
+398;Ostprignitz-Ruppin;Königshorst;Königshorst - 5;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.75;52.71;
+399;Potsdam;Potsdam;Potsdam - 13;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.08;52.38;
+400;Potsdam;Potsdam;Potsdam - 21;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.09;52.38;
+401;Potsdam;Bornim;Bornim - 9;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.98;52.45;
+402;Potsdam;Potsdam;Potsdam - 31;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.05;52.39;
+403;Potsdam;Potsdam;Potsdam - 57;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.07;52.42;
+404;Potsdam-Mittelmark;Emstal;Emstal - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.78;52.31;
+405;Potsdam-Mittelmark;Hohenferchesar;Hohenferchesar - 8;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.49;52.51;
+406;Potsdam-Mittelmark;Alt Töplitz;Alt Töplitz - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.92;52.42;
+407;Potsdam-Mittelmark;Alt Töplitz;Alt Töplitz - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.91;52.44;
+408;Potsdam-Mittelmark;Alt Töplitz;Alt Töplitz - 21;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.93;52.42;
+409;Potsdam-Mittelmark;Bergholz-Rehbrücke;Bergholz-Rehbrücke - 8;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.09;52.35;
+410;Potsdam-Mittelmark;Bergholz-Rehbrücke;Bergholz-Rehbrücke - 17;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.07;52.35;
+411;Potsdam-Mittelmark;Geltow;Geltow - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.96;52.36;
+412;Potsdam-Mittelmark;Geltow;Geltow - 9;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.98;52.37;
+413;Potsdam-Mittelmark;Krampnitz;Krampnitz - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.05;52.46;
+414;Potsdam-Mittelmark;Plötzin;Plötzin - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.84;52.39;
+415;Potsdam-Mittelmark;Satzkorn;Satzkorn - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.00;52.47;
+416;Potsdam-Mittelmark;Gollwitz;Gollwitz - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.63;52.42;
+417;Potsdam-Mittelmark;Philippsthal;Philippsthal - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.14;52.35;
+418;Potsdam-Mittelmark;Marquardt;Marquardt - 14;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.96;52.46;
+419;Potsdam-Mittelmark;Ferch;Ferch - 11;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.93;52.32;
+421;Potsdam-Mittelmark;Treuenbrietzen;Treuenbrietzen - 65;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.87;52.07;
+422;Potsdam-Mittelmark;Treuenbrietzen;Treuenbrietzen - 66;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.88;52.12;
+423;Potsdam-Mittelmark;Wildenbruch;Wildenbruch - 16;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.06;52.30;
+424;Potsdam-Mittelmark;Alt Töplitz;Alt Töplitz - 10;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.91;52.43;
+425;Potsdam-Mittelmark;Alt Töplitz;Alt Töplitz - 14;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.92;52.42;
+426;Potsdam-Mittelmark;Kleinmachnow;Kleinmachnow - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.21;52.40;
+427;Potsdam-Mittelmark;Beelitz;Beelitz - 13;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.97;52.23;
+428;Prignitz;Neuhausen;Neuhausen - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.85;53.23;
+429;Prignitz;Pirow;Pirow - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.89;53.21;
+430;Prignitz;Putlitz;Putlitz - 6;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.03;53.24;
+431;Prignitz;Kleinow;Kleinow - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.97;53.05;
+432;Prignitz;Sadenbeck;Sadenbeck - 6;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.25;53.19;
+433;Prignitz;Babekuhl;Babekuhl - 5;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.62;53.07;
+434;Prignitz;Lenzen;Lenzen - 33;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.50;53.10;
+435;Prignitz;Semlin;Semlin - 15;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.74;53.14;
+436;Prignitz;Perleberg;Perleberg - 16;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.82;53.03;
+437;Prignitz;Premslin;Premslin - 33;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.77;53.13;
+438;Prignitz;Groß Linde;Groß Linde - 47;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.92;53.12;
+439;Prignitz;Tacken;Tacken - 12;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.01;53.18;
+440;Prignitz;Hinzdorf;Hinzdorf - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.83;52.97;
+441;Prignitz;Kleeste;Kleeste - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.83;53.24;
+442;Prignitz;Wustrow;Wustrow - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;11.56;53.07;
+443;Spree-Neiße;Raakow;Raakow - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.23;51.64;
+444;Teltow-Fläming;Blankensee;Blankensee - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.14;52.24;
+445;Teltow-Fläming;Ahrensdorf bei Ludwigsfelde;Ahrensdorf bei Ludwigsfelde - 10;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.20;52.31;
+446;Teltow-Fläming;Blankenfelde;Blankenfelde - 9;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.38;52.32;
+447;Teltow-Fläming;Gröben;Gröben - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.16;52.28;
+448;Teltow-Fläming;Gröben;Gröben - 13;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.16;52.30;
+449;Teltow-Fläming;Kummersdorf;Kummersdorf - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.34;52.16;
+450;Teltow-Fläming;Mellensee;Mellensee - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.44;52.18;
+453;Teltow-Fläming;Sperenberg;Sperenberg - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.39;52.14;
+454;Teltow-Fläming;Zesch;Zesch - 2;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.52;52.11;
+455;Teltow-Fläming;Zossen;Zossen - 10;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.47;52.22;
+456;Teltow-Fläming;Trebbin;Trebbin - 14;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.22;52.22;
+459;Teltow-Fläming;Blankensee;Blankensee - 14;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.13;52.24;
+460;Teltow-Fläming;Blankensee;Blankensee - 15;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.14;52.23;
+461;Teltow-Fläming;Blankensee;Blankensee - 16;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.14;52.24;
+462;Teltow-Fläming;Klein Kienitz;Klein Kienitz - 9;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.47;52.31;
+463;Teltow-Fläming;Kliestow;Kliestow - 20;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.20;52.19;
+464;Uckermark;Angermünde;Angermünde - 79;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.01;53.02;
+465;Uckermark;Dobberzin;Dobberzin - 20;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.05;53.02;
+466;Uckermark;Felchow;Felchow - 12;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.13;53.02;
+467;Uckermark;Felchow;Felchow - 13;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.12;53.04;
+468;Uckermark;Angermünde;Angermünde - 24;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.97;53.03;
+469;Uckermark;Gellmersdorf;Gellmersdorf - 8;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.06;52.96;
+470;Uckermark;Berkholz zu Berkholz-Meyenburg;Berkholz zu Berkholz-Meyenburg - 9;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.18;53.06;
+471;Uckermark;Flemsdorf;Flemsdorf - 19;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.17;53.04;
+472;Uckermark;Görlsdorf;Görlsdorf - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.94;53.04;
+473;Uckermark;Günterberg;Günterberg - 13;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.98;53.11;
+474;Uckermark;Hohenlandin;Hohenlandin - 10;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.12;53.10;
+475;Uckermark;Niederlandin;Niederlandin - 15;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.14;53.08;
+476;Uckermark;Schmargendorf;Schmargendorf - 3;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.98;52.98;
+477;Uckermark;Schönermark;Schönermark - 22;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.08;53.11;
+478;Uckermark;Staffelde;Staffelde - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.44;53.27;
+479;Uckermark;Wartin;Wartin - 11;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.14;53.24;
+480;Uckermark;Fürstenwerder;Fürstenwerder - 14;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.60;53.40;
+481;Uckermark;Gollmitz;Gollmitz - 6;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.71;53.29;
+482;Uckermark;Schenkenberg;Schenkenberg - 19;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.94;53.35;
+483;Uckermark;Fürstenwerder;Fürstenwerder - 88;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.62;53.39;
+484;Uckermark;Wollschow;Wollschow - 35;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.24;53.39;
+485;Uckermark;Schwedt;Schwedt - 4;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.28;53.08;
+486;Uckermark;Knehden;Knehden - 8;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.53;53.14;
+487;Uckermark;Kreuzkrug;Kreuzkrug - 12;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.60;53.15;
+488;Uckermark;Petersdorf;Petersdorf - 9;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.62;53.07;
+489;Uckermark;Templin;Templin - 89;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.54;53.09;
+490;Uckermark;Schwedt;Schwedt - 6;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.28;53.05;
+491;Uckermark;Lychen;Lychen - 10;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.30;53.22;
+492;Uckermark;Dobberzin;Dobberzin - 9;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.05;53.02;
+493;Uckermark;Berkholz zu Berkholz-Meyenburg;Berkholz zu Berkholz-Meyenburg - 13;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.22;53.05;
+494;Uckermark;Zichow;Zichow - 1;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.04;53.19;
+495;Uckermark;Herzfelde;Herzfelde - 32;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.63;53.19;
+496;Uckermark;Carmzow;Carmzow - 77;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.09;53.37;
+497;Uckermark;Bandelow;Bandelow - 18;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.88;53.41;
+498;Uckermark;Grünberg;Grünberg - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.12;53.35;
+499;Uckermark;Prenzlau;Prenzlau - 101;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.82;53.30;
+500;Uckermark;Groß Dölln;Groß Dölln - 5;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.53;52.99;
+501;Uckermark;Crussow;Crussow - 7;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.08;53.00;
+502;Uckermark;Zollchow;Zollchow - 20;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.84;53.25;
+503;Uckermark;Grünow bei Prenzlau;Grünow bei Prenzlau - 56;Meso;Einzelfund;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.93;53.31;
+504;Havelland;Kienberg;Kienberg 1;FBG;Ausgrabung;BLDAM 2024;Siedlung;nein;12.90;52.66;
+505;Potsdam-Mittelmark;Woltersdorf;Woltersdorf 3;FBG;Lesefunde;BLDAM 2024;unbek.;nein;12.38;52.39;
+506;Dahme-Spreewald;Speichrow;Speichrow 10;FBG;Lesefunde;BLDAM 2024;unbek.;nein;14.19;52.04;
+507;Dahme-Spreewald;Leibsch;Leibsch 10;FBG;Lesefunde;BLDAM 2024;unbek.;nein;13.86;52.09;
+508;Havelland;Friesack;Friesack 13;FBG;Ausgrabung;BLDAM 2024;Siedlung;nein;12.60;52.75;Wetzel/Beran 2023
+510;Havelland;Friesack;Friesack 59;FBG;Ausgrabung;BLDAM 2024;Siedlung;nein;12.52;52.75;
+563;Dahme-Spreewald;Neuendorf am See;Neuendorf am See 6;FBG;Lesefunde;BLDAM 2021;unbek.;nein;13.88;52.10;Wetzel/Beran 2023
+564;Oder-Spree;Fürstenwalde;Fürstenwalde 41;FBG;Lesefunde;BLDAM 2024;unbek.;nein;13.94;52.39;Wetzel/Beran 2023
+565;Havelland;Rhinow;Rhinow 30;FBG;Lesefunde;BLDAM 2021;unbek.;ja;12.35;52.76;Wetzel/Beran 2023
+566;Potsdam;Potsdam;Potsdam 3/58 (16);;;BLDAM 2021;;nein;13.07;52.40;Beran 2012 b
+571;Dahme-Spreewald;Hohenbrück;Hohenbrück 2;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.89;52.09;Wetzel 2013
+574;Dahme-Spreewald;Neuendorf am See;Neuendorf am See 13;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;ja;13.88;52.10;Wetzel 2013
+575;Spree-Neiße;Heinersbrück;Heinersbrück 31;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;ja;14.54;51.81;Wetzel 2013
+579;Potsdam;Potsdam;Potsdam 16;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.07;52.40;Beran 2012 b
+580;Potsdam;Potsdam;Potsdam 82;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.07;52.40;Beran 2011 a
+581;Oder-Spree;Trebus;Trebus 1;Guhrau;;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.05;52.41;Kirsch 1993
+582;Havelland;Kietz;Kietz 3b;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.32;52.76;Wetzel 2013
+584;Teltow-Fläming;Bochow;Bochow  8;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.06;51.96;Eberhardt 2007
+585;Uckermark;Klinkow;Klinkow 26;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.83;53.32;Wetzel 2013
+586;Uckermark;Schwaneberg;Schwaneberg 27;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;14.12;53.33;Raddatz 1959
+587;Uckermark;Bietikow;Bietikow 15;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.96;53.28;Schoknecht 1986
+588;Uckermark;Potzlow;Potzlow 36;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;13.83;53.22;Wetzel 2013
+589;Havelland;Rhinow;Rhinow 30;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.35;52.76;Wetzel/Beran 2023
+590;Havelland;Hoppenrade;Hoppenrade 6;Guhrau;Lesefunde;BLDAM / M. Ismail-Weber 2018;unbek.;nein;12.92;52.54;Umbreit 1937
+2001;Potsdam-Mittelmark;Alt Toeplitz;Alt Toeplitz 6;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;12.91;52.44;Ismail-Weber 2017
+2002;Uckermark;Bagemuehl;Bagemuehl 15;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.21;53.36;Ismail-Weber 2017
+2003;Uckermark;Bagemuehl;Bagemuehl 17;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.19;53.37;Ismail-Weber 2017
+2004;Uckermark;Bagemuehl;Bagemuehl 37;LBK Dechsel;unbek.;BLDAM 2021;;nein;14.17;53.37;Ismail-Weber 2017
+2005;Uckermark;Battin;Battin 17;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.14;53.34;Ismail-Weber 2017
+2006;Uckermark;Berkholz zu Berkholz Meyenburg;Berkholz zu Berkholz;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.18;53.06;Ismail-Weber 2017
+2007;Uckermark;Biesenbrow;Biesenbrow 4;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.99;53.11;Ismail-Weber 2017
+2008;Uckermark;Blankenburg;Blankenburg 8;Rös. Beil/Axt;Einzelfund;BLDAM 2021;;nein;13.95;53.23;
+2009;Uckermark;Blankenburg;Blankenburg 26;Rös. Beil/Axt;Einzelfund;BLDAM 2021;;nein;13.94;53.21;
+2010;Uckermark;Bruessow;Bruessow 21;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.15;53.40;Ismail-Weber 2017
+2011;Uckermark;Bruessow;Bruessow 67;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.10;53.42;Ismail-Weber 2017
+2012;Uckermark;Dedelow;Dedelow 5;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.79;53.36;Ismail-Weber 2017
+2013;Uckermark;Dedelow;Dedelow 11;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.78;53.35;Ismail-Weber 2017
+2014;Spree-Neiße;Drebkau;Drebkau 2;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.23;51.65;Ismail-Weber 2017
+2015;Ostprignitz-Ruppin;Dreetz;Dreetz 8;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;12.39;52.77;Ismail-Weber 2017
+2016;Uckermark;Eickstedt;Eickstedt 4;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.04;53.31;Ismail-Weber 2017
+2017;Uckermark;Eickstedt;Eickstedt 5;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.04;53.31;Ismail-Weber 2017
+2018;Uckermark;Falkenhagen;Falkenhagen 8;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.77;53.36;Ismail-Weber 2017
+2019;Frankfurt (Oder);Frankfurt;Frankfurt 69;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.52;52.34;Ismail-Weber 2017
+2020;Frankfurt (Oder);Frankfurt;Frankfurt 108;Rös. Beil/Axt;Einzelfund;BLDAM 2021;;nein;14.52;52.33;
+2021;Potsdam-Mittelmark;Glindow;Glindow 4;LBK Dechsel;unbek.;BLDAM 2021;;nein;12.88;52.37;Ismail-Weber 2017
+2022;Uckermark;Gruenow bei Schoenermark;Gruenow bei Schoener;LBK Dechsel;Lesefunde;BLDAM 2021;;nein;14.07;53.13;Ismail-Weber 2017
+2023;Uckermark;Gramzow;Gramzow 7;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.06;53.22;Ismail-Weber 2017
+2024;Uckermark;Gramzow;Gramzow 29;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.03;53.20;Ismail-Weber 2017
+2025;Teltow-Fläming;Kallinchen;Kallinchen 7;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.55;52.21;Ismail-Weber 2017
+2026;Uckermark;Luetzlow;Luetzlow 13;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.01;53.24;Ismail-Weber 2017
+2027;Uckermark;Lemmersdorf;Lemmersdorf 15;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.69;53.46;Ismail-Weber 2017
+2028;Uckermark;Melzow;Melzow 16;LBK Dechsel;unbek.;BLDAM 2021;;nein;13.93;53.19;Ismail-Weber 2017
+2029;Uckermark;Mescherin;Mescherin 8;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.43;53.25;Ismail-Weber 2017
+2030;Brandenburg (Havel);Neuendorf;Neuendorf 4;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;12.49;52.39;Ismail-Weber 2017
+2031;Uckermark;Neumeichow;Neumeichow 14;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.97;53.20;Ismail-Weber 2017
+2032;Uckermark;Petershagen;Petershagen 3;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.27;53.25;Ismail-Weber 2017
+2033;Uckermark;Prenzlau;Prenzlau 23;Rös. Beil/Axt;Einzelfund;BLDAM 2021;;nein;13.86;53.30;
+2034;Uckermark;Prenzlau;Prenzlau 76;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.86;53.31;Ismail-Weber 2017
+2035;Uckermark;Prenzlau;Prenzlau 174;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.89;53.29;Ismail-Weber 2017
+2036;Uckermark;Roepersdorf;Roepersdorf 19;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.84;53.29;Ismail-Weber 2017
+2037;Uckermark;Schoenermark OW;Schoenermark OW 11;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.07;53.11;Ismail-Weber 2017
+2038;Uckermark;Schoenermark NWU;Schoenermark NWU 11;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.74;53.34;Ismail-Weber 2017
+2039;Uckermark;Schoenwerder;Schoenwerder 26;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.84;53.36;Ismail-Weber 2017
+2040;Brandenburg (Havel);Schmerzke;Schmerzke 1;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;12.56;52.38;Ismail-Weber 2017
+2041;Dahme-Spreewald;Schulzendorf;Schulzendorf 1;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.59;52.37;Ismail-Weber 2017
+2042;Uckermark;Schwaneberg;Schwaneberg 39;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.12;53.34;Ismail-Weber 2017
+2043;Oberspreewald-Lausitz;Senftenberg;Senftenberg 1;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.00;51.52;Ismail-Weber 2017
+2044;Uckermark;Strehlow;Strehlow 1;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.85;53.22;Ismail-Weber 2017
+2045;Uckermark;Strehlow;Strehlow 9;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.84;53.22;Ismail-Weber 2017
+2046;Uckermark;Tornow;Tornow 1;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.96;53.40;Ismail-Weber 2017
+2047;Uckermark;Trampe;Trampe 3;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.09;53.37;Ismail-Weber 2017
+2048;Uckermark;Wallmow;Wallmow 1;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;14.09;53.37;Ismail-Weber 2017
+2049;Uckermark;Warnitz;Warnitz 17;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.87;53.18;Ismail-Weber 2017
+2050;Elbe-Elster;Wiederau;Wiederau 1;LBK Dechsel;Einzelfund;BLDAM 2021;;nein;13.32;51.62;Ismail-Weber 2017
+3001;Frankfurt (Oder);Frankfurt;Frankfurt 33;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.50;52.36;Ismail-Weber 2017
+3002;Havelland;Nauen;Nauen 21;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;12.88;52.62;Ismail-Weber 2017
+3003;Havelland;Rathenow;Rathenow 36;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;12.34;52.58;Ismail-Weber 2017
+3004;Havelland;Wachow;Wachow 5;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;12.76;52.53;Ismail-Weber 2017
+3005;Havelland;Wachow;Wachow 20;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;12.76;52.52;Ismail-Weber 2017
+3006;Havelland;Wagenitz;Wagenitz 11;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;12.64;52.67;Ismail-Weber 2017
+3007;Havelland;Bredow;Bredow 2;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.91;52.60;Ismail-Weber 2017
+3008;Havelland;Bredow;Bredow 18;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.91;52.60;Ismail-Weber 2017
+3009;Havelland;Bredow;Bredow 24;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.91;52.58;Ismail-Weber 2017
+3010;Havelland;Buchow-Karpzow;Buchow-Karpzow 9;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.94;52.52;Ismail-Weber 2017
+3011;Havelland;Gohlitz;Gohlitz 5;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.78;52.54;Ismail-Weber 2017
+3012;Havelland;Groß Behnitz;Groß Behnitz 15;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.77;52.58;Ismail-Weber 2017
+3013;Havelland;Hoppenrade;Hoppenrade 6;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.92;52.54;Ismail-Weber 2017
+3014;Havelland;Lietzow;Lietzow 2;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.82;52.61;Ismail-Weber 2017
+3015;Havelland;Niebede;Niebede 4;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.79;52.54;Ismail-Weber 2017
+3016;Havelland;Wustermark;Wustermark 11;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.96;52.56;Ismail-Weber 2017
+3017;Havelland;Lietzow;Lietzow 10;LBK Siedl.;unbek.;BLDAM 2021;;nein;12.83;52.61;Ismail-Weber 2017
+3018;Märkisch-Oderland;Libbenichen;Libbenichen 4;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.44;52.49;Ismail-Weber 2017
+3019;Oder-Spree;Sawall;Sawall 2;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.19;52.07;Ismail-Weber 2017
+3020;Ostprignitz-Ruppin;Linum;Linum 16;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.88;52.74;Ismail-Weber 2017
+3021;Potsdam-Mittelmark;Wusterwitz;Wusterwitz 29;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;12.35;52.39;Ismail-Weber 2017
+3022;Potsdam-Mittelmark;Satzkorn;Satzkorn 5;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;12.99;52.48;Ismail-Weber 2017
+3023;Teltow-Fläming;Bochow;Bochow 7;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.08;51.96;Ismail-Weber 2017
+3024;Teltow-Fläming;Bochow;Bochow 8;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.06;51.96;Ismail-Weber 2017
+3025;Teltow-Fläming;Bochow;Bochow 10;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.09;51.97;Ismail-Weber 2017
+3026;Teltow-Fläming;Bochow;Bochow 15;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.08;51.96;Ismail-Weber 2017
+3027;Teltow-Fläming;Bochow;Bochow 16;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.08;51.96;Ismail-Weber 2017
+3028;Teltow-Fläming;Bochow;Bochow 18;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.09;51.96;Ismail-Weber 2017
+3029;Teltow-Fläming;Jueterbog;Jueterbog 17;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.05;51.99;Ismail-Weber 2017
+3030;Teltow-Fläming;Jueterbog;Jueterbog 31;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.05;51.99;Ismail-Weber 2017
+3031;Teltow-Fläming;Niedergoersdorf;Niedergoersdorf 4;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;12.97;51.99;Ismail-Weber 2017
+3032;Teltow-Fläming;Oehna;Oehna 14;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.03;51.93;Ismail-Weber 2017
+3033;Teltow-Fläming;Bochow;Bochow 1;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.08;51.96;Ismail-Weber 2017
+3034;Teltow-Fläming;Bochow;Bochow 6;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.08;51.96;Ismail-Weber 2017
+3035;Teltow-Fläming;Bochow;Bochow 12;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.09;51.96;Ismail-Weber 2017
+3036;Teltow-Fläming;Bochow;Bochow 13;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.09;51.96;Ismail-Weber 2017
+3037;Teltow-Fläming;Dennewitz;Dennewitz 15;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.02;51.97;Ismail-Weber 2017
+3038;Teltow-Fläming;Jueterbog;Jueterbog 33;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.07;51.96;Ismail-Weber 2017
+3039;Teltow-Fläming;Jueterbog;Jueterbog 36;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.08;51.97;Ismail-Weber 2017
+3040;Teltow-Fläming;Jueterbog;Jueterbog 50;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.07;51.97;Ismail-Weber 2017
+3041;Teltow-Fläming;Rohrbeck;Rohrbeck 2;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.05;51.97;Ismail-Weber 2017
+3042;Teltow-Fläming;Rohrbeck;Rohrbeck 14;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.03;51.97;Ismail-Weber 2017
+3043;Teltow-Fläming;Rohrbeck;Rohrbeck 20;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.04;51.96;Ismail-Weber 2017
+3044;Teltow-Fläming;Werbig;Werbig 1;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.18;51.95;Ismail-Weber 2017
+3045;Uckermark;Prenzlau;Prenzlau 2;LBK Siedl.;Einzelfund;BLDAM 2021;;nein;13.86;53.31;Ismail-Weber 2017
+3046;Uckermark;Bagemuehl;Bagemuehl 3;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.20;53.37;Ismail-Weber 2017
+3047;Uckermark;Blankenburg;Blankenburg 38;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.95;53.21;Ismail-Weber 2017
+3048;Uckermark;Carmzow;Carmzow 9;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.06;53.39;Ismail-Weber 2017
+3049;Uckermark;Carmzow;Carmzow 12;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.07;53.37;Ismail-Weber 2017
+3050;Uckermark;Dedelow;Dedelow 52;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.81;53.39;Ismail-Weber 2017
+3051;Uckermark;Dobberzin;Dobberzin 2;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.04;53.01;Ismail-Weber 2017
+3052;Uckermark;Dobberzin;Dobberzin 10;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.04;53.01;Ismail-Weber 2017
+3053;Uckermark;Ellingen;Ellingen 3;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.81;53.35;Ismail-Weber 2017
+3054;Uckermark;Falkenwalde;Falkenwalde 42;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.99;53.27;Ismail-Weber 2017
+3055;Uckermark;Falkenwalde;Falkenwalde 43;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.01;53.25;Ismail-Weber 2017
+3056;Uckermark;Flemsdorf;Flemsdorf 13;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.17;53.03;Ismail-Weber 2017
+3057;Uckermark;Flemsdorf;Flemsdorf 15;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.16;53.03;Ismail-Weber 2017
+3058;Uckermark;Gramzow;Gramzow 23;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.02;53.22;Ismail-Weber 2017
+3059;Uckermark;Gramzow;Gramzow 42;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.02;53.22;Ismail-Weber 2017
+3060;Uckermark;Gruenberg;Gruenberg 19;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.10;53.35;Ismail-Weber 2017
+3061;Uckermark;Kleptow;Kleptow 32;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.01;53.37;Ismail-Weber 2017
+3062;Uckermark;Klinkow;Klinkow 1;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.83;53.33;Ismail-Weber 2017
+3063;Uckermark;Klinkow;Klinkow 3;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.82;53.33;Ismail-Weber 2017
+3064;Uckermark;Klinkow;Klinkow 14;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.83;53.33;Ismail-Weber 2017
+3065;Uckermark;Klinkow;Klinkow 17;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.82;53.32;Ismail-Weber 2017
+3066;Uckermark;Klinkow;Klinkow 18;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.81;53.32;Ismail-Weber 2017
+3067;Uckermark;Klinkow;Klinkow 26;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.83;53.32;Ismail-Weber 2017
+3068;Uckermark;Klockow;Klockow 41;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.01;53.39;Ismail-Weber 2017
+3069;Uckermark;Luetzlow;Luetzlow 13;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.01;53.24;Ismail-Weber 2017
+3070;Uckermark;Nechlin;Nechlin 18;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.90;53.45;Ismail-Weber 2017
+3071;Uckermark;Niederlandin;Niederlandin 8;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.15;53.06;Ismail-Weber 2017
+3072;Uckermark;Prenzlau;Prenzlau 43;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.88;53.28;Ismail-Weber 2017
+3073;Uckermark;Prenzlau;Prenzlau 113;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.84;53.29;Ismail-Weber 2017
+3074;Uckermark;Prenzlau;Prenzlau 126;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.85;53.29;Ismail-Weber 2017
+3075;Uckermark;Prenzlau;Prenzlau 230;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.83;53.30;Ismail-Weber 2017
+3076;Uckermark;Prenzlau;Prenzlau 259;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.87;53.30;Ismail-Weber 2017
+3077;Uckermark;Schenkenberg;Schenkenberg 18;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.94;53.35;Ismail-Weber 2017
+3078;Uckermark;Schoenermark (NWU);Schoenermark (NWU) 2;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.70;53.34;Ismail-Weber 2017
+3079;Uckermark;Schoenfeld bei Prenzlau;Schoenfeld bei Prenzlau 2;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.98;53.40;Ismail-Weber 2017
+3080;Uckermark;Schoenwerder;Schoenwerder 10;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.83;53.38;Ismail-Weber 2017
+3081;Uckermark;Schoenwerder;Schoenwerder 13;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.85;53.36;Ismail-Weber 2017
+3082;Uckermark;Sternhagen;Sternhagen 17;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.77;53.23;Ismail-Weber 2017
+3083;Uckermark;Strehlow;Strehlow 2;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.84;53.24;Ismail-Weber 2017
+3084;Uckermark;Strehlow;Strehlow 14;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.84;53.23;Ismail-Weber 2017
+3085;Uckermark;Tornow;Tornow 11;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.97;53.39;Ismail-Weber 2017
+3086;Uckermark;Wartin;Wartin 1;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.11;53.26;Ismail-Weber 2017
+3087;Uckermark;Weselitz;Weselitz 22;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.99;53.26;Ismail-Weber 2017
+3088;Uckermark;Zernikow;Zernikow 4;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.75;53.39;Ismail-Weber 2017
+3089;Uckermark;Ziemkendorf;Ziemkendorf 25;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;14.04;53.32;Ismail-Weber 2017
+3090;Uckermark;Zollchow;Zollchow 11;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.84;53.25;Ismail-Weber 2017
+3091;Uckermark;Zollchow;Zollchow 26;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.84;53.25;Ismail-Weber 2017
+3092;Uckermark;Basedow;Basedow 2;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.80;53.34;Ismail-Weber 2017
+3093;Uckermark;Prenzlau;Prenzlau 98;LBK Siedl.;Lesefunde;BLDAM 2021;;nein;13.87;53.30;Ismail-Weber 2017
+3094;Uckermark;Bandelow;Bandelow 4;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.86;53.43;Ismail-Weber 2017
+3095;Uckermark;Biesenbrow;Biesenbrow 32;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.03;53.13;Ismail-Weber 2017
+3096;Uckermark;Bietikow;Bietikow 15;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.96;53.28;Ismail-Weber 2017
+3097;Uckermark;Blankenburg;Blankenburg 47;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.92;53.22;Ismail-Weber 2017
+3098;Uckermark;Blindow;Blindow 3;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.88;53.36;Ismail-Weber 2017
+3099;Uckermark;Bruchhagen;Bruchhagen 6;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.97;53.07;Ismail-Weber 2017
+3100;Uckermark;Bruessow;Bruessow 74;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.09;53.39;Ismail-Weber 2017
+3101;Uckermark;Cremzow;Cremzow 19;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.03;53.36;Ismail-Weber 2017
+3102;Uckermark;Cremzow;Cremzow 23;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.02;53.36;Ismail-Weber 2017
+3103;Uckermark;Dargersdorf;Dargersdorf 8;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.55;53.06;Ismail-Weber 2017
+3104;Uckermark;Dargersdorf;Dargersdorf 18;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.53;53.08;Ismail-Weber 2017
+3105;Uckermark;Falkenwalde;Falkenwalde 39;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.03;53.27;Ismail-Weber 2017
+3106;Uckermark;Falkenwalde;Falkenwalde 60;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.02;53.28;Ismail-Weber 2017
+3107;Uckermark;Falkenwalde;Falkenwalde 74;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.01;53.28;Ismail-Weber 2017
+3108;Uckermark;Falkenwalde;Falkenwalde 88;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.02;53.26;Ismail-Weber 2017
+3109;Uckermark;Felchow;Felchow 1;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.12;53.05;Ismail-Weber 2017
+3110;Uckermark;Flemsdorf;Flemsdorf 6;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.17;53.03;Ismail-Weber 2017
+3111;Uckermark;Klinkow;Klinkow 30;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.83;53.33;Ismail-Weber 2017
+3112;Uckermark;Klinkow;Klinkow 32;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.83;53.32;Ismail-Weber 2017
+3113;Uckermark;Klockow;Klockow 1;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.01;53.39;Ismail-Weber 2017
+3114;Uckermark;Klockow;Klockow 38;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.01;53.39;Ismail-Weber 2017
+3115;Uckermark;Luetzlow;Luetzlow 61;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.02;53.24;Ismail-Weber 2017
+3116;Uckermark;Meichow;Meichow 16;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.96;53.19;Ismail-Weber 2017
+3117;Uckermark;Potzlow;Potzlow 16;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.84;53.22;Ismail-Weber 2017
+3118;Uckermark;Prenzlau;Prenzlau 30;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.87;53.31;Ismail-Weber 2017
+3119;Uckermark;Prenzlau;Prenzlau 58;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.87;53.30;Ismail-Weber 2017
+3120;Uckermark;Prenzlau;Prenzlau 95;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.87;53.30;Ismail-Weber 2017
+3121;Uckermark;Prenzlau;Prenzlau 98;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.87;53.30;Ismail-Weber 2017
+3122;Uckermark;Prenzlau;Prenzlau 128;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.84;53.29;Ismail-Weber 2017
+3123;Uckermark;Prenzlau;Prenzlau 134;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.88;53.33;Ismail-Weber 2017
+3124;Uckermark;Prenzlau;Prenzlau 158;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.90;53.34;Ismail-Weber 2017
+3125;Uckermark;Prenzlau;Prenzlau 170;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.87;53.30;Ismail-Weber 2017
+3126;Uckermark;Prenzlau;Prenzlau 214;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.87;53.30;Ismail-Weber 2017
+3127;Uckermark;Prenzlau;Prenzlau 224;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.88;53.30;Ismail-Weber 2017
+3128;Uckermark;Prenzlau;Prenzlau 256;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.83;53.30;Ismail-Weber 2017
+3129;Uckermark;Prenzlau;Prenzlau 263;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.90;53.30;Ismail-Weber 2017
+3130;Uckermark;Prenzlau;Prenzlau 277;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.87;53.30;Ismail-Weber 2017
+3131;Uckermark;Prenzlau;Prenzlau 278;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.87;53.30;Ismail-Weber 2017
+3132;Uckermark;Prenzlau;Prenzlau 406;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.88;53.30;Ismail-Weber 2017
+3133;Uckermark;Roepersdorf;Roepersdorf 23;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.84;53.29;Ismail-Weber 2017
+3134;Uckermark;Schwaneberg;Schwaneberg 48;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.15;53.33;Ismail-Weber 2017
+3135;Uckermark;Trebenow;Trebenow 29;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.88;53.43;Ismail-Weber 2017
+3136;Uckermark;Vietmannsdorf;Vietmannsdorf 23;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.55;53.05;Ismail-Weber 2017
+3137;Uckermark;Wallmow;Wallmow 32;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.09;53.36;Ismail-Weber 2017
+3138;Uckermark;Wallmow;Wallmow 38;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;14.09;53.36;Ismail-Weber 2017
+3139;Uckermark;Zollchow;Zollchow 7;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.84;53.25;Ismail-Weber 2017
+3140;Uckermark;Zollchow;Zollchow 13;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.84;53.25;Ismail-Weber 2017
+3141;Uckermark;Zollchow;Zollchow 20;LBK Siedl.;Ausgrabung;BLDAM 2021;Siedlung;nein;13.84;53.25;Ismail-Weber 2017
