@@ -4,6 +4,8 @@
 
 ornamente <- read.csv2("./analysis/data/raw_data/ornamente.csv", sep = "|")
 
+load("./analysis/data/derived_data/verzierungen.RData")
+
 library(tidyr)
 library(dplyr)
 library(ggplot2)
@@ -94,5 +96,5 @@ verz_ornamente_long |>
         legend.key.size = unit(0.5, "cm"))+
   coord_flip() 
 
-ggsave("./analysis/figures/Muster/2024-10-23_Ornamente_Kultur-Kreis.jpg", dpi = 300, width = 20, height = 10, units = "cm")
+ggsave("./analysis/figures/Muster/2024-10-23_Ornamente_Kultur-Kreis.png", dpi = 300, width = 20, height = 30, units = "cm")
 
