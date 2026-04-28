@@ -16,11 +16,11 @@ kult_per_kr <- scherben |>
 s_ofl <- scherben |>
   filter(as.numeric(erh_ofl_k) < 3) |>
   filter(!is.na(ofl)) |>
-  select(gefäßnummer, kreislabel, fundort, kultur_gr, ofl, verz_n) |>
-  unique() |>
+  select(gefäßnummer, kreislabel, fundort, kultur_gr, kultur2, ofl, verz_n) |>
   group_by(gefäßnummer) |>
-  slice_min(ofl) |>
-  ungroup()
+  slice_min(ofl) |> # nimm die "ordentlichste" Oberfläche per Gefäß
+  ungroup() |>
+  unique()
 
 save(s_ofl, file = "./analysis/data/derived_data/s_ofl.RData")
 
