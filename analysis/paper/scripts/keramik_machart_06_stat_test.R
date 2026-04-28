@@ -365,6 +365,9 @@ save(p_values, file = "./analysis/data/derived_data/alle_p_machart_2026-04-23.RD
 
 ### plotten der verzierten
 
+library(ggplot2)
+library(ggh4x)
+library(stringr)
 
 load(file = "./analysis/data/derived_data/alle_p_machart_2026-04-23.RData") 
 
