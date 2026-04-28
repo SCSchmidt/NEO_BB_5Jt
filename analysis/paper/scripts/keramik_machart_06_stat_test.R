@@ -1,5 +1,7 @@
 ## Keramik Machart: Testen aller Variablen
 
+library(dplyr)
+
 source("./R_functions/get_p-adj_chiperm.R")
 
 load(file = "./analysis/data/derived_data/scherben.RData")
