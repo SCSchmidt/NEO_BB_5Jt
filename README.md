@@ -4,7 +4,9 @@ Dieser Ordner enthält den Analysecode und die veröffentlichbaren Daten der Dis
 "Zwischen West und Ost, Nord und Süd: Brandenburg im 5. Jahrtausend v. Chr. als Interaktionsraum für Gruppen unterschiedlicher Subsistenz"
 
 Hier wird in etwa der Struktur Ben Marwicks Paket {rrtools} (*reproducible research tools*) gefolgt: Auf der ersten Ebene befinden sich zwei Ordner, 
-*R_functions* und *analysis*. Unter *R_functions* befinden sich kleinere R-Scripte, die mehrmals im Verlauf der 
+*R_functions* und *analysis*. Eine csv-Tabelle auf dieser Ebene hält die dependencies vor und ein kleines R-Skript *setup_dependencies.R* detailliert eine Möglichkeit 
+zur automatischen Nachinstallation der notwendigen Pakete.
+Unter *R_functions* befinden sich kleinere R-Scripte, die mehrmals im Verlauf der 
 Analyse eingesetzt wurden. 
 
 Der Ordner *py_code* enthält unter *QGIS* 
@@ -16,8 +18,6 @@ Der Ordner *py_code* enthält unter *QGIS*
       - schwarzerden_bb_admin3 ist eine Verschneidung der Schwarzerdenkartierung des Landesamts für Umwelt Brandenburg (<https://geobroker.geobasis-bb.de/gbss.php?MODE=GetProductInformation&PRODUCTID=BB07A209-E253-413D-B285-7B14671585DF>) und der Karten von Natural Earth Data (<https://www.naturalearthdata.com/>)
       - seen_bb_admin3 ist eine Verschneidung der KArtierung von Seeflächen des Landesamts für Umwelt Brandenburg (<https://geoportal.brandenburg.de/detailansichtdienst/render?view=gdibb&url=https://geoportal.brandenburg.de/gs-json/xml?fileid=D9C4E283-00C3-42A2-9F1F-15BFD6A40B55>)
       - SGDB_PTR_arbeitsgebiet_epsg25833 ist eine in das EPSG 25833 transformierte und auf das Arbeitsgebiet zugeschnittene Karte der *Soil Georgraphic Database of Europe* der Euroäischen Kommission (<https://esdac.jrc.ec.europa.eu/content/european-soil-database-v20-vector-and-attribute-data> )
-
-
 
 Unter *analysis* liegen die Ordner *data*, *figures* und *paper*:
 
