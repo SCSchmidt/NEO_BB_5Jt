@@ -1,5 +1,10 @@
 #### Testen der Handhaben
 
+library(ggplot2)
+library(dplyr)
+library(ggh4x)
+
+
 source("analysis/paper/scripts/keramik_gefform_06_handhaben.R")
 
 

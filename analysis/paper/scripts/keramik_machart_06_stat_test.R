@@ -1,5 +1,9 @@
 ## Keramik Machart: Testen aller Variablen
 
+library(ggplot2)
+library(dplyr)
+library(ggh4x)
+
 library(dplyr)
 
 source("./R_functions/get_p-adj_chiperm.R")
