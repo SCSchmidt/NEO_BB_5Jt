@@ -1,7 +1,7 @@
 
 ## plotten
 
-## falls noch nie laufgen gelassen, benötigt es: source("standortanalyse_11_analyse_BZ_grabloecher_vorb.R")
+## falls noch nie laufgen gelassen, benötigt es: source("standortanalyse_11_analyse_BZ_grabloecher_vorb.R") mit vorherigem eigenen Datenimport
 # source("analysis/paper/scripts/standortanalyse_01_datenvorbereitung.R")
 
 load("./analysis/data/derived_data/fst_bs_punktabfrage_maxwerte.RData")
@@ -24,8 +24,7 @@ sites_bs$kultur2 <- factor(sites_bs$kultur2,
 
 library(ggplot2)
 
-palette_LBK_SBK <- c("grey", "#61D04F", "#117733", "#CC6677",  "#882255",  "#CD0BBC","black",  "#F5C710", "#2297E6", "darkblue" )
-
+source("./R_functions/farbzuweisungen.R")
 
 sample_size <- as.data.frame(table(sites_bs$kultur2, sites_bs$r))
 
@@ -46,7 +45,7 @@ sites_bs |>
                 y = 0,
                 label = paste("n = ", n),
                 hjust = 0))+
-  scale_colour_manual(values = palette_LBK_SBK)+
+  scale_colour_manual(values = col)+
   theme_bw()+
   labs(title = "Bodengüte im Umkreis der Fundstellen",
        subtitle = "anhand der Bohrlöcher",
@@ -66,7 +65,6 @@ ggsave("./analysis/figures/Standortanalyse/BS_max-wert_radius_kultur2.png", dpi 
 library(ggplot2)
 library(ggh4x)
 
-palette_LBK_SBK<- c( "grey", "#61D04F", "#117733","#CD0BBC",  "#CC6677",  "black", "#F5C710", "#2297E6", "darkblue" )
 
 sample_size <- as.data.frame(table(sites_bs$kultur2, sites_bs$r, sites_bs$kreislabel))
 colnames(sample_size) <- c("kultur2", "r", "kreislabel", "n")
@@ -106,14 +104,13 @@ sites_bs |>
                 label = paste("n = ", n),
                 hjust = 0),
             size = 3)+
-  scale_colour_manual(values = palette_LBK_SBK)+
+  scale_colour_manual(values = col)+
   theme_bw()+
   labs(title = "Bodengüte im Umkreis der Fundstellen",
        subtitle = "anhand der Bohrlöcher",
        caption = "im Umkreis von 250, 500, 1000 und 2000m",
        y = "max. Wert d. Bodenzahl um eine Fundstelle herum",
        x = "",
-       fill = "",
        colour = "")+
   coord_flip()+
   facet_grid(kreislabel ~ r, 
@@ -154,7 +151,7 @@ l_per_h <- sites_bs_o_mes |>
 l_per_h$kreislabel <- factor(l_per_h$kreislabel, ordered  = T,
                              levels = c("TF", "EE", "HVL", "BAR", "DSW", "SPN", "LOS", "MOL", "UM", "BRB", "FF", "OH", "OSL", "OPR", "P", "PM", "PR") )
 
-source("../../R_functions/farbzuweisungen.R")
+source("./R_functions/farbzuweisungen.R")
 
 sites_bs_o_mes |>
   ggplot()+
@@ -262,7 +259,7 @@ ggsave("./analysis/figures/Standortanalyse/BS_max-wert_radius_SRK_LBKwest.png", 
 
 #### Bodenzahl KS-Test
 
-load("../data/derived_data/fst_bs_punktabfrage_maxwerte.RData")
+load("./analysis/data/derived_data/fst_bs_punktabfrage_maxwerte.RData")
 
 fst_bs_500 <- fst_bs |> filter(r == 500)
 

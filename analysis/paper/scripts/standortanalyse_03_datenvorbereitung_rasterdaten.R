@@ -137,7 +137,7 @@ r_info_bs_nat2 <- r_info_bs_nat[!str_detect(rownames(r_info_bs_nat), "\\.1"),] #
 
 ## großer Vergleichsdatensatz (Rasterpunkte alle 1500m entfernt) einladen
 
-# Umwandlung von shape in csv
+# Umwandlung von shape in csv für Veröffentlichung
 #HG <-  st_read("./analysis/data/geodata/abfrage_BB_regelm_punkte_1500_DGM-derivate.shp", crs = 25833)
 #coords <- st_coordinates(HG)
 #sites3 <- cbind(st_drop_geometry(HG), round(coords, 2) )

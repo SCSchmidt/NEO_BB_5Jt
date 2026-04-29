@@ -85,8 +85,6 @@ bük_hg_sites <- rbind(bük_hg_sites, potsdam_sbk)
 
 ## plot BÜK Hauptgruppen
 
-source("analysis/paper/scripts/standortanalyse_03_datenvorbereitung_analyseBUEK.R")
-
 standort_BB <- bük_hg_sites
 
 standort_BB <- standort_BB |>

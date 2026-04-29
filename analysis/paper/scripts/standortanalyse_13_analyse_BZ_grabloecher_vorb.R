@@ -1,5 +1,7 @@
 ## Bodenschätzung nach Bohrlochdaten: Abfrage. Achtung, dauert! 
 
+
+
 ## 1. Daten einladen
 ## Kreis ziehen um jeden Punkt und schauen, welche Bohrlöcher mit Bodenzahlen darin liegen
 
@@ -8,9 +10,14 @@
 library(sf) # simple features packages for handling vector GIS data
 library(dplyr)
 
-bs_o_sch <- read_sf(dsn = "./analysis/data/geodata/grabloecher_BS_ohneSchichten.shp")
+# bs_o_sch <- read_sf(dsn = "./analysis/data/geodata/grabloecher_BS_ohneSchichten.shp")
+# bs_m_sch <- read_sf(dsn = "./analysis/data/geodata/grabloecher_BS_mitSchichten.shp")
 
-bs_m_sch <- read_sf(dsn = "./analysis/data/geodata/grabloecher_BS_mitSchichten.shp")
+## Daten müssen vom LGB selber heruntergeladen werden: https://ogc-api.geobasis-bb.de/datasets/bograbloecher
+## da sie zu groß sind, um über Git verfolgt und über Github hochgeladen zu werden (mehrere GB!)
+
+## dementsprechend lange dauert die Weiterverarbeitung!
+
 
 bs_o_sch_w <- bs_o_sch |> select(wertzahlen)
 
@@ -74,5 +81,5 @@ for (d in names(ls_buffer) ) {
   }
 }
 
-save(fst_bs, file = "./analysis/data/derived_data/fst_bs_punktabfrage_maxwerte.RData")
+save(fst_bs, file = "./analysis/data/derived_data/fst_bs_punktabfrage_maxwerte.RData") # einfach hiermit weiterarbeiten ;-)
 

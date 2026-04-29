@@ -6,15 +6,15 @@
 
 
 #### 1. Daten: 
-load(file = "./analysis/data/derived_data/sites.RData"))
+load(file = "./analysis/data/derived_data/sites.RData")
 
-mesorel <- read.csv2("/analysis/data/geodata/standortanalyse_2000_BB/mesorel.csv", sep = ",", dec = ".")
+mesorel <- read.csv2("./analysis/data/geodata/standortanalyse_2000_BB/mesorel.csv", sep = ",", dec = ".")
 
-mesorel500 <- read.csv2("/analysis/data/geodata/standortanalyse_500_BB/mesorel.csv", sep = ",", dec = ".")
+mesorel500 <- read.csv2("./analysis/data/geodata/standortanalyse_500_BB/mesorel.csv", sep = ",", dec = ".")
 
-mesorel250 <- read.csv2("/analysis/data/geodata/standortanalyse_250_BB/mesorel.csv", sep = ",", dec = ".")
+mesorel250 <- read.csv2("./analysis/data/geodata/standortanalyse_250_BB/mesorel.csv", sep = ",", dec = ".")
 
-mesorel1000 <- read.csv2("/analysis/data/geodata/standortanalyse_1000_BB/mesorel.csv", sep = ",", dec = ".")
+mesorel1000 <- read.csv2("./analysis/data/geodata/standortanalyse_1000_BB/mesorel.csv", sep = ",", dec = ".")
 
 
 mesorel$r <- 2000
@@ -237,7 +237,7 @@ farbskala <- c("#440154FF", "#26828EFF", "yellow", "green",  "brown", "black", "
 x |>
   filter(!is.na(r)) |>
   filter(r != "NA") |>
-  ggplot(na.rm = TRUE)+
+  ggplot()+
   geom_bar(aes(y = sum_p_area,
                x = kultur2,
                fill = obj3),

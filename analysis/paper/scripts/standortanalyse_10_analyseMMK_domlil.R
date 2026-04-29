@@ -10,19 +10,19 @@
 load(file = "./analysis/data/derived_data/sites.RData")
 
 
-domlil500 <- read.csv2("/media/sophie/Volume/R/Diss/analysis/data/geodata/standortanalyse_500_BB/domlil.csv", sep = ",", dec = ".")
+domlil500 <- read.csv2("./analysis/data/geodata/standortanalyse_500_BB/domlil.csv", sep = ",", dec = ".")
 
-domlil250 <- read.csv2("/media/sophie/Volume/R/Diss/analysis/data/geodata/standortanalyse_250_BB/domlil.csv", sep = ",", dec = ".")
+domlil250 <- read.csv2("./analysis/data/geodata/standortanalyse_250_BB/domlil.csv", sep = ",", dec = ".")
 
 domlil250$r <- 250
 
 domlil500$r <- 500
 
-domlil1000 <- read.csv2("/media/sophie/Volume/R/Diss/analysis/data/geodata/standortanalyse_1000_BB/domlil.csv", sep = ",", dec = ".")
+domlil1000 <- read.csv2("./analysis/data/geodata/standortanalyse_1000_BB/domlil.csv", sep = ",", dec = ".")
 
 domlil1000$r <- 1000
 
-domlil2000 <- read.csv2("/media/sophie/Volume/R/Diss/analysis/data/geodata/standortanalyse_2000_BB/domlil.csv", sep = ",", dec = ".")
+domlil2000 <- read.csv2("./analysis/data/geodata/standortanalyse_2000_BB/domlil.csv", sep = ",", dec = ".")
 
 domlil2000$r <- 2000
 

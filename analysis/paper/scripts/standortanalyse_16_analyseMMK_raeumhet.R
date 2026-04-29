@@ -1,6 +1,6 @@
 ## Räumliche Heterogenität
 
-raeumhet <- read.csv2("/analysis/data/geodata/standortanalyse_500_BB/raeumhet.csv", sep = ",", dec = ".")
+raeumhet <- read.csv2("./analysis/data/geodata/standortanalyse_500_BB/raeumhet.csv", sep = ",", dec = ".")
 
 load(file = "./analysis/data/derived_data/sites.RData")
 

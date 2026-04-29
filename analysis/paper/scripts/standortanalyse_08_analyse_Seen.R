@@ -9,15 +9,15 @@
 
 load(file = "./analysis/data/derived_data/sites.RData")
 
-ofl_wasser <- read.csv2("/analysis/data/geodata/standortanalyse_BB_2025-02-03/layer.csv", sep = ",", dec = ".")
+ofl_wasser <- read.csv2("./analysis/data/geodata/standortanalyse_BB_2025-02-03/layer.csv", sep = ",", dec = ".")
 
-ofl_wasser1000 <- read.csv2("/analysis/data/geodata/standortanalyse_1000_BB/layer.csv", sep = ",", dec = ".")
+ofl_wasser1000 <- read.csv2("./analysis/data/geodata/standortanalyse_1000_BB/layer.csv", sep = ",", dec = ".")
 
-ofl_wasser2000 <- read.csv2("/analysis/data/geodata/standortanalyse_2000_BB/layer.csv", sep = ",", dec = ".")
+ofl_wasser2000 <- read.csv2("./analysis/data/geodata/standortanalyse_2000_BB/layer.csv", sep = ",", dec = ".")
 
-ofl_wasser250 <- read.csv2("/analysis/data/geodata/standortanalyse_250_BB/layer.csv", sep = ",", dec = ".")
+ofl_wasser250 <- read.csv2("./analysis/data/geodata/standortanalyse_250_BB/layer.csv", sep = ",", dec = ".")
 
-ofl_wasser500 <- read.csv2("/analysis/data/geodata/standortanalyse_500_BB/layer.csv", sep = ",", dec = ".")
+ofl_wasser500 <- read.csv2("./analysis/data/geodata/standortanalyse_500_BB/layer.csv", sep = ",", dec = ".")
 
 
 ofl_wasser1000$obj <- paste0(ofl_wasser1000$obj , "_r1000")
@@ -158,7 +158,7 @@ x2 |>
 
 ggsave("./analysis/figures/Standortanalyse/LGB_see_Kreis-Kultur_rad250-5000.png", dpi = 300, height = 25, width = 25, units = "cm")
 
-# "../figures/Standortanalyse/LGB_see_Kreis-Kultur_rad250-5000_v2.png" händisch so geändert, dass die Legende besser liegt
+# "./analysis/figures/Standortanalyse/LGB_see_Kreis-Kultur_rad250-5000_v2.png" händisch so geändert, dass die Legende besser liegt
 
 
 ### adonis Seenanteil, 500m Radius

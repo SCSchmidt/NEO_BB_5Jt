@@ -1,6 +1,6 @@
 ### Erosionsgefährdung
 
-source("analysis/paper/scripts/standortanalyse_13_datenvorbereitung_rasterdaten.R")
+source("./analysis/paper/scripts/standortanalyse_03_datenvorbereitung_rasterdaten.R")
 
 ## Datenvorbereitung
 
@@ -28,7 +28,7 @@ r_eros_HG$FSt_GG[r_eros_HG$kultur2 != "GG alle 1500m"] <- "Fst"
 
 ### Bodenabtrag als Erosionsgefahrindex
 
-#### zuerst: allgemein: Bodenabtrag als Indikator für Ackerfläche (wie viele liegen auf NA, wie viele mit  Zahl)
+#### zuerst: allgemein: Bodenabtrag als Indikator für Ackerfläche (wie viele liegen auf NA, wie viele mit Zahl)
 
 r_info_HG$FSt_GG[r_info_HG$kultur2 == "GG alle 1500m"] <- "GG"
 r_info_HG$FSt_GG[r_info_HG$kultur2 != "GG alle 1500m"] <- "Fst"
@@ -38,13 +38,13 @@ r_info_bodabtr <- r_info_HG |>
   filter(KREIS != "NA") |>
   filter(!is.na(Bodenabtra))
 
-Bodenabtr_NA <- r_info_bodabtr |>
+Bodenabtr_NA <- r_info_HG |>
   filter(is.na(Bodenabtra)) |>
   group_by(FSt_GG, KREIS) |>
   summarize(count = n_distinct(FID)) |>
   ungroup()
 
-Bodenabtr_noNA <- r_info_bodabtr |>
+Bodenabtr_noNA <- r_info_HG |>
   filter(!(is.na(Bodenabtra)) ) |>
   group_by(FSt_GG, KREIS) |>
   summarize(count = n_distinct(FID)) |>
@@ -298,6 +298,12 @@ x2 <- mesorel_all |>
   group_by(KREIS, obj5, kultur2) |>
   summarise(sum_p_area = sum(area.) ) |>
   ungroup()
+
+
+fo_per_kr <- mesorel_all |>
+  group_by(KREIS, kultur2) |>
+ summarize(count = n_distinct(FST)) |> 
+  ungroup() |> unique()
 
 x2 |>
   ggplot()+

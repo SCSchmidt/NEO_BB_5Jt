@@ -5,15 +5,15 @@
 load(file = "./analysis/data/derived_data/sites.RData")
 
 
-AZ5000 <- read.csv2("/analysis/data/geodata/standortanalyse_BB_2025-02-03/ertrag_bez.csv", sep = ",", dec = ".")
+AZ5000 <- read.csv2("./analysis/data/geodata/standortanalyse_BB_2025-02-03/ertrag_bez.csv", sep = ",", dec = ".")
 
-AZ1000 <- read.csv2("/analysis/data/geodata/standortanalyse_1000_BB/ertrag_bez.csv", sep = ",", dec = ".")
+AZ1000 <- read.csv2("./analysis/data/geodata/standortanalyse_1000_BB/ertrag_bez.csv", sep = ",", dec = ".")
 
-AZ2000 <- read.csv2("/analysis/data/geodata/standortanalyse_2000_BB/ertrag_bez.csv", sep = ",", dec = ".")
+AZ2000 <- read.csv2("./analysis/data/geodata/standortanalyse_2000_BB/ertrag_bez.csv", sep = ",", dec = ".")
 
-AZ250 <- read.csv2("/analysis/data/geodata/standortanalyse_250_BB/ertrag_bez.csv", sep = ",", dec = ".")
+AZ250 <- read.csv2("./analysis/data/geodata/standortanalyse_250_BB/ertrag_bez.csv", sep = ",", dec = ".")
 
-AZ500 <- read.csv2("/analysis/data/geodata/standortanalyse_500_BB/ertrag_bez.csv", sep = ",", dec = ".")
+AZ500 <- read.csv2("./analysis/data/geodata/standortanalyse_500_BB/ertrag_bez.csv", sep = ",", dec = ".")
 
 
 AZ5000$r  <- 5000
@@ -186,5 +186,3 @@ x |>
 
 ggsave("./analysis/figures/Standortanalyse/Bodenzahl_Kreis-Kultur_rad250-5000.png", dpi = 300, height = 40, width = 35, units = "cm")
 
-
-```
