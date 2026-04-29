@@ -322,7 +322,7 @@ x |>
         legend.text = element_text(size = 12),
         axis.text.x = element_text(size = 10))
 
-ggsave("./analysis/figures/Standortanalyse/BB_2000/MMK_mesorel_BB_all_250-2000_facet.png", dpi = 300, height = 35, width = 35, units = "cm")
+ggsave("./analysis/figures/Standortanalyse/MMK_mesorel_BB_all_250-2000_facet.png", dpi = 300, height = 35, width = 35, units = "cm")
 
 
 #3. Distanzberechnung und ADONIStest
