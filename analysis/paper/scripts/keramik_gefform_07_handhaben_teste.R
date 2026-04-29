@@ -9,14 +9,14 @@ source("analysis/paper/scripts/keramik_gefform_06_handhaben.R")
 
 
 ## Chi-Quadrat für nominales
-source("./analysis/./analysis/R_functions/get_p-adj_chiperm.R")
+source("./R_functions/get_p-adj_chiperm.R")
 
 gef_hh_chi <- get_p_chi_perm(df = gef_hh, vars = c("Handhabentyp", "ort_k", "form_loch"), id = "gefäßnummer", kult = "kultur2")
 
 ## Wilcoxon für ordinale Variablen
 
 
-source("./analysis/./analysis/R_functions/get_p_wilcoxon.R")
+source("./R_functions/get_p_wilcoxon.R")
 
 gef_hh$länge_mm <- as.numeric(gef_hh$länge_mm)
 gef_hh$tiefe_mm <- as.numeric(gef_hh$tiefe_mm)
@@ -29,7 +29,7 @@ hh_p_adj_wilcox <- adjust_p(hh_wilcoxon)
 ## plot p-Werte
 
 
-farben <- c("#FDE725FF", "#7AD151FF", "#22A884FF", "grey70","grey60","grey50")
+source("./R_functions/farbzuweisungen.R")
 
 p_values_chi <- adjust_p(gef_hh_chi)
 

@@ -131,7 +131,8 @@ gef_umbruch$randabschluss_f <- factor(gef_umbruch$randabschluss_f , ordered = F)
 
 ## Randwinkel
 
-source("./analysis/./analysis/R_functions/farbzuweisungen.R")
+source("./R_functions/farbzuweisungen.R")
+
 gef_umbruch$randneigung <- as.numeric(gef_umbruch$randneigung)
 
 gef_per_k2 <- gef_umbruch |>    filter(!is.na(randneigung)) |>
