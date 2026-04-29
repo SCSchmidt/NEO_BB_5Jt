@@ -28,7 +28,7 @@ s_ofl2_unverz <- s_ofl2 |>
   rename(ofl_unverz = ofl )
 
 ## Magerung
-source("analysis/paper/scripts/keramik_machart_03_magerung.R")
+source("./analysis/paper/scripts/keramik_machart_03_magerung.R")
 
 
 s_mag <- s_mag |>
@@ -93,7 +93,7 @@ magerungsel_gr <- scherben_gef_magerung |>
 
 ## Bruchfarbe
 
-source("analysis/paper/scripts/keramik_machart_04_bruch.R")
+source("./analysis/paper/scripts/keramik_machart_04_bruch.R")
 
 s_bruchfarbe <- scherben_bf |>
   select(gefäßnummer, bruchfarbe_gr, kultur2) |>
@@ -101,7 +101,11 @@ s_bruchfarbe <- scherben_bf |>
 
 ## Wandungsstärke
 
-source("analysis/paper/scripts/keramik_machart_05_wandung.R")
+source("./analysis/paper/scripts/keramik_machart_05_wandung.R")
+
+scherben_d_max <- scherben_d_max |> rename(maxdicke = dicke)
+scherben_d_min <- scherben_d_min |> rename(mindicke = dicke)
+
 
 ### Zusammenfassung von allen und Zuweisung, welche Eigenschaften ordinal und welche nominal sind
 
