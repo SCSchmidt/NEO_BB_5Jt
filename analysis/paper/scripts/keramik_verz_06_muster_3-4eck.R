@@ -5,7 +5,7 @@ library(dplyr)
 library(ggh4x)
 library(ggplot2)
 
-load(file = "../data/derived_data/verzierungen.RData")
+load(file = "./analysis/data/derived_data/verzierungen.RData")
 
 verzierungen$muster <- tolower(verzierungen$muster)
 
@@ -106,7 +106,7 @@ verz_dreiecke |>
         text = element_text(size = 14) )+
   guides(fill = guide_legend(ncol = 2 ))
 
-ggsave("../figures/Muster/2024-10-23_dreiecke-Kultur--Kreis2.jpg", height = 10, width = 10)  
+ggsave("./analysis/figures/Muster/2024-10-23_dreiecke-Kultur--Kreis2.jpg", height = 10, width = 10)  
 
 
 
@@ -171,4 +171,4 @@ verzierungen |>
   guides(fill=guide_legend(nrow = 3))
 
 
-ggsave("../figures/Muster/2024-10-23_vierecke-Kultur--Kreis.jpg", height = 10, width = 16, units = "cm")  
+ggsave("./analysis/figures/Muster/2024-10-23_vierecke-Kultur--Kreis.jpg", height = 10, width = 16, units = "cm")  

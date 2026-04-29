@@ -45,7 +45,7 @@ verz_rs <- verzierungen |>
                                            "parallel zum Randdurchmesser" )
   ) )
 
-save(verz_rs, file="analysis/data/derived_data/verz_rs.RData")
+save(verz_rs, file = "./analysis/data/derived_data/verz_rs.RData")
 
 verz_rs |>
   count(gefäßnummer, kreislabel, fundort, kultur_gr, muster.zusatz ) |>  # group by gefäßnummer 
@@ -81,4 +81,4 @@ verz_rs |>
   guides(fill = guide_legend(nrow = 3))+
   ggtitle("Ausrichtung der Randstiche")
 
-ggsave("../figures/Muster/2024-10-23_ausr_randstiche_FBG-SBK-Rös--Kreis_prop.jpg", height = 27, width = 22, units = "cm")
+ggsave("./analysis/figures/Muster/2024-10-23_ausr_randstiche_FBG-SBK-Rös--Kreis_prop.jpg", height = 27, width = 22, units = "cm")
