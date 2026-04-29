@@ -1,6 +1,7 @@
 ### Keramik Machart: distance based RDA
 
 load("./analysis/data/derived_data/scherben_gef_magerung.RData")
+load("./analysis/data/derived_data/scherben.RData")
 
 magerung <- scherben_gef_magerung |> # war vorgefiltert
   filter(magerungsel_gr != "NA") |>
