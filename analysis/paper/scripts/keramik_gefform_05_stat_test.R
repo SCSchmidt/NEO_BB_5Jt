@@ -37,7 +37,7 @@ p_values$label <- paste0(p_values$variable, "\n", p_values$method)
 
 p_values$n_note <- gsub(" \n ", "\n", p_values$n_note)
 
-farben <- c("#FDE725FF", "#7AD151FF", "#22A884FF", "grey70","grey60","grey50")
+source("./R_functions/farbzuweisungen.R")
 
 
 p_values$label <- factor(p_values$label,
