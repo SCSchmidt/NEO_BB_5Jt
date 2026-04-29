@@ -10,6 +10,7 @@ col  <- c(
   "SRK" = "#CD0BBC",
   "Guhrau" = "#DDCC77",
   "Rös" = "#332288",
+  "Rös. Beil/Axt" = "dodgerblue",
   "BKK" = "darkviolet"
 )
 
