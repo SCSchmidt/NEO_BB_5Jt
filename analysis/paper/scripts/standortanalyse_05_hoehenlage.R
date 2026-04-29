@@ -1,6 +1,8 @@
 #### Standortanalyse: Höhenwerte mit DGM 1
 
-source("analysis/paper/scripts/standortanalyse_13_datenvorbereitung_rasterdaten.R")
+source("./analysis/paper/scripts/standortanalyse_03_datenvorbereitung_rasterdaten.R")
+
+source("R_functions/farbzuweisungen.R")
 
 r_info_HG |>
   filter(kr_group != "NA") |>

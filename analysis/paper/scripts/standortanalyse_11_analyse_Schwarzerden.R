@@ -7,15 +7,15 @@
 load(file = "./analysis/data/derived_data/sites.RData")
 
 
-ofl_schwarzerd5000 <- read.csv2("/analysis/data/geodata/standortanalyse_BB_2025-02-03/schwarzerd.csv", sep = ",", dec = ".")
+ofl_schwarzerd5000 <- read.csv2("./analysis/data/geodata/standortanalyse_BB_2025-02-03/schwarzerd.csv", sep = ",", dec = ".")
 
-ofl_schwarzerd1000 <- read.csv2("/analysis/data/geodata/standortanalyse_1000_BB/schwarzerd.csv", sep = ",", dec = ".")
+ofl_schwarzerd1000 <- read.csv2("./analysis/data/geodata/standortanalyse_1000_BB/schwarzerd.csv", sep = ",", dec = ".")
 
-ofl_schwarzerd2000 <- read.csv2("/analysis/data/geodata/standortanalyse_2000_BB/schwarzerd.csv", sep = ",", dec = ".")
+ofl_schwarzerd2000 <- read.csv2("./analysis/data/geodata/standortanalyse_2000_BB/schwarzerd.csv", sep = ",", dec = ".")
 
-ofl_schwarzerd250 <- read.csv2("/analysis/data/geodata/standortanalyse_250_BB/schwarzerd.csv", sep = ",", dec = ".")
+ofl_schwarzerd250 <- read.csv2("./analysis/data/geodata/standortanalyse_250_BB/schwarzerd.csv", sep = ",", dec = ".")
 
-ofl_schwarzerd500 <- read.csv2("/analysis/data/geodata/standortanalyse_500_BB/schwarzerd.csv", sep = ",", dec = ".")
+ofl_schwarzerd500 <- read.csv2("./analysis/data/geodata/standortanalyse_500_BB/schwarzerd.csv", sep = ",", dec = ".")
 
 
 ofl_schwarzerd5000$obj  <- paste0(ofl_schwarzerd5000$obj , "_r5000")

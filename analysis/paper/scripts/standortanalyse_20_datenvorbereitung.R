@@ -177,9 +177,9 @@ save(vgl_para, file = "./analysis/data/derived_data/vgl_standortpara_2025-01-06.
 
 ### daten verschmelzen
 
-load(file = "../data/derived_data/all_standortparameter_2025-01-07.RData")
+load(file = "./analysis/data/derived_data/all_standortparameter_2025-01-07.RData")
 
-load( "../data/derived_data/vgl_standortpara_2025-01-06.RData")
+load( "./analysis/data/derived_data/vgl_standortpara_2025-01-06.RData")
 
 vgl_para$kultur2 <- "GG/Bundesland"
 
