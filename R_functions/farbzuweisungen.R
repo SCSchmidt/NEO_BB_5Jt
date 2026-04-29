@@ -13,3 +13,4 @@ col  <- c(
   "BKK" = "darkviolet"
 )
 
+farben <- c("#FDE725FF", "#7AD151FF", "#22A884FF", "grey70","grey60","grey50")
