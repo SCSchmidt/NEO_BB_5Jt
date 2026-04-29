@@ -10,6 +10,8 @@ library(ggh4x)
 hh <- read.csv2("./analysis/data/raw_data/handhaben.csv", sep = "|")
 gef_umbruch <- load("./analysis/data/derived_data/gef_umbruch.RData")
 
+source("./R_functions/farbzuweisungen.R")
+
 gef_umbruch <- gef_umbruch2
 
 
@@ -172,12 +174,12 @@ gef_hh |>
        fill = "")+
   coord_flip()+
   theme_bw()+
-  theme(text = element_text(size = 15),
+  theme(text = element_text(size = 12),
         legend.position = "bottom"         ) #+
 #  guides(fill = guide_legend(nrow = 1) )
 
 
-ggsave("./analysis/figures/Gef_Form/Ausrichtung_Handhaben.png", dpi = 300, width = 17, height = 12, unit = "cm")
+ggsave("./analysis/figures/Gef_Form/Ausrichtung_Handhaben.png", dpi = 300, width = 16, height = 10, unit = "cm")
 
 ### Lage der Knubben am Gefäßkörper
 
@@ -373,6 +375,9 @@ handhaben <- handhaben |>
   ) )
 
 save(handhaben, file = "./analysis/data/derived_data/handhaben.RData")
+
+load(file = "./analysis/data/derived_data/handhaben.RData")
+
 
 library(forcats)
 

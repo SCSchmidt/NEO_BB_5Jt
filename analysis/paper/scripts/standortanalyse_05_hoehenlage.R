@@ -5,14 +5,15 @@ source("analysis/paper/scripts/standortanalyse_13_datenvorbereitung_rasterdaten.
 r_info_HG |>
   filter(kr_group != "NA") |>
   ggplot()+
-  geom_boxplot(aes(x = kultur2,
-                   y = DGM,
-                   col = kultur2))+
   geom_jitter(aes(x = kultur2,
                   y = DGM,
                   col = kultur2),
               alpha = 0.25)+
-  scale_colour_manual(values = col )+
+  geom_boxplot(aes(x = kultur2,
+                   y = DGM,
+                   col = kultur2),
+               alpha = 0) +
+    scale_colour_manual(values = col )+
   labs(title = "Höhenwerte der Fundstellen in Brandenburg",
        subtitle = "nach Region und Kulturgruppe",
        caption = "Daten als Punktabfrage der Fundstellen auf das DGM 1x1 Raster \nQuelle: Landesvermessung und Geobasisinformation Brandenburg (LGB)",
@@ -29,7 +30,7 @@ r_info_HG |>
 ggsave("./analysis/figures/Standortanalyse/Höhenwerte_DGM1.png", dpi = 300, height = 23, width = 20, units = "cm")
 
 
-
+source("R_functions/farbzuweisungen.R")
 ### KS-Test DGM über ganz BB 
 
 

@@ -73,7 +73,7 @@ gef_umbruch |>
   theme(strip.text.y = element_text(angle = 0) )  # drehen der Facettierungsbeschriftung
 
 
-ggsave("./analysis/figures/Gef_Form/2025-09-25_Richtungswechsel_Hals.png", dpi = 300, width = 16, height = 25, units = "cm")
+ggsave("./analysis/figures/Gef_Form/2025-09-25_Richtungswechsel_Hals.png", dpi = 300, width = 18, height = 27, units = "cm")
 
 
 

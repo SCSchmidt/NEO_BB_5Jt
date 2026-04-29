@@ -2,6 +2,11 @@
 
 ### plotten der Balkendiagramme
 
+library(viridis)
+library(ggplot2)
+library(dplyr)
+library(ggh4x)
+
 
 vgl_WRBFU <- vgl_standort_all |>
   select(fid, FST, BUNDESLAND, Bndslnd, kultur2, starts_with("WRB")) |>

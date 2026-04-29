@@ -45,7 +45,7 @@ gef_umbruch |>
   labs(title = "Randausformungen",
        x = "",
        y = "Prozent",
-       fill = "Randabschluss grob",
+       fill = " ",
        caption = paste0( "erhaltene Ränder, n = ", nrow(unique(gef_umbruch |>  filter(!is.na(randabschluss_gr)) |> select(gefäßnummer)))) ) +
   scale_fill_viridis(discrete = TRUE,
                      direction = 1,
@@ -62,9 +62,10 @@ gef_umbruch |>
         axis.text.x = element_text(size = 10))+
   guides(fill = guide_legend(nrow = 4) )+
   theme(strip.text.y = element_text(angle = 0),  # drehen der Facettierungsbeschriftung
-        legend.key.size = unit(0.25, "cm"))
+        legend.key.size = unit(0.25, "cm"))+
+  guides(fill=guide_legend(nrow=2,byrow=TRUE))
 
-ggsave("./analysis/figures/Gef_Form/2024-10-25_Randausformungen.jpg", dpi = 300, width = 18, height = 24, units = "cm")
+ggsave("./analysis/figures/Gef_Form/2024-10-25_Randausformungen.jpg", dpi = 300, width = 18, height = 26, units = "cm")
 
 
 library(scales)
@@ -123,7 +124,7 @@ gef_umbruch |>
   theme(strip.text.y = element_text(angle = 0) )  # drehen der Facettierungsbeschriftung
 
 
-ggsave("./analysis/figures/Gef_Form/2024-10-25_Randlippe.jpg", dpi = 300, width = 18, height = 24, units = "cm")
+ggsave("./analysis/figures/Gef_Form/2024-10-25_Randlippe.jpg", dpi = 300, width = 18, height = 27, units = "cm")
 
 gef_umbruch$randabschluss_f <- factor(gef_umbruch$randabschluss_f , ordered = F)
 
