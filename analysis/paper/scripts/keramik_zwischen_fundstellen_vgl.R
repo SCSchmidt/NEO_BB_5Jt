@@ -38,9 +38,9 @@ vm |>
   scale_colour_discrete(labels = c("Gefäßform", "Machart", "Verzierungs-\ntechniken & -elemente") )+
   theme_bw(base_size = 12)
 
-ggsave("../figures/Dichteverteilung_gemittelte_S.png", dpi = 300, width = 16, height = 16, units = "cm")
+ggsave("./analysis/figures/Dichteverteilung_gemittelte_S.png", dpi = 300, width = 16, height = 16, units = "cm")
 
-save(vm, file = "../data/derived_data/gemittelte_S_alleParameter.RData")
+save(vm, file ="./analysis/data/derived_data/gemittelte_S_alleParameter.RData")
 
 
 
@@ -78,7 +78,7 @@ vmg_RGB$kultur2[vmg_RGB$kultur2 == "Rös"] <- "Rössen"
 vmg_RGB$kultur2_from[vmg_RGB$kultur2_from == "Rös"] <- "Rössen"
 
 
-save(vmg_RGB, file = "../data/derived_data/gemittelte_S_alleParameter_RGB.RData")
+save(vmg_RGB, file = "./analysis/data/derived_data/gemittelte_S_alleParameter_RGB.RData")
 
 
 vmg_RGB |>
