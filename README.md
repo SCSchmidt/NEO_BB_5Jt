@@ -24,7 +24,7 @@ Unter *analysis* liegen die Ordner *data*, *figures* und *paper*:
 - *data* beherbergt 
   - alle Datensätze zur Keramik als csv-Daten im Ordner *raw_data*
   - die Geodaten im Ordner *geodata*: 
-      - csv-Tabellen mit X- und Y-Koordinaten im *EPSG 25833* für die Lokalisierung von Fundstellen. Die Fundpunktkoordinaten wurden auf zwei Nachkommastellen reduziert, wodurch leichte Abweichungen entstehen könnten, sollte die *site catchment* - Analyse nachvollzogen werden. 
+      - csv-Tabellen mit X- und Y-Koordinaten im *EPSG 25833* für die Lokalisierung von Fundstellen. Die Fundpunktkoordinaten wurden auf zwei Nachkommastellen reduziert, wodurch leichte Abweichungen entstehen könnten, sollte die *site catchment* - Analyse nachvollzogen werden. Diese Fundstellendaten werden als *Linked Open Data* modelliert unter <https://github.com/Research-Squirrel-Engineers/bb-5kbc-sites>
       - Stichprobenpunkte mit X- und Y-Koordinaten im *EPSG 25833* für die Umweltanalyse, 
       - sowie die Ergebnisse der Abfrage von den Umkreisanalysen / *site catchment* nach Radius getrennt (s. o.)
   - der Ordner *derived_data* beinhaltet Daten, die während der statistischen Analyse erstellt wurden und nicht jedesmal neu generiert werden sollten, wenn zu einem späteren Zeitpunkt weiter gearbeitet wurde
