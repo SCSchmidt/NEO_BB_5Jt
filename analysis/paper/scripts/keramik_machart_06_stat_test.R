@@ -6,7 +6,6 @@ library(ggh4x)
 
 library(dplyr)
 
-source("./R_functions/get_p-adj_chiperm.R")
 
 load(file = "./analysis/data/derived_data/scherben.RData")
 
@@ -97,7 +96,7 @@ source("./analysis/paper/scripts/keramik_machart_04_bruch.R")
 
 s_bruchfarbe <- scherben_bf |>
   select(gefäßnummer, bruchfarbe_gr, kultur2) |>
-  unique() # hatt ich das vergessen?
+  unique() #
 
 ## Wandungsstärke
 
@@ -105,7 +104,6 @@ source("./analysis/paper/scripts/keramik_machart_05_wandung.R")
 
 scherben_d_max <- scherben_d_max |> rename(maxdicke = dicke)
 scherben_d_min <- scherben_d_min |> rename(mindicke = dicke)
-
 
 ### Zusammenfassung von allen und Zuweisung, welche Eigenschaften ordinal und welche nominal sind
 
