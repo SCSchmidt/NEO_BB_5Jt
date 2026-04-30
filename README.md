@@ -3,6 +3,9 @@
 Dieser Ordner enthält den Analysecode und die veröffentlichbaren Daten der Dissertation von Sophie C. Schmidt 
 "Zwischen West und Ost, Nord und Süd: Brandenburg im 5. Jahrtausend v. Chr. als Interaktionsraum für Gruppen unterschiedlicher Subsistenz"
 
+Dies ist die Abgabeversion
+[![DOI](https://zenodo.org/badge/1210569968.svg)](https://doi.org/10.5281/zenodo.19921667)
+
 Hier wird in etwa der Struktur Ben Marwicks Paket {rrtools} (*reproducible research tools*) gefolgt: Auf der ersten Ebene befinden sich zwei Ordner, 
 *R_functions* und *analysis*. Eine csv-Tabelle auf dieser Ebene hält die dependencies vor und ein kleines R-Skript *setup_dependencies.R* detailliert eine Möglichkeit 
 zur automatischen Nachinstallation der notwendigen Pakete.
