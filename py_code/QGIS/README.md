@@ -3,7 +3,7 @@
   - die grundlegende Funktion wird unter <https://archaeoinformatics.net/python-for-site-catchment-qgis/> erläutert
   - darum wurde eine weitere Schleife gelegt, die, wenn in einem shape-file mehrere Informationen zur Verfügung standen, diese gleichzeitig abfragen kann
 
-- unter *geodata* liegen die notwendigen Shapefiles, Herausgeber: Landesvermessung und Geobasisinformation Brandenburg (LGB)
+- unter *geodata* liegen die notwendigen Shapefiles, Herausgeber: Landesvermessung und Geobasisinformation Brandenburg (LGB), copyright beim LGBR und LfU (siehe Projekt-README)
       - BB_BÜK300_Grundkarte, steht als *open data* zur Verfügung unter <https://geoportal.brandenburg.de/detailansichtdienst/render?url=https://geoportal.brandenburg.de/gs-json/xml?fileid=f916fd97-f1e4-4516-a95c-7e9af9f98521> 
       - landwirtschaftliches_ertragspotential, steht als *open data* zur Verfügung unter <https://geoportal.brandenburg.de/detailansichtdienst/render?view=gdibb&url=https%3A%2F%2Fgeoportal.brandenburg.de%2Fgs-json%2Fxml%3Ffileid%3Dbfafc655-9fa0-4b42-9c9b-43d00342e7ca> 
       - Mittelmßst_landwirtsch_Standortkart_MMK100, steht als *open data* zur Verfügung unter <https://geoportal.brandenburg.de/detailansichtdienst/render?url=https://geoportal.brandenburg.de/gs-json/xml?fileid=f916fd97-f1e4-4516-a95c-7e9af9f98521> 
