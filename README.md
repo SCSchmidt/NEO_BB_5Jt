@@ -11,13 +11,12 @@ Analyse eingesetzt wurden.
 
 Der Ordner *py_code* enthält unter *QGIS* 
   - den Abfragecode für die Umkreisanalysen / *site catchment*-Analyse in Python (ein Derivat von <https://github.com/PyQGISCologne/PyQGIS_Site_Catchment>, MIT Lizenz) und 
-  - die notwendigen Shapefiles unter *geodata*, Herausgeber: Landesvermessung und Geobasisinformation Brandenburg (LGB)
+  - die notwendigen Shapefiles unter *geodata*, Herausgeber: Landesvermessung und Geobasisinformation Brandenburg (LGB) und Quelle: © Landesamt für Bergbau, Geologie und Rohstoffe Brandenburg (LBGR), dl-de/by-2-0
       - BB_BÜK300_Grundkarte, steht als *open data* zur Verfügung unter <https://geoportal.brandenburg.de/detailansichtdienst/render?url=https://geoportal.brandenburg.de/gs-json/xml?fileid=f916fd97-f1e4-4516-a95c-7e9af9f98521> 
       - landwirtschaftliches_ertragspotential, steht als *open data* zur Verfügung unter <https://geoportal.brandenburg.de/detailansichtdienst/render?view=gdibb&url=https%3A%2F%2Fgeoportal.brandenburg.de%2Fgs-json%2Fxml%3Ffileid%3Dbfafc655-9fa0-4b42-9c9b-43d00342e7ca> 
       - Mittelmßst_landwirtsch_Standortkart_MMK100, steht als *open data* zur Verfügung unter <https://geoportal.brandenburg.de/detailansichtdienst/render?url=https://geoportal.brandenburg.de/gs-json/xml?fileid=f916fd97-f1e4-4516-a95c-7e9af9f98521> 
-      - schwarzerden_bb_admin3 ist eine Verschneidung der Schwarzerdenkartierung des Landesamts für Umwelt Brandenburg (<https://geobroker.geobasis-bb.de/gbss.php?MODE=GetProductInformation&PRODUCTID=BB07A209-E253-413D-B285-7B14671585DF>) und der Karten von Natural Earth Data (<https://www.naturalearthdata.com/>)
-      - seen_bb_admin3 ist eine Verschneidung der Natural Earth Data mit der *open data* Kartierung von Seeflächen des Landesamts für Umwelt Brandenburg (<https://geoportal.brandenburg.de/detailansichtdienst/render?view=gdibb&url=https://geoportal.brandenburg.de/gs-json/xml?fileid=D9C4E283-00C3-42A2-9F1F-15BFD6A40B55>)
-      - SGDB_PTR_arbeitsgebiet_epsg25833 ist eine in das EPSG 25833 transformierte und auf das Arbeitsgebiet zugeschnittene Karte der *Soil Georgraphic Database of Europe* der Euroäischen Kommission (<https://esdac.jrc.ec.europa.eu/content/european-soil-database-v20-vector-and-attribute-data> , siehe auch Panagos Panos. The European soil database (2006) GEO: connexion, 5 (7), pp. 32-33.)
+      - schwarzerden_bb_admin3 ist eine Verschneidung der Schwarzerdenkartierung des Landesamts für Umwelt Brandenburg ©, dl-de/by-2-0 (<https://geobroker.geobasis-bb.de/gbss.php?MODE=GetProductInformation&PRODUCTID=BB07A209-E253-413D-B285-7B14671585DF>) und der Karten von Natural Earth Data (<https://www.naturalearthdata.com/>)
+      - seen_bb_admin3 ist eine Verschneidung der Natural Earth Data mit der *open data* Kartierung von Seeflächen des Landesamts für Umwelt Brandenburg ©, dl-de/by-2-0 (<https://geoportal.brandenburg.de/detailansichtdienst/render?view=gdibb&url=https://geoportal.brandenburg.de/gs-json/xml?fileid=D9C4E283-00C3-42A2-9F1F-15BFD6A40B55>)
 
 Unter *analysis* liegen die Ordner *data*, *figures* und *paper*:
 
