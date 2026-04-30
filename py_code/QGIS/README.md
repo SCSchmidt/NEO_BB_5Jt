@@ -1,7 +1,7 @@
  
 - Script_Site_Catchment_schleife.py ist der Abfragecode für die Umkreisanalysen / *site catchment*-Analyse in QPy -- Python für QGIS 
   - die grundlegende Funktion wird unter <https://archaeoinformatics.net/python-for-site-catchment-qgis/> erläutert
-  - darum wurde eine weitere Schleife gelegt, die, wenn in einem shape-file mehrere Informationen zur Verfügung standen, diese gleichzeitig abfragen kann
+  - darum wurde eine weitere Schleife gelegt, die, wenn in einem *shape*-file mehrere Informationen zur Verfügung standen, diese gleichzeitig abfragen kann
 
 - unter *geodata* liegen die notwendigen Shapefiles, Herausgeber: Landesvermessung und Geobasisinformation Brandenburg (LGB), copyright beim LGBR und LfU (siehe Projekt-README)
       - BB_BÜK300_Grundkarte, steht als *open data* zur Verfügung unter <https://geoportal.brandenburg.de/detailansichtdienst/render?url=https://geoportal.brandenburg.de/gs-json/xml?fileid=f916fd97-f1e4-4516-a95c-7e9af9f98521> 
